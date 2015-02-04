@@ -1,0 +1,51 @@
+<div class="slider-blog-container">
+	<?php $posts = $this->getRecent() ?>
+	<?php if (count($posts)): ?>
+	<div class="items-slider posts-slider">
+		<?php foreach ($posts as $post): ?>
+		<div class="slide-item post-slide">
+			<?php
+				if($banner_image = $post->getBanner()){
+			?>
+			<div class="post-images">
+				<a href="<?php echo $post->getAddress(); ?>"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$banner_image; ?>" alt=""/>
+				</a>
+				<div class="blog-mask">
+					<div class="mask-content">
+						<a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$banner_image; ?>" class="post-banner-lightbox">
+							<i class="icon-resize-full"></i>
+						</a>
+						<a href="<?php echo $post->getAddress(); ?>" class="post-banner-link">
+							<i class="icon-link"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+			<?php } ?>
+			<div class="post-information">
+				<span class="posted-on"><?php echo date('d M Y', strtotime($post->getCreatedTime())) ?></span>
+			</div>
+			<h5><a href="<?php echo $post->getAddress(); ?>" ><?php echo $post->getTitle(); ?></a></h5>
+		</div>
+		<?php endforeach; ?>
+	</div>
+	<script type="text/javascript">
+	//<![CDATA[
+		jQuery('.slider-blog-container .posts-slider').owlCarousel({
+			items: 4,
+			itemsDesktop: [1199, 3],
+			itemsDesktopSmall: [991, 3],
+			itemsTablet: [768, 2],
+			itemsMobile: [479, 1],
+			lazyLoad: true,
+			pagination: false,
+			navigation: true
+		});
+	//]]>
+	</script>
+	<?php else: ?>
+	<div class="content-element">
+		<div class="note-msg"><span class="msg-content"><?php echo $this->__('There are no blogs.') ?></span></div>
+	</div>
+	<?php endif; ?>
+</div>

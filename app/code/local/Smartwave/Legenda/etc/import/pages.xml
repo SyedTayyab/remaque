@@ -1,0 +1,385 @@
+<root>
+   <pages>
+      <cms_block>
+         <title>About Us</title>
+         <identifier>about-magento-demo-store</identifier>
+         <content><![CDATA[<div class="content-element"><img src="{{media url="wysiwyg/3-1.png"}}" alt="" /></div>
+<div class="content-element">
+<h3 class="title"><span>Our Company</span></h3>
+<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="content-element">
+<h5>our Approach</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div class="list list-arrow">
+<ul>
+<li>Duis aute irure dolor in reprehenderit in voluptate.</li>
+<li>Excepteur sint occaecat cupidatat non proident.</li>
+<li>Sunt in culpa qui officia deserunt mollit.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="content-element">
+<h5>Company Abilities</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="progress-bars">
+<div class="progress-bars">
+<div class="progress-bar" data-width="90"><span>Developement</span>
+<div>&nbsp;</div>
+</div>
+</div>
+<div class="progress-bars">
+<div class="progress-bar" data-width="80"><span>Design</span>
+<div>&nbsp;</div>
+</div>
+</div>
+<div class="progress-bars">
+<div class="progress-bar" data-width="70"><span>Marketing</span>
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="join-our-team">
+<div class="content-element">
+<h3 class="title"><span>Legenda Team</span></h3>
+</div>
+<div class="row">
+<div class="col-sm-3">
+<div class="team-member">
+<div class="member-image"><img src="{{media url="wysiwyg/team-member21.jpg"}}" alt="" />
+<div class="member-mask">
+<div class="mask-text"><fieldset><legend>Social Profiles</legend> <a href="#"><em class="icon-linkedin">linkedin</em></a> <a href="#"><em class="icon-twitter">twitter</em></a> <a href="#"><em class="icon-facebook">facebook</em></a> <a href="#"><em class="icon-skype">skype</em></a> <a href="#"><em class="icon-instagram">instagram</em></a></fieldset></div>
+</div>
+</div>
+<div class="clearer">&nbsp;</div>
+<div class="member-details">
+<h5 class="member-position">Developer</h5>
+<h4>Steven Jobs</h4>
+<p class="member-email"><span>Email:</span> <a href="sjobs@legendary.com">sjobs@legendary.com</a></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="team-member">
+<div class="member-image"><img src="{{media url="wysiwyg/team-member11.jpg"}}" alt="" />
+<div class="member-mask">
+<div class="mask-text"><fieldset><legend>Social Profiles</legend> <a href="#"><em class="icon-linkedin">linkedin</em></a> <a href="#"><em class="icon-twitter">twitter</em></a> <a href="#"><em class="icon-facebook">facebook</em></a> <a href="#"><em class="icon-skype">skype</em></a> <a href="#"><em class="icon-instagram">instagram</em></a></fieldset></div>
+</div>
+</div>
+<div class="clearer">&nbsp;</div>
+<div class="member-details">
+<h5 class="member-position">Developer</h5>
+<h4>Steven Jobs</h4>
+<p class="member-email"><span>Email:</span> <a href="sjobs@legendary.com">sjobs@legendary.com</a></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="team-member">
+<div class="member-image"><img src="{{media url="wysiwyg/team-member41.jpg"}}" alt="" />
+<div class="member-mask">
+<div class="mask-text"><fieldset><legend>Social Profiles</legend> <a href="#"><em class="icon-linkedin">linkedin</em></a> <a href="#"><em class="icon-twitter">twitter</em></a> <a href="#"><em class="icon-facebook">facebook</em></a> <a href="#"><em class="icon-skype">skype</em></a> <a href="#"><em class="icon-instagram">instagram</em></a></fieldset></div>
+</div>
+</div>
+<div class="clearer">&nbsp;</div>
+<div class="member-details">
+<h5 class="member-position">Developer</h5>
+<h4>Steven Jobs</h4>
+<p class="member-email"><span>Email:</span> <a href="sjobs@legendary.com">sjobs@legendary.com</a></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="team-member">
+<div class="member-image"><img src="{{media url="wysiwyg/team-member31.jpg"}}" alt="" />
+<div class="member-mask">
+<div class="mask-text"><fieldset><legend>Social Profiles</legend> <a href="#"><em class="icon-linkedin">linkedin</em></a> <a href="#"><em class="icon-twitter">twitter</em></a> <a href="#"><em class="icon-facebook">facebook</em></a> <a href="#"><em class="icon-skype">skype</em></a> <a href="#"><em class="icon-instagram">instagram</em></a></fieldset></div>
+</div>
+</div>
+<div class="clearer">&nbsp;</div>
+<div class="member-details">
+<h5 class="member-position">Developer</h5>
+<h4>Steven Jobs</h4>
+<p class="member-email"><span>Email:</span> <a href="sjobs@legendary.com">sjobs@legendary.com</a></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="content-element">
+<p style="text-align: center;"><a class="button mini-filled" href="#"><span>Join our team</span></a></p>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+         <root_template>one_column</root_template>
+		 <layout_update_xml><![CDATA[]]></layout_update_xml>
+      </cms_block>
+
+      <cms_block>
+         <title>Legenda | Premium Magento Template</title>
+         <identifier>demo</identifier>
+         <content><![CDATA[<div>{{block type="cms/block" block_id="banner_block_1" }}</div>
+<div>{{block type="filterproducts/latest_home_list" product_count="8" template="smartwave/filterproducts/home_latest.phtml"}}</div>
+<div>{{block type="filterproducts/featured_home_list" product_count="8" template="smartwave/filterproducts/home_featured.phtml"}}</div>
+<div class="row">
+<div class="col-sm-8">{{block type="blog/menu_recents" blog_widget_recent_count="1" template="blog/home_block.phtml"}}</div>
+<div class="col-sm-4">{{block type="newsletter/subscribe" template="newsletter/subscribe_home.phtml"}}</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+         <root_template>one_column</root_template>
+         <layout_update_xml><![CDATA[]]></layout_update_xml>
+      </cms_block>
+
+      <cms_block>
+         <title>Legenda | Premium Magento Template 1</title>
+         <identifier>demo1</identifier>
+         <content><![CDATA[<div>{{block type="cms/block" block_id="home_page_top" }}</div>
+<div>{{block type="core/template" template="revolutionslider/revolutionslider.phtml" block_id="home_slider_1"}}</div>
+<div>{{block type="cms/block" block_id="banner_block_1" }}</div>
+<div>{{block type="filterproducts/latest_home_list" product_count="8" template="smartwave/filterproducts/home_latest.phtml"}}</div>
+<div>{{block type="filterproducts/featured_home_list" product_count="8" template="smartwave/filterproducts/home_featured.phtml"}}</div>
+<div class="row">
+<div class="col-sm-8">{{block type="blog/menu_recents" blog_widget_recent_count="1" template="blog/home_block.phtml"}}</div>
+<div class="col-sm-4">{{block type="newsletter/subscribe" template="newsletter/subscribe_home.phtml"}}</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+         <root_template>one_column</root_template>
+         <layout_update_xml><![CDATA[]]></layout_update_xml>
+      </cms_block>
+      
+      <cms_block>
+         <title>Legenda | Premium Magento Template 2</title>
+         <identifier>demo2</identifier>
+         <content><![CDATA[<div class="content-element">
+<h2 class="title with-customtitle"><span>New jewellery collection</span></h2>
+<span class="custom-title a-center"> Sed ut perspiciatis unde omnis iste natus error sit boluptatem doloremque laudantium, <br /> totam rem aperiam, eaque ipsa quae ab illo inventor veritatis et quasi architecto beatae vitae dicta sunt explicabo. </span></div>
+<div>{{block type="filterproducts/newproduct_home_list" product_count="4" products_column="4" template="smartwave/filterproducts/home_products_grid.phtml"}}</div>
+<div>{{block type="cms/block" block_id="featured_brands_block" }}</div>
+<div>{{block type="cms/block" block_id="parallex_block_1" }}</div>
+<div class="content-element">
+<h2 class="title with-customtitle"><span>Popular Products</span></h2>
+<span class="custom-title a-center"> Sed ut perspiciatis unde omnis iste natus error sit boluptatem doloremque laudantium, <br /> totam rem aperiam, eaque ipsa quae ab illo inventor veritatis et quasi architecto beatae vitae dicta sunt explicabo. </span></div>
+<div>{{block type="filterproducts/bestsellers_home_list" product_count="4" products_column="4" template="smartwave/filterproducts/home_products_grid.phtml"}}</div>
+<div>{{block type="cms/block" block_id="our_company_home_block" }}</div>
+<div>{{block type="cms/block" block_id="parallex_block_2" }}</div>
+<div class="row content-element">
+<div class="col-sm-8">{{block type="blog/menu_recents" blog_widget_recent_count="1" template="blog/home_block.phtml"}}</div>
+<div class="col-sm-4">{{block type="newsletter/subscribe" template="newsletter/subscribe_home.phtml"}}</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+         <root_template>one_column</root_template>
+         <layout_update_xml><![CDATA[]]></layout_update_xml>
+      </cms_block>
+      
+      <cms_block>
+         <title>Legenda | Premium Magento Template 3</title>
+         <identifier>demo3</identifier>
+         <content><![CDATA[<div>{{block type="core/template" template="revolutionslider/revolutionslider.phtml" block_id="home_slider_3"}}</div>
+<div>{{block type="cms/block" block_id="banner_block_2" }}</div>
+<div>
+<h2 class="title with-customtitle"><span>Featured Toys</span></h2>
+<span class="custom-title a-center"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,</span></div>
+<div>{{block type="filterproducts/featured_home_list" product_count="4" template="smartwave/filterproducts/home_featured_custom.phtml"}}</div>
+<div>{{block type="cms/block" block_id="parallex_block_3" }}</div>
+<div>
+<h2 class="title with-customtitle"><span>Bestsellers</span></h2>
+<span class="custom-title a-center"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, </span></div>
+<div class="element-content">{{block type="filterproducts/bestsellers_home_list" product_count="4" products_column="4" template="smartwave/filterproducts/home_bestsellers_custom.phtml"}}</div>
+<div>{{block type="cms/block" block_id="featured_brands_block2" }}</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+         <root_template>one_column</root_template>
+         <layout_update_xml><![CDATA[]]></layout_update_xml>
+      </cms_block>
+      
+      <cms_block>
+         <title>Restaurant | Legenda</title>
+         <identifier>demo4</identifier>
+         <content><![CDATA[<div>
+<h2 class="title with-customtitle"><span>Featured Food</span></h2>
+<span class="custom-title a-center"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,</span></div>
+<div>{{block type="filterproducts/featured_home_list" product_count="4" template="smartwave/filterproducts/home_featured_custom.phtml"}}</div>
+<div>{{block type="cms/block" block_id="parallex_block_4" }}</div>
+<div>{{block type="cms/block" block_id="parallex_block_5" }}</div>
+<div>{{block type="blog/menu_recents" blog_widget_recent_count="4" template="blog/home_slider_block.phtml"}}</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+         <root_template>one_column</root_template>
+         <layout_update_xml><![CDATA[]]></layout_update_xml>
+      </cms_block>
+      
+      <cms_block>
+         <title>Sport | Legenda</title>
+         <identifier>demo5</identifier>
+         <content><![CDATA[<div>{{block type="core/template" template="revolutionslider/revolutionslider.phtml" block_id="home_slider_5"}}</div>
+<div>{{block type="cms/block" block_id="banner_block_3" }}</div>
+<div class="a-center" style="margin-bottom: 10px;">
+<h2 class="title"><span>Featured Products</span></h2>
+<hr class="divider horizontal-break" />Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,<br /> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+<div>{{block type="filterproducts/featured_home_list" product_count="4" products_column="4" template="smartwave/filterproducts/home_products_grid.phtml"}}</div>
+<div>{{block type="cms/block" block_id="parallex_block_6" }}</div>
+<div>{{block type="cms/block" block_id="company_description_block" }}</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+         <root_template>one_column</root_template>
+         <layout_update_xml><![CDATA[]]></layout_update_xml>
+      </cms_block>
+      
+      <cms_block>
+         <title>Candy | Legenda</title>
+         <identifier>demo6</identifier>
+         <content><![CDATA[<div>{{block type="core/template" template="revolutionslider/revolutionslider.phtml" block_id="home_slider_6"}}</div>
+<div>{{block type="cms/block" block_id="offer_you_block" }}</div>
+<div>{{block type="cms/block" block_id="parallex_block_7" }}</div>
+<div>{{block type="filterproducts/featured_home_list" product_count="4" template="smartwave/filterproducts/home_featured_custom.phtml"}}</div>
+<div>{{block type="cms/block" block_id="parallex_block_8" }}</div>
+<div class="row">
+<div class="col-xs-12">
+<div class="element-content">
+<h2 class="title with-customtitle"><span>We want to offer you</span></h2>
+<span class="custom-title a-center"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,<br />neaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</span></div>
+{{block type="blog/menu_recents" blog_widget_recent_count="4" template="blog/home_slider_block_custom.phtml"}}</div>
+</div>
+<div><hr class="divider space " style="height: 30px;" />{{block type="cms/block" block_id="featured_brands_block2" }}</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+         <root_template>one_column</root_template>
+         <layout_update_xml><![CDATA[]]></layout_update_xml>
+      </cms_block>
+      
+      <cms_block>
+         <title>Watches | Legenda</title>
+         <identifier>demo8</identifier>
+         <content><![CDATA[<div>{{block type="cms/block" block_id="watch_offer_block" }}</div>
+<div>{{block type="cms/block" block_id="banner_block_4" }}</div>
+<div>
+<h2 class="title with-customtitle"><span>Featured Products</span></h2>
+<span class="custom-title a-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br /> eiusmod tempor. Ut enim ad minim veniam.</span></div>
+<div>{{block type="filterproducts/featured_home_list" product_count="4" template="smartwave/filterproducts/home_featured_custom.phtml"}}</div>
+<div>{{block type="cms/block" block_id="parallex_block_9" }}</div>
+<div>{{block type="cms/block" block_id="parallex_block_10" }}</div>
+<div>{{block type="blog/menu_recents" blog_widget_recent_count="4" template="blog/home_slider_block.phtml"}}</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+         <root_template>one_column</root_template>
+         <layout_update_xml><![CDATA[]]></layout_update_xml>
+      </cms_block>
+      
+      <cms_block>
+         <title>Games | Legenda</title>
+         <identifier>demo9</identifier>
+         <content><![CDATA[<div>{{block type="core/template" template="revolutionslider/revolutionslider.phtml" block_id="home_slider_9"}}</div>
+<div class="content-element">
+<h2 class="title with-customtitle"><span>Featured Products</span></h2>
+<span class="custom-title a-center"> Sed ut perspiciatis unde omnis iste natus error sit boluptatem doloremque laudantium, <br /> totam rem aperiam, eaque ipsa quae ab illo inventor veritatis et quasi architecto beatae vitae dicta sunt explicabo. </span></div>
+<div>{{block type="filterproducts/featured_home_list" product_count="2" products_column="2" template="smartwave/filterproducts/home_product_list_slider.phtml"}}</div>
+<div>{{block type="cms/block" block_id="parallex_block_11" }}</div>
+<div class="content-element">
+<h2 class="title with-customtitle"><span>Featured Products</span></h2>
+<span class="custom-title a-center"> Sed ut perspiciatis unde omnis iste natus error sit boluptatem doloremque laudantium, totam rem aperiam,<br /> eaque ipsa quae ab illo inventor veritatis et quasi architecto beatae vitae dicta sunt explicabo. </span></div>
+<div>{{block type="filterproducts/latest_home_list" product_count="5" products_column="5" template="smartwave/filterproducts/home_latest_custom.phtml"}}</div>
+<div>{{block type="cms/block" block_id="parallex_block_12" }}</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+         <root_template>one_column</root_template>
+         <layout_update_xml><![CDATA[]]></layout_update_xml>
+      </cms_block>
+      
+      <cms_block>
+         <title>Cars | Legenda</title>
+         <identifier>demo10</identifier>
+         <content><![CDATA[<div>{{block type="core/template" template="revolutionslider/revolutionslider.phtml" block_id="home_slider_10"}}</div>
+<div>{{block type="cms/block" block_id="banner_block_5" }}</div>
+<div class="content-element">
+<h2 class="title with-customtitle"><span>Featured Products</span></h2>
+<span class="custom-title a-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br /> eiusmod tempor. Ut enim ad minim veniam. </span></div>
+<div>{{block type="filterproducts/featured_home_list" product_count="4" template="smartwave/filterproducts/home_featured_custom.phtml"}}</div>
+<div>{{block type="cms/block" block_id="parallex_block_13" }}</div>
+<div class="content-element"><hr class="divider space " style="height: 30px;" />
+<h2 class="title with-customtitle"><span>Popular Products</span></h2>
+<span class="custom-title a-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br /> eiusmod tempor. Ut enim ad minim veniam.</span></div>
+<div>{{block type="filterproducts/bestsellers_home_list" product_count="4" template="smartwave/filterproducts/home_bestsellers_custom.phtml"}}</div>
+<div>{{block type="blog/menu_recents" blog_widget_recent_count="4" template="blog/home_slider_block.phtml"}}</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+         <root_template>one_column</root_template>
+         <layout_update_xml><![CDATA[]]></layout_update_xml>
+      </cms_block>
+      
+      <cms_block>
+         <title>Intimate | Legenda</title>
+         <identifier>demo7</identifier>
+         <content><![CDATA[<div>{{block type="cms/block" block_id="home_page_top" }}</div>
+<div class="row">
+<div class="col-sm-8">{{block type="core/template" template="revolutionslider/revolutionslider.phtml" block_id="home_slider_7"}}</div>
+<div class="col-sm-4">
+<div>{{block type="cms/block" block_id="home_desc_7" }}</div>
+</div>
+</div>
+<div class="content-element">
+<h2 class="title with-customtitle"><span>Promoting Products</span></h2>
+<span class="custom-title a-center"> Sed ut perspiciatis unde omnis iste natus error sit boluptatem doloremque laudantium, <br /> totam rem aperiam, eaque ipsa quae ab illo inventor veritatis et quasi architecto beatae vitae dicta sunt explicabo. </span></div>
+<div>{{block type="filterproducts/featured_home_list" product_count="2" products_column="2" template="smartwave/filterproducts/home_product_list_slider.phtml"}}</div>
+<div>{{block type="cms/block" block_id="parallex_block_10" }}</div>
+<div class="content-element">
+<h2 class="title with-customtitle"><span>Popular Categories</span></h2>
+<span class="custom-title a-center"> Sed ut perspiciatis unde omnis iste natus error sit boluptatem doloremque laudantium, <br /> totam rem aperiam, eaque ipsa quae ab illo inventor veritatis et quasi architecto beatae vitae dicta sunt explicabo. </span></div>
+<div>{{block type="cms/block" block_id="banner_block_7" }}</div>
+<div>{{block type="cms/block" block_id="parallex_block_14" }}</div>
+<div class="content-element">
+<h2 class="title with-customtitle"><span>New Jewellery Collection</span></h2>
+<span class="custom-title a-center"> Sed ut perspiciatis unde omnis iste natus error sit boluptatem doloremque laudantium, <br /> totam rem aperiam, eaque ipsa quae ab illo inventor veritatis et quasi architecto beatae vitae dicta sunt explicabo. </span></div>
+<div>{{block type="filterproducts/newproduct_home_list" product_count="4" products_column="4" template="smartwave/filterproducts/home_newproduct_custom.phtml"}}</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+         <root_template>one_column</root_template>
+         <layout_update_xml><![CDATA[]]></layout_update_xml>
+      </cms_block>
+
+	  <cms_block>
+         <title>Furniture | Premium Magento Template </title>
+         <identifier>demo11</identifier>
+         <content><![CDATA[<div class="row">
+<div class="col-sm-3">{{block type="megamenu/toggle" template="smartwave/megamenu/html/catlist.phtml"}}</div>
+<div class="col-sm-9">{{block type="core/template" template="revolutionslider/revolutionslider.phtml" block_id="home_slider_11"}}</div>
+</div>
+<div>{{block type="cms/block" block_id="home_page_top" }}</div>
+<div>{{block type="cms/block" block_id="banner_block_8" }}</div>
+<div>{{block type="cms/block" block_id="comp_desc_11" }}</div>
+<div>{{block type="cms/block" block_id="parallex_block_15" }}</div>
+<div>{{block type="cms/block" block_id="featured_brands_block2" }}</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+         <root_template>one_column</root_template>
+         <layout_update_xml><![CDATA[]]></layout_update_xml>
+      </cms_block>
+      
+      <cms_block>
+         <title>404 Not Found 1</title>
+         <identifier>no-route</identifier>
+         <content><![CDATA[<div class="page-404">
+<h1 class="largest">404</h1>
+<h1>Oop! Page not found</h1>
+<p>Sorry, but the page you are looking for is not found. Please, make sure you have typed the current url.</p>
+<a class="button" href="{{store url=''}}">Go to homepage</a></div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+         <root_template>one_column</root_template>
+         <layout_update_xml><![CDATA[]]></layout_update_xml>
+      </cms_block>
+   </pages>
+</root>

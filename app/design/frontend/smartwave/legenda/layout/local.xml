@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <default>
+        <reference name="head">
+        <!--INPUT JS -->
+            <!--INPUT jQuery -->
+            <!--<action method="addJs"><script>legenda/jquery/jquery.min.js</script></action>-->
+            <action method="addJs"><script>smartwave/jquery/jquery-1.10.2.min.js</script></action>
+            <action method="addJs"><script>smartwave/jquery/jquery-noconflict.js</script></action>
+            <!--<action method="addJs"><script>smartwave/jquery/jquery-ui-1.10.4.min.js</script></action>            -->
+            <action method="addJs"><script>legenda/jquery/mordernizr.js</script><params/><if>lt IE 9</if></action>
+            <action method="addJs"><script>legenda/jquery/html5shiv.min.js</script><params/><if>lt IE 9</if></action>
+            <action method="addJs"><script>legenda/jquery/respond.min.js</script><params/><if>lt IE 9</if></action>
+            <action method="addJs"><script>legenda/jquery/bootstrap.min.js</script></action>
+            <action method="addJs"><script>smartwave/jquery/plugins/owlslider/js/owl.carousel.js</script></action>
+            <action method="addJs"><script>smartwave/jquery/plugins/legenda/favico-0.3.0.min.js</script></action>
+			<action method="addJs"><script>smartwave/jquery/plugins/cbprotator/js/jquery.cbpQTRotator.js</script></action>
+			<action method="addJs"><script>smartwave/jquery/plugins/legenda/waypoints.min.js</script></action>
+            <action method="addItem"><type>skin_js</type><name>js/jquery.legenda.js</name></action>
+        <!-- INPUT CSS -->
+            <!--<action method="addItem"><type>js_css</type><name>smartwave/jquery/jquery-ui-1.10.4.min.css</name><params/></action>-->
+            <action method="addItem"><type>skin_css</type><name>css/bootstrap-theme.min.css</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/bootstrap.min.css</name><params/></action> 
+            <action method="addItem"><type>js_css</type><name>smartwave/jquery/plugins/owlslider/css/owl.carousel.css</name></action>
+			<action method="addItem"><type>js_css</type><name>smartwave/jquery/plugins/cbprotator/css/component.css</name></action>
+            <action method="removeItem"><type>skin_css</type><name>css/styles.css</name></action>
+            <action method="addItem"><type>skin_css</type><name>css/styles-legenda.css</name><params/></action>
+            <action method="addItem"><type>skin_css</type><name>css/styles-legenda-responsive.css</name><params/></action>
+			<action method="addCss"><stylesheet helper="legenda/config/getSettingCssFile"/></action>
+			<action method="addCss"><stylesheet helper="legenda/config/getDesignCssFile"/></action>
+			<action method="addCss" ifconfig="legenda_setting/custom_settings/custom_css"><stylesheet>css/custom.css</stylesheet></action>
+        </reference> 
+        <reference name="root">
+            <block type="blog/menu_sidebar" name="blog.sideblock" as="blog.sideblock" template="blog/side_block.phtml" />
+            <block type="core/template" name="page.totop" template="legenda/page/to_top.phtml" />
+        </reference>       
+        <!--header-->
+        <reference name="header">
+            <block type="directory/currency" name="currency" as="currency" template="directory/currency.phtml" />
+            <block type="core/template" name="modal.search" as="modalSearch" template="catalogsearch/form.modal.phtml"/>
+            <block type="core/template" name="center.search" as="centerSearch" template="catalogsearch/form.center.phtml"/>
+            <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml" before="-">
+                <action method="addItemRender"><type>simple</type><block>checkout/cart_item_renderer</block><template>checkout/cart/sidebar/default.phtml</template></action>
+                <action method="addItemRender"><type>grouped</type><block>checkout/cart_item_renderer_grouped</block><template>checkout/cart/sidebar/default.phtml</template></action>
+                <action method="addItemRender"><type>configurable</type><block>checkout/cart_item_renderer_configurable</block><template>checkout/cart/sidebar/default.phtml</template></action>
+                <block type="core/text_list" name="cart_sidebar.extra_actions" as="extra_actions" translate="label" module="checkout">
+                    <label>Shopping Cart Sidebar Extra Actions</label>
+                </block>
+            </block>
+        </reference>
+        <!--top links-->
+        <reference name="top.links">
+            <action method="setTemplate">
+                <template>page/template/top.links.phtml</template>
+            </action>
+            <action method="removeLinkByUrl"><url helper="customer/getAccountUrl" /></action>
+            <remove name="checkout_cart_link" />            
+            <action method="addLink" translate="label title" module="customer">
+                <label>Register</label>
+                <url helper="customer/getRegisterUrl" />
+                <title>Register</title>
+                <prepare />
+                <urlParams />
+                <position>110</position>
+            </action>
+            <block type="legenda/checkout_links" name="checkout_cart_link_custom">
+                <action method="addCartLink" />
+            </block>
+        </reference>
+        <!--right sidebar-->
+        <reference name="right">
+            <action method="unsetChild"><name>cart_sidebar</name></action>
+            <action method="unsetChild"><name>catalog.compare.sidebar</name></action>
+            <action method="unsetChild"><name>right.permanent.callout</name></action>
+            <action method="unsetChild"><name>right.poll</name></action>
+            <action method="unsetChild"><name>paypal.partner.right.logo</name></action>
+            <action method="unsetChild"><name>wishlist</name></action>
+            <action method="unsetChild"><name>right.reports.product.compared</name></action>
+        </reference>
+        <reference name="left">
+            <action method="unsetChild"><name>cart_sidebar</name></action>
+            <action method="unsetChild"><name>left.permanent.callout</name></action>
+            <action method="unsetChild"><name>left.newsletter</name></action>
+        </reference>
+        <reference name="footer">
+            <block type="filterproducts/bestsellers_home_list" name="footer_best_seller" template="legenda/filterproducts/footer/footer_bestsellers.phtml">                
+                <action method="setData"><name>product_count</name><value>2</value></action>
+            </block>
+            <block type="filterproducts/newproduct_home_list" name="footer_new_products" template="legenda/filterproducts/footer/footer_newproduct.phtml">
+                <action method="setData"><name>product_count</name><value>2</value></action>
+            </block>
+            <block type="filterproducts/latest_home_list" name="footer_latest_products" template="legenda/filterproducts/footer/footer_latest.phtml">
+                <action method="setData"><name>product_count</name><value>2</value></action>
+            </block>
+            <block type="filterproducts/sale_home_list" name="footer_sale_products" template="legenda/filterproducts/footer/footer_sale.phtml">
+                <action method="setData"><name>product_count</name><value>2</value></action>
+            </block>
+            <block type="blog/menu_sidebar" name="footer_blog" template="blog/footer_block.phtml">
+                <action method="setData"><name>blog_widget_recent_count</name><value>2</value></action>
+            </block>
+            <block type="core/template" name="footer_facebook" template="socialfeeds/facebookfans.phtml"/>
+            <block type="core/template" name="footer_twitter" template="socialfeeds/twitterfeed.phtml" />
+            <block type="core/template" name="footer_flickr" template="socialfeeds/flickrphotos.phtml" />
+        </reference>
+    </default>
+    <cms_index_index>
+        <reference name="right">
+            <action method="unsetChild"><name>paypal.partner.right.logo</name></action>
+        </reference>
+        <reference name="root">
+            <block type="core/template" name="home_slider" template="revolutionslider/revolutionslider.phtml" />
+        </reference>
+    </cms_index_index>
+    <!--Custommer-->
+    <customer_logged_in>
+        <reference name="top.links">
+            <action method="removeLinkByUrl"><url helper="customer/getRegisterUrl" /></action>
+            <action method="addLink" translate="label title" module="customer">
+                <label>My Account</label>
+                <url helper="customer/getAccountUrl" />
+                <title>My Account</title>
+                <prepare />
+                <urlParams />
+                <position>90</position>
+            </action>
+        </reference>
+    </customer_logged_in>
+    <customer_logged_out>        
+        <reference name="top.links">
+            <action method="removeLinkByUrl"><url helper="customer/getAccountUrl" /></action>
+        </reference>
+    </customer_logged_out>
+    <customer_account>
+        <reference name="left">
+            <action method="unsetChild"><name>cart_sidebar</name></action>
+        </reference>
+    </customer_account>
+    <customer_account_index>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>My Account</crumbName>
+                <crumbInfo><label>My Account</label><title>My Account</title></crumbInfo>
+            </action>
+        </reference>
+    </customer_account_index>
+    <customer_account_login>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>My Account</crumbName>
+                <crumbInfo><label>My Account</label><title>My Account</title></crumbInfo>
+            </action>
+        </reference>
+    </customer_account_login>
+    <customer_account_create>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>My Account</crumbName>
+                <crumbInfo><label>My Account</label><title>My Account</title></crumbInfo>
+            </action>
+        </reference>
+    </customer_account_create>
+    <customer_account_edit>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>Account Information</crumbName>
+                <crumbInfo><label>Account Information</label><title>Account Information</title></crumbInfo>
+            </action>
+        </reference>
+    </customer_account_edit>
+    <customer_address_form>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>New Address</crumbName>
+                <crumbInfo><label>New Address</label><title>New Address</title></crumbInfo>
+            </action>
+        </reference>
+    </customer_address_form>
+    <customer_address_index>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>Address Book</crumbName>
+                <crumbInfo><label>Address Book</label><title>Address Book</title></crumbInfo>
+            </action>
+        </reference>
+    </customer_address_index>
+    <sales_order_history>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>My Orders</crumbName>
+                <crumbInfo><label>My Orders</label><title>My Orders</title></crumbInfo>
+            </action>
+        </reference>
+    </sales_order_history>
+    <sales_billing_agreement_index>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>Billing Agreements</crumbName>
+                <crumbInfo><label>Billing Agreements</label><title>Billing Agreements</title></crumbInfo>
+            </action>
+        </reference>
+    </sales_billing_agreement_index>
+    <sales_recurring_profile_index>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>Recurring Profiles</crumbName>
+                <crumbInfo><label>Recurring Profiles</label><title>Recurring Profiles</title></crumbInfo>
+            </action>
+        </reference>
+    </sales_recurring_profile_index>
+    <review_customer_index>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>My Product Reviews</crumbName>
+                <crumbInfo><label>My Product Reviews</label><title>My Product Reviews</title></crumbInfo>
+            </action>
+        </reference>
+    </review_customer_index>
+    <tag_customer_index>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>My Tags</crumbName>
+                <crumbInfo><label>My Tags</label><title>My Tags</title></crumbInfo>
+            </action>
+        </reference>
+    </tag_customer_index>
+    <wishlist_index_index>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>My Wishlist</crumbName>
+                <crumbInfo><label>Wishlist</label><title>Wishlist</title></crumbInfo>
+            </action>
+        </reference>
+    </wishlist_index_index>
+    <oauth_customer_token_index>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>My Applications</crumbName>
+                <crumbInfo><label>My Applications</label><title>My Applications</title></crumbInfo>
+            </action>
+        </reference>
+    </oauth_customer_token_index>
+    <newsletter_manage_index>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>Newsletter Subscription</crumbName>
+                <crumbInfo><label>Newsletter Subscription</label><title>Newsletter Subscription</title></crumbInfo>
+            </action>
+        </reference>
+    </newsletter_manage_index>
+    <downloadable_customer_products>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>My Downloadable Products</crumbName>
+                <crumbInfo><label>My Downloadable Products</label><title>My Downloadable Products</title></crumbInfo>
+            </action>
+        </reference>
+    </downloadable_customer_products>
+    <!--Categor Page-->
+    <catalog_category_default translate="label">
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+        </reference>       
+		<reference name="head">
+            <action method="addItem"><type>skin_js</type><name>js/category.accordion.js</name></action>
+        </reference>
+        <reference name="left">
+            <action method="unsetChild"><name>currency</name></action>
+            <block type="core/template" name="left_cat_bar" template="legenda/category/left_cat_bar.phtml" before="-"/>
+        </reference>
+        <reference name="right">            
+            <block type="core/template" name="right_cat_bar" template="legenda/category/right_cat_bar.phtml" before="-"/>
+			<block type="catalog/navigation" name="catalog.category" before="-" template="catalog/navigation/category_nav.phtml" />
+            <block type="core/template" name="category.custom.side" after="-" template="catalog/layer/custom_side.phtml" />
+            <action method="unsetChild"><name>paypal.partner.right.logo</name></action>
+        </reference>
+        <reference name="left_cat_bar">
+            <block type="core/template" name="main_category" template="legenda/category/main_categories.phtml"/>
+        </reference>
+        <reference name="right_cat_bar">
+            <block type="core/template" name="main_category" template="legenda/category/main_categories.phtml"/>
+        </reference>
+    </catalog_category_default>
+    
+    <catalog_category_layered translate="label">
+        <reference name="root">
+            <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+        </reference>
+        <reference name="head">
+            <action method="addItem"><type>skin_js</type><name>js/category.accordion.js</name></action>
+        </reference>
+        <reference name="left">
+			<block type="core/template" name="left_cat_bar" template="legenda/category/left_cat_bar.phtml" before="-"/>
+            <reference name="catalog.leftnav">
+                <block type="catalog/navigation" name="catalog.category" before="-" template="catalog/navigation/category_nav.phtml" />
+                <action method="unsetChild"><name>category_filter</name></action>
+            </reference>
+            <block type="core/template" name="category.custom.side" after="-" template="catalog/layer/custom_side.phtml" />
+            <action method="unsetChild"><name>currency</name></action>
+        </reference>
+        <reference name="right">
+            <block type="core/template" name="right_cat_bar" template="legenda/category/right_cat_bar.phtml" before="-"/>
+            <action method="unsetChild"><name>paypal.partner.right.logo</name></action>
+        </reference>
+        <reference name="left_cat_bar">
+            <block type="core/template" name="main_category" template="legenda/category/main_categories.phtml"/>
+        </reference>
+        <reference name="right_cat_bar">
+            <block type="core/template" name="main_category" template="legenda/category/main_categories.phtml"/>
+        </reference>
+    </catalog_category_layered>
+    <catalogsearch_result_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="head">
+            <action method="addItem"><type>skin_js</type><name>js/category.accordion.js</name></action>
+        </reference>
+        <reference name="left">
+            <action method="unsetChild"><name>currency</name></action>
+        </reference>
+    </catalogsearch_result_index>
+    <catalogsearch_advanced_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="head">
+            <action method="addItem"><type>skin_js</type><name>js/category.accordion.js</name></action>
+        </reference>
+        <reference name="left">
+            <action method="unsetChild"><name>currency</name></action>
+        </reference>
+        <reference name="right">
+            <action method="unsetChild"><name>currency</name></action>
+        </reference>
+    </catalogsearch_advanced_index>
+    <catalogsearch_advanced_result>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="head">
+            <action method="addItem"><type>skin_js</type><name>js/category.accordion.js</name></action>
+        </reference>
+        <reference name="left">
+            <action method="unsetChild"><name>currency</name></action>
+        </reference>
+        <reference name="right">
+            <action method="unsetChild"><name>currency</name></action>
+        </reference>
+    </catalogsearch_advanced_result>
+    <catalog_product_view>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="head">
+            <action method="addItem"><type>skin_js</type><name>js/jquery.rating.pack.js</name><params/></action>
+            <action method="addCss"><stylesheet>css/jquery/jquery.rating.css</stylesheet></action>
+        </reference>
+        <reference name="product.info">
+            <block type="catalog/product_view_attributes" name="product_brand" template="catalog/product/view/product_brand.phtml" />
+            <block type="catalog/product_view_attributes" name="product_code" template="catalog/product/view/product_code.phtml" />
+            <block type="core/template" name="product_category" template="catalog/product/view/product_category.phtml" />            
+        </reference>
+        <reference name="product.info.additional">
+            <action method="unsetChild"><name>product_tag_list</name></action>
+            <block type="catalog/product_view_tabs" name="product.info.tabs" as="info_tabs">
+                <action method="setTemplate" ><template>catalog/product/view/tabs.phtml</template></action>
+                <action method="addTab" translate="title" module="catalog" ><alias>description_tabbed</alias><title>Description</title><block>catalog/product_view_description</block><template>catalog/product/view/description.phtml</template></action>
+                <action method="addTab" translate="title" module="catalog" ><alias>additional_tabbed</alias><title>Additional</title><block>catalog/product_view_attributes</block><template>catalog/product/view/attributes.phtml</template></action>
+                <action method="addTab" translate="title" module="tag" ><alias>tags_tabbed</alias><title>Tags</title><block>tag/product_list</block><template>tag/list.phtml</template></action>
+                <action method="addTab" translate="title" module="review" ><alias>review_tabbed</alias><title>Reviews</title><block>review/product_view_list</block><template>review/product_info_review.phtml</template></action>
+            </block>
+            <block type="catalog/product_list_related" name="catalog.product.related" template="catalog/product/list/related.phtml"/>
+        </reference>
+        <reference name="product.info.upsell">
+            <action method="setColumnCount"><columns>8</columns></action>
+            <action method="setItemLimit"><type>upsell</type><limit>12</limit></action>
+        </reference>
+        <reference name="right">
+            <action method="unsetChild"><name>catalog.product.related</name></action>
+        </reference>
+    </catalog_product_view>
+    <onepagecheckout_index_success>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>Purchase Success</crumbName>
+                <crumbInfo><label>Purchase Success</label><title>Purchase Success</title></crumbInfo>
+            </action>
+        </reference>
+    </onepagecheckout_index_success>
+    <!--Checkout Cart-->
+    <checkout_cart_index>
+        <reference name="head">
+            <action method="setTitle"><title>Shopping Bag</title></action>
+        </reference>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>Cart</crumbName>
+                <crumbInfo><label>Bag</label><title>Bag</title></crumbInfo>
+            </action>
+        </reference>
+	 <reference name="head">
+           <action method="setTitle" translate="title"><title>Shopping Bag</title></action>
+       </reference>
+    </checkout_cart_index>
+    <checkout_onepage_index>
+        <reference name="head">
+ 	    <action method="setTitle"><title>Shopping Bag</title></action>
+        </reference>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>Checkout</crumbName>
+                <crumbInfo><label>Checkout</label><title>Checkout</title></crumbInfo>
+            </action>
+        </reference>
+    </checkout_onepage_index>
+    <onepagecheckout_index_index>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>Checkout</crumbName>
+                <crumbInfo><label>Checkout</label><title>Checkout</title></crumbInfo>
+            </action>
+        </reference>
+    </onepagecheckout_index_index>
+    <checkout_multishipping>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>Create Shipping Address</crumbName>
+                <crumbInfo><label>Create Shipping Address</label><title>Create Shipping Address</title></crumbInfo>
+            </action>
+        </reference>
+    </checkout_multishipping>
+    <contacts_index_index>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="head">
+            <action method="addItem"><type>skin_js</type><name>js/mapmarker.jquery.js</name><params/></action>
+        </reference>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>Contact Us</crumbName>
+                <crumbInfo><label>Contact Us</label><title>Contact Us</title></crumbInfo>
+            </action>
+        </reference>
+    </contacts_index_index>
+    <filterproducts_index_bestsellers>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>BestSellers</crumbName>
+                <crumbInfo><label>BestSellers</label><title>BestSellers</title></crumbInfo>
+            </action>
+        </reference>
+    </filterproducts_index_bestsellers>
+    <filterproducts_index_featured>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>Featured Products</crumbName>
+                <crumbInfo><label>Featured Products</label><title>Featured Products</title></crumbInfo>
+            </action>
+        </reference>
+    </filterproducts_index_featured>
+    <filterproducts_index_latest>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>Latest Products</crumbName>
+                <crumbInfo><label>Latest Products</label><title>Latest Products</title></crumbInfo>
+            </action>
+        </reference>
+    </filterproducts_index_latest>
+    <filterproducts_index_newproduct>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>New Products</crumbName>
+                <crumbInfo><label>New Products</label><title>New Products</title></crumbInfo>
+            </action>
+        </reference>
+    </filterproducts_index_newproduct>
+    <filterproducts_index_sale>
+        <reference name="breadcrumbs">
+            <action method="addCrumb" translate="crumbName">
+                <crumbName>Home</crumbName>
+                <params helper="legenda/getHomeUrl" />
+            </action>
+            <action method="addCrumb" translate="label title crumbName">
+                <crumbName>Sale Products</crumbName>
+                <crumbInfo><label>Sale Products</label><title>Sale Products</title></crumbInfo>
+            </action>
+        </reference>
+    </filterproducts_index_sale>
+    <!--reviews-->
+    <reviews>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+    </reviews>
+    <review_product_list>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="head">
+            <action method="addItem" ifconfig="zoom/general/enable"><type>skin_css</type><name>zoom/css/style.css</name></action>
+            <action method="addItem"><type>skin_js</type><name>js/jquery.rating.pack.js</name><params/></action>
+            <action method="addCss"><stylesheet>css/jquery/jquery.rating.css</stylesheet></action>
+        </reference>
+        <reference name="product.info.media">
+            <action method="setTemplate" ifconfig="zoom/general/enable"><template>smartwave/zoom/product/view/media.phtml</template></action>
+        </reference>
+    </review_product_list>
+</layout>

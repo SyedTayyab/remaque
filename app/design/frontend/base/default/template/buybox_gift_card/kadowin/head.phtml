@@ -1,0 +1,10 @@
+<script type="text/javascript" src="<?php echo $this->getScriptUrl(); ?>"></script>
+<script language="javascript">
+// Parametres de base (obligatoires)
+(function () {
+	var linker = new buybox.GCLinker({
+		position: 'right',
+		lang: '<?php echo Mage::app()->getLocale()->getLocaleCode(); ?>',
+	});
+})();
+</script>

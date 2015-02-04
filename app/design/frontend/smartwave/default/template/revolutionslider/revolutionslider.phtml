@@ -1,0 +1,139 @@
+<?php
+
+$store = Mage::app()->getStore();
+$code  = $store->getCode();
+$_enable = Mage::getStoreConfig('revolutionslider/general/enabled', $code);
+$_block_id = $this->getBlockId();
+if (!$_block_id) {
+	$_block_id = Mage::getStoreConfig('revolutionslider/general/block_id', $code);
+}
+
+$_delay = Mage::getStoreConfig('revolutionslider/options/delay', $code);
+$_startheight = Mage::getStoreConfig('revolutionslider/options/startheight', $code);
+$_startwidth = Mage::getStoreConfig('revolutionslider/options/startwidth', $code);
+$_onHoverStop = Mage::getStoreConfig('revolutionslider/options/onHoverStop', $code);
+$_thumbWidth = Mage::getStoreConfig('revolutionslider/options/thumbWidth', $code);
+$_thumbHeight = Mage::getStoreConfig('revolutionslider/options/thumbHeight', $code);
+$_thumbAmount = Mage::getStoreConfig('revolutionslider/options/thumbAmount', $code);
+$_hideThumbs = Mage::getStoreConfig('revolutionslider/options/hideThumbs', $code);
+$_navigationType = Mage::getStoreConfig('revolutionslider/options/navigationType', $code);
+$_navigationArrows = Mage::getStoreConfig('revolutionslider/options/navigationArrows', $code);
+$_navigationStyle = Mage::getStoreConfig('revolutionslider/options/navigationStyle', $code);
+$_navigationHAlign = Mage::getStoreConfig('revolutionslider/options/navigationHAlign', $code);
+$_navigationVAlign = Mage::getStoreConfig('revolutionslider/options/navigationVAlign', $code);
+$_navigationHOffset = Mage::getStoreConfig('revolutionslider/options/navigationHOffset', $code);
+$_navigationVOffset = Mage::getStoreConfig('revolutionslider/options/navigationVOffset', $code);
+$_soloArrowLeftHaling = Mage::getStoreConfig('revolutionslider/options/soloArrowLeftHaling', $code);
+$_soloArrowRightHalign = Mage::getStoreConfig('revolutionslider/options/soloArrowRightHalign', $code);
+$_soloArrowLeftValign = Mage::getStoreConfig('revolutionslider/options/soloArrowLeftValign', $code);
+$_soloArrowRightValign = Mage::getStoreConfig('revolutionslider/options/soloArrowRightValign', $code);
+$_soloArrowLeftHOffset = Mage::getStoreConfig('revolutionslider/options/soloArrowLeftHOffset', $code);
+$_soloArrowLeftVOffset = Mage::getStoreConfig('revolutionslider/options/soloArrowLeftVOffset', $code);
+$_soloArrowRightHOffset = Mage::getStoreConfig('revolutionslider/options/soloArrowRightHOffset', $code);
+$_soloArrowRightVOffset = Mage::getStoreConfig('revolutionslider/options/soloArrowRightVOffset', $code);
+$_touchenabled = Mage::getStoreConfig('revolutionslider/options/touchenabled', $code);
+$_swipe_velocity = Mage::getStoreConfig('revolutionslider/options/swipe_velocity', $code);
+$_swipe_max_touches = Mage::getStoreConfig('revolutionslider/options/swipe_max_touches', $code);
+$_swipe_min_touches = Mage::getStoreConfig('revolutionslider/options/swipe_min_touches', $code);
+$_drag_block_vertical = Mage::getStoreConfig('revolutionslider/options/drag_block_vertical', $code);
+$_stopAtSlide = Mage::getStoreConfig('revolutionslider/options/stopAtSlide', $code);
+$_stopAfterLoops = Mage::getStoreConfig('revolutionslider/options/stopAfterLoops', $code);
+$_hideCaptionAtLimit = Mage::getStoreConfig('revolutionslider/options/hideCaptionAtLimit', $code);
+$_hideAllCaptionAtLimit = Mage::getStoreConfig('revolutionslider/options/hideAllCaptionAtLimit', $code);
+$_hideSliderAtLimit = Mage::getStoreConfig('revolutionslider/options/hideSliderAtLimit', $code);
+$_hideThumbsOnMobile = Mage::getStoreConfig('revolutionslider/options/hideThumbsOnMobile', $code);
+$_hideBulletsOnMobile = Mage::getStoreConfig('revolutionslider/options/hideBulletsOnMobile', $code);
+$_hideArrowsOnMobile = Mage::getStoreConfig('revolutionslider/options/hideArrowsOnMobile', $code);
+$_hideThumbsUnderResoluition = Mage::getStoreConfig('revolutionslider/options/hideThumbsUnderResoluition', $code);
+$_hideTimerbar = Mage::getStoreConfig('revolutionslider/options/hideTimerBar', $code); //updated from version 1.2.0
+$_fullWidth = Mage::getStoreConfig('revolutionslider/options/fullWidth', $code);
+$_autoHeight = Mage::getStoreConfig('revolutionslider/options/autoHeight', $code);
+$_fullScreenAlignForce = Mage::getStoreConfig('revolutionslider/options/fullScreenAlignForce', $code);
+$_forceFullWidth = Mage::getStoreConfig('revolutionslider/options/forceFullWidth', $code);
+$_fullScreen = Mage::getStoreConfig('revolutionslider/options/fullScreen', $code);
+$_fullScreenOffsetContainer = Mage::getStoreConfig('revolutionslider/options/fullScreenOffsetContainer', $code);
+$_shadow = Mage::getStoreConfig('revolutionslider/options/shadow', $code);
+$_dottedOverlay = Mage::getStoreconfig('revolutionslider/options/dottedOverlay', $code);
+if($_enable && $_block_id){
+?>
+<?php //updated from version 1.1.4 - removed themepunch.plugins.min.js, added themepunch.tools.min.js  ?>
+<script type="text/javascript" src="<?php echo Mage::getDesign()->getSkinUrl('revolutionslider/rs-plugin/js/jquery.themepunch.tools.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo Mage::getDesign()->getSkinUrl('revolutionslider/rs-plugin/js/jquery.themepunch.revolution.js'); ?>"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo Mage::getDesign()->getSkinUrl('revolutionslider/rs-plugin/css/settings.css'); ?>" media="all" />
+<link rel="stylesheet" type="text/css" href="<?php echo Mage::getDesign()->getSkinUrl('revolutionslider/css/style.css'); ?>" media="all" />
+
+<div class="home-slider-container content-element <?php echo $_block_id; ?>">
+<div class="tp-banner-container" >
+    <div class="tp-banner" >
+<?php
+    if($_block_id){
+        echo $this->getLayout()->createBlock('cms/block')->setBlockId($_block_id)->toHtml();
+    }
+?>
+    <div class="tp-bannertimer"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+    jQuery(document).ready(function() {
+
+        jQuery('.tp-banner').revolution({
+<?php 
+        if($_delay) echo "delay:".$_delay.",";
+        if($_startheight) echo "startheight:".$_startheight.",";
+        if($_startwidth) echo "startwidth:".$_startwidth.",";
+        if($_onHoverStop) echo "onHoverStop:'".$_onHoverStop."',";
+        if($_thumbWidth) echo "thumbWidth:".$_thumbWidth.",";
+        if($_thumbHeight) echo "thumbHeight:".$_thumbHeight.",";
+        if($_thumbAmount) echo "thumbAmount:".$_thumbAmount.",";
+        if($_hideThumbs) echo "hideThumbs:".$_hideThumbs.",";
+        if($_navigationType) echo "navigationType:'".$_navigationType."',";
+        if($_navigationArrows) echo "navigationArrows:'".$_navigationArrows."',";
+        if($_navigationStyle) echo "navigationStyle:'".$_navigationStyle."',";
+        if($_navigationHAlign) echo "navigationHAlign:'".$_navigationHAlign."',";
+        if($_navigationVAlign) echo "navigationVAlign:'".$_navigationVAlign."',";
+        if($_navigationHOffset) echo "navigationHOffset:".$_navigationHOffset.",";
+        if($_navigationVOffset) echo "navigationVOffset:".$_navigationVOffset.",";
+        if($_soloArrowLeftHaling) echo "soloArrowLeftHaling:'".$_soloArrowLeftHaling."',";
+        if($_soloArrowRightHalign) echo "soloArrowRightHalign:'".$_soloArrowRightHalign."',";
+        if($_soloArrowLeftValign) echo "soloArrowLeftValign:'".$_soloArrowLeftValign."',";
+        if($_soloArrowRightValign) echo "soloArrowRightValign:'".$_soloArrowRightValign."',";
+        if($_soloArrowLeftHOffset) echo "soloArrowLeftHOffset:'".$_soloArrowLeftHOffset."',";
+        if($_soloArrowLeftVOffset) echo "soloArrowLeftVOffset:'".$_soloArrowLeftVOffset."',";
+        if($_soloArrowRightHOffset) echo "soloArrowRightHOffset:'".$_soloArrowRightHOffset."',";
+        if($_soloArrowRightVOffset) echo "soloArrowRightVOffset:'".$_soloArrowRightVOffset."',";
+        if($_touchenabled) echo "touchenabled:'".$_touchenabled."',";
+        if($_swipe_velocity) echo "swipe_velocity:".$_swipe_velocity.",";
+        if($_swipe_max_touches) echo "swipe_max_touches:".$_swipe_max_touches.",";
+        if($_swipe_min_touches) echo "swipe_min_touches:".$_swipe_min_touches.",";
+        if($_drag_block_vertical) echo "drag_block_vertical:'".$_drag_block_vertical."',";
+        if($_stopAtSlide) echo "stopAtSlide:".$_stopAtSlide.",";
+        if($_stopAfterLoops) echo "stopAfterLoops:".$_stopAfterLoops.",";
+        if($_hideCaptionAtLimit) echo "hideCaptionAtLimit:".$_hideCaptionAtLimit.",";
+        if($_hideAllCaptionAtLimit) echo "hideAllCaptionAtLimit:".$_hideAllCaptionAtLimit.",";
+        if($_hideSliderAtLimit) echo "hideSliderAtLimit:".$_hideSliderAtLimit.",";
+        if($_hideThumbsOnMobile) echo "hideThumbsOnMobile:'".$_hideThumbsOnMobile."',";
+        if($_hideBulletsOnMobile) echo "hideBulletsOnMobile:'".$_hideBulletsOnMobile."',";
+        if($_hideArrowsOnMobile) echo "hideArrowsOnMobile:'".$_hideArrowsOnMobile."',";
+        if($_hideThumbsUnderResoluition) echo "hideThumbsUnderResoluition:".$_hideThumbsUnderResoluition.",";
+        if($_hideTimerbar) echo "hideTimerBar:'".$_hideTimerbar."',"; //updated from version 1.2.0
+        if($_fullWidth) echo "fullWidth:'".$_fullWidth."',";
+        if($_autoHeight) echo "autoHeight:'".$_autoHeight."',";
+        if($_fullScreenAlignForce) echo "fullScreenAlignForce:'".$_fullScreenAlignForce."',";
+        if($_forceFullWidth) echo "forceFullWidth:'".$_forceFullWidth."',";
+        if($_fullScreen) echo "fullScreen:'".$_fullScreen."',";
+        if($_fullScreenOffsetContainer) echo "fullScreenOffsetContainer:".$_fullScreenOffsetContainer.",";
+        if($_shadow){echo "shadow:".$_shadow.",";} else{echo "shadow:0,";}
+        if($_dottedOverlay) echo "dottedOverlay:'".$_dottedOverlay."'";
+      
+?>
+        });
+
+});
+//]]>
+</script>
+</div>
+<?php
+} // End Enable
+?>

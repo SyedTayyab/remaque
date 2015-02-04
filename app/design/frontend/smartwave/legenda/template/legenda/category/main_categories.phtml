@@ -1,0 +1,86 @@
+<div class="block block-main-categories">
+    <div class="block-title">
+        <strong><?php echo $this->__('Categories') ?></strong>
+    </div>
+    <div class="block-content">
+        <?php
+            $storeId = Mage::app()->getStore()->getId();
+            //Get category model
+            $_category = Mage::getModel('catalog/category')->setStoreId($storeId);
+            $_cat = $_category->load(Mage::app()->getStore()->getRootCategoryId());
+        ?>
+
+        <?php
+        if(!function_exists('hasChildrenCategory')){
+            function hasChildrenCategory($_cat){
+                $storeId    = Mage::app()->getStore()->getId();
+                $return_val = false;
+                if($_cat->hasChildren()){
+                    $_children = $_cat->getChildren();
+                    $children_ids = explode(",", $_children);
+                    foreach ($children_ids as $child_id){
+                        $_child = Mage::getModel('catalog/category')->setStoreId($storeId)->load($child_id);
+                        if($_child->getIncludeInMenu()){
+                            $return_val = true;
+                        }
+                    }
+                }
+                return $return_val;
+            }
+        }
+        if(!function_exists('cmpCategoryPosition')){
+            function cmpCategoryPosition($a, $b) {
+                if ($a->position == $b->position)
+                    return 0;
+                return ($a->position > $b->position) ? 1 : -1;
+            }
+        }
+        if(!function_exists('showCategories')){
+            function showCategories($_category, $level, $level_limit){
+                $storeId = Mage::app()->getStore()->getId();
+                $currentId = Mage::registry('current_category')->getId();                
+                $html = '';
+                if($level == 0){
+                    $html .= '';
+                } else {
+                    $html .= '<ul class="children level-'.$level.'">';
+                }
+                $_children = $_category->getChildren();
+                $children_ids = explode(",", $_children);                
+                $categoryChildren = array();   
+                if ($children_ids) {
+                    foreach ($children_ids as $categoryId){
+                        $category = Mage::getModel('catalog/category')->load($categoryId);
+                        $categoryChildren[] = $category;
+                    }
+                }
+                    
+                usort($categoryChildren, 'cmpCategoryPosition');
+                foreach ($categoryChildren as $_child){
+                    if($_child->getIncludeInMenu()){
+                        $class = '';
+                        if ($currentId == $_child->getId()) {
+                            $class = 'current-cat';
+                        }                        
+                        $html .= '<li class="cat-item '.$class.'">';
+                        $html .= '<a href ="'.$_child->getUrl().'">';
+                        $html .= $_child->getName();
+                        $html .= '</a>';
+                        if( hasChildrenCategory($_child) && $level < $level_limit ){
+                            $html .= showCategories($_child, $level+1, $level_limit);
+                        }
+                        $html .= '</li>';
+                    }
+                }
+                $html .= '</ul>';
+                return $html;
+            }
+        }
+    ?>
+        <ul class="product-categories">
+        <?php
+            echo showCategories($_cat, 0, 1);
+        ?>
+        </ul>
+    </div>
+</div>

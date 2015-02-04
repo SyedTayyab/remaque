@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <modules>
+        <Smartwave_OnepageCheckout>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Smartwave_OnepageCheckout>
+    </modules>
+</config>

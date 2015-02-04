@@ -1,0 +1,93 @@
+<?php 
+/**
+* template: product_view_media
+* @var $_product    Mage_Catalog_Model_Product
+* @author           SW-THEMES
+* @copyright        Copyright 2014 Smartwave
+* */                         
+?>
+
+<?php 
+    $_product = $this->getProduct();    
+    $_helper = $this->helper('catalog/output');
+    $helpZoom = $this->helper('smartwave_zoom');
+    $store = Mage::app()->getStore();
+    $code  = $store->getCode();
+        
+//  Main Image Style. If there is more images, image class is has-more-img, else has-no-more-img    
+    $imgCount = count($this->getGalleryImages());
+?>
+
+<?php // main image ?>
+<?php if ($_product->getImage() != 'no_selection' && $_product->getImage()): ?>
+<div class="img-box product-image-zoom">
+    <?php 
+        // Get the Special Price
+        $specialprice = Mage::getModel('catalog/product')->load($_product->getId())->getSpecialPrice(); 
+        // Get the Special Price FROM date
+        $specialPriceFromDate = Mage::getModel('catalog/product')->load($_product->getId())->getSpecialFromDate();
+        // Get the Special Price TO date
+        $specialPriceToDate = Mage::getModel('catalog/product')->load($_product->getId())->getSpecialToDate();
+        // Get Current date
+        $today =  time();
+     
+        if ($specialprice){
+            if($today >= strtotime( $specialPriceFromDate) && $today <= strtotime($specialPriceToDate) || $today >= strtotime( $specialPriceFromDate) && is_null($specialPriceToDate)){
+                if(Mage::getStoreConfig("legenda_setting/product_label/sale", $code)){
+    ?>
+                <span class="label-icon sale-label">Sale!</span>
+    <?php       
+                }
+            }
+        }
+    ?>
+    <?php
+        $now = date("Y-m-d");
+        $newsFrom= substr($_product->getData('news_from_date'),0,10);
+        $newsTo=  substr($_product->getData('news_to_date'),0,10);
+        if ($newsTo != '' || $newsFrom != ''){
+            if (($newsTo != '' && $newsFrom != '' && $now>=$newsFrom && $now<=$newsTo) || ($newsTo == '' && $now >=$newsFrom) || ($newsFrom == '' && $now<=$newsTo))
+            {
+                if(Mage::getStoreConfig("legenda_setting/product_label/new", $code)){
+        ?> 
+                <span class="label-icon new-label second-label">New!</span>
+        <?php 
+                }
+            }
+        }
+    ?>
+    <div class="img-wrapper">
+        <div id="qv_img_gal" class="owl-carousel">        
+            <?php if ($imgCount > 0):?>
+                <?php foreach($this->getGalleryImages() as $_image): ?>
+                    <?php // If no image, skip 
+                        if ($_image->getFile() == NULL)
+                            continue;
+                    ?>
+                    <div class="item">
+                        <img src="<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail',$_image->getFile())->constrainOnly(FALSE)->keepAspectRatio(TRUE)->keepFrame(FALSE)->resize(480); ?>" data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'thumbnail', $_image->getFile())->constrainOnly(FALSE)->keepAspectRatio(TRUE)->keepFrame(FALSE)->resize(960); ?>" title="<?php echo $this->escapeHtml($this->getImageLabel());?>" class="main-zoom-img"/>
+                    </div>                
+                <?php endforeach ?>
+            <?php else: ?>
+                <div class="item">
+                    <img class="main-zoom-img" src="<?php echo $this->helper('catalog/image')->init($_product, 'image')->constrainOnly(FALSE)->keepAspectRatio(TRUE)->keepFrame(FALSE)->resize(480); ?>" data-zoom-image="<?php echo $this->helper('catalog/image')->init($_product, 'image')->constrainOnly(FALSE)->keepAspectRatio(TRUE)->keepFrame(FALSE)->resize(960); ?>" title="<?php echo $this->escapeHtml($this->getImageLabel());?>" />
+                </div>            
+            <?php endif; ?>        
+        </div>            
+    </div>
+</div>
+<?php else: ?>
+<div class="img-box product-no-image-zoom">
+    <?php
+        $_img = '<img src="'.$this->helper('catalog/image')->init($_product, 'image')->resize(480).'" alt="'.$this->escapeHtml($this->getImageLabel()).'" title="'.$this->escapeHtml($this->getImageLabel()).'" />';
+        echo $_helper->productAttribute($_product, $_img, 'image');
+    ?>    
+</div>    
+<?php endif; ?>
+<?php if ((count($this->getGalleryImages()) > 0 || $_product->getImage()) && $_product->getImage() != 'no_selection'): ?>
+<script type="text/javascript">
+jQuery(document).on('click','.button-up',function(e){
+   
+});
+</script>
+<?php endif; ?>

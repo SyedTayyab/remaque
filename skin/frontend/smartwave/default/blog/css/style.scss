@@ -1,0 +1,219 @@
+@import "../../../legenda/css/mixins";
+@import "../../../legenda/css/variables";
+.postWrapper {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    clear: both;
+}
+.postBanner {
+    position: relative;
+    margin-bottom: 20px;
+    .blog-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        padding: 0 0 1px 1px;
+        text-align: center;
+        @include opacity(0);
+        @include transition(0.3s all ease-in-out);
+        .mask-content {
+            position: absolute;
+            left: 50%;
+            margin-left: -65px;
+            top: 50%;
+            @include translateY(-50%);
+            a {
+                color: #fff;
+                display: inline-block;
+                width: 44px;
+                height: 44px;
+                padding: 0;
+                position: relative;
+                font-size: 28px;
+                margin: 0 10px;
+                background-color: rgba(0,0,0,0.4);
+                @include transition(0.2s all ease-in-out);
+                i {
+                    line-height: 34px;
+					font-style: normal;
+                    &:before {
+                        font-family: "FontAwesome";
+                    }
+                }
+                &:after {
+                    content: "";
+                    @include box-shadow(0 0 0 rgba(0,0,0,0.6));
+                    @include transition(opacity 0.3s, box-shadow 0.3s);
+                    pointer-events: none;
+                    position: absolute;
+                    width: 22px;
+                    height: 26px;
+                    left: 26px;
+                    bottom: -4px;
+                    -webkit-box-sizing: content-box;
+                    -moz-box-sizing: content-box;
+                    box-sizing: content-box;                                        
+                }
+                &:hover {
+                    text-decoration: none;
+                    background-color: rgba(0,0,0,0.6);
+                    @include opacity(1);
+                    color: #fff;
+                    &:after {
+                        @include opacity(0.85);
+                        @include box-shadow(2px 2px 0 rgba(0,0,0,0.6));
+                    }
+                }
+            }
+        }
+    }
+    &:hover {
+        .blog-mask {
+            @include opacity(0.9);
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+    }
+}
+.postWrapper {
+    .post-title {
+        margin-bottom: 0;
+        a {
+            font-size: 20px;
+        }
+    }
+    .post-info {
+        margin-bottom: 30px;
+        strong {
+            font-weight: normal;
+        }
+        .posted-in {
+            .last {
+                display: none;
+            }
+        }
+    }
+    .postContent {
+        line-height: 1.8;
+        p {
+            margin-bottom: 5px;
+        }
+        .more-link {
+            line-height: 1;
+            display: block;
+            text-align: center;
+        }
+        .read-more {
+            margin-top: 20px;
+        }
+    }
+    &.post-single {
+        margin-bottom: 20px;
+    }
+}
+.comments-title {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $normal-border-color;
+}
+.commentWrapper {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $normal-border-color;
+    .comment-heading {
+        margin-bottom: 10px;
+        position: relative;
+        .comment-avatar {
+            float: left;
+            width: 70px;
+            margin-right: 30px;
+            margin-bottom: 10px;
+        }
+        .author-name {
+            margin-right: 5px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+    }
+    .comment-content {
+        p {
+            margin-bottom: 10px;
+        }
+    }
+}
+.post-comments {
+    .comment-area {
+        height: 150px;
+        width: 100%;
+    }
+}
+.icon-resize-full:before {
+    content: "\f065";
+}
+.icon-link:before {
+    content: "\f0c1";
+}
+.postError {
+    font-size: 16px;
+}
+
+.tags {
+    font-weight: bold;
+    padding-bottom: 10px;
+    
+      UL {
+        display: inline;
+    
+        LI {
+              font-weight: normal;
+              display: inline;
+            padding-right: 6px;
+        }
+    }
+    
+    h4 {
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
+.menu-categories {
+    margin: 5px 9px; 
+    h5 {
+        font-size: 11px; 
+    }
+}
+
+.menu-recent {
+    margin: 5px 9px; 
+
+    h5 {
+        font-size: 11px; 
+    }
+}
+.postWrapper {
+    .poster {
+        display: inline;
+    }
+}
+
+.input-box.aw-blog-comment-area {
+    width: 100%;
+}
+.widget-latest li {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.block-blog .menu-categories {
+    margin: 0;
+    padding: 5px 9px;
+}
+
+A.smartwaveblog_current_comment {
+    text-decoration: none ;
+    font-weight: bold;
+}

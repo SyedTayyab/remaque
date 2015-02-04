@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<package>
+    <name>buybox_gift_card_plus</name>
+    <version>1.2.0</version>
+    <stability>stable</stability>
+    <license>commercial</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Deploy your own Digital &amp; Social Gift Card thanks to the GiftCard+ white label platform&#xD;
+</summary>
+    <description>GiftCard+ covers the 4 dimensions of e-commerce on-site marketing:&#xD;
+&#xD;
+    GiftCard+ Digital: a white label service that offers your customers the chance to give a gift-card by themselves or as a group&#xD;
+    GiftCard+ Loyalty: an integrated feature to forward gift-card to your customers base&#xD;
+    GiftCard+ B2B: an easy-to-use solution to generate gift-cards in bulk&#xD;
+    GiftCard+ BirthdayApp: a state-of-the-art Facebook App to enter the Social Commerce&#xD;
+&#xD;
+No needs to implement dozens of plugins on your magento website to cover all your on-site marketing operations; GiftCard+ does it with just one integration.&#xD;
+&#xD;
+GiftCard+ is a turnkey, white label service tailored as you wish with your logo and colors. The solution does not impact your current system and the technology is secured and fully integrated with payment gateways.&#xD;
+&#xD;
+GET A 14 DAYS FREE TRIAL&#xD;
+&#xD;
+Then subscribe to one of our non-binding plans:&#xD;
+&#xD;
+    &#x20AC;29/month + VAT: 40 gift-cards included (0.90cts per extra gift-cards)&#xD;
+    &#x20AC;59/month + VAT: 100 gift-cards included (0.80cts per extra gift-cards)&#xD;
+    &#x20AC;99/month + VAT: 250 gift-cards included (0.70cts per extra gift-cards)&#xD;
+    &#x20AC;159/month + VAT: 500 gift-cards included (0.60cts per extra gift-cards)&#xD;
+    &#x20AC;399/month + VAT: 1500 gift-cards included (0.50cts per extra gift-cards)&#xD;
+&#xD;
+How to use a gift-card on my e-commerce website?&#xD;
+&#xD;
+Once generated, the gift-card is used as a payment means on your website. Your customers may use the gift-card for several purchases and they can achieve a complementary payment (via credit-card) if the amount of their cart exceeds the value of the gift-card. In case of cancellation or product return, the gift-card can be re-credited in same way as standard payment method. Gift-cards expire after one year. Credit is then considered as non-recurring income in your accounting journal.&#xD;
+&#xD;
+Your customers only have benefits for using the solution:&#xD;
+&#xD;
+    The can give a gift-card as a group or by themselves directly from your website or your Facebook Page&#xD;
+    No one needs to front-up cash when it comes to buy a joint gift&#xD;
+    Your customers are rewarded for their loyalty&#xD;
+    The payment is safe as a regular one&#xD;
+&#xD;
+Setup Instructions:&#xD;
+&#xD;
+To activate the plugin, you must register at BuyBox. Go to www.buybox.net/en/subscribe, select &#x201C;GiftCard+&#x201D; and click on &#x201C;Try it for Free&#x201D;. A 14 days trial will start as soon as you will achieve your registration. Then, choose a plan and complete the form. No any debit will be pursue whilst your 14 days trial and the subscription is non-recurring so that you can stop your plan at any time. Click on &#x201C;Continue&#x201D; and provide all the required information.&#xD;
+&#xD;
+Once your registration achieved, you will receive an e-mail with your information and a startup guide.&#xD;
+&#xD;
+Need some help? Contact our support at help@buybox.net&#xD;
+&#xD;
+Find out more about GiftCard+ on BuyBox website: www.buybox.net/en/gift-card-plus</description>
+    <notes>GiftCard+ covers the 4 dimensions of e-commerce on-site marketing:&#xD;
+&#xD;
+    GiftCard+ Digital: a white label service that offers your customers the chance to give a gift-card by themselves or as a group&#xD;
+    GiftCard+ Loyalty: an integrated feature to forward gift-card to your customers base&#xD;
+    GiftCard+ B2B: an easy-to-use solution to generate gift-cards in bulk&#xD;
+    GiftCard+ BirthdayApp: a state-of-the-art Facebook App to enter the Social Commerce&#xD;
+&#xD;
+No needs to implement dozens of plugins on your magento website to cover all your on-site marketing operations; GiftCard+ does it with just one integration.&#xD;
+&#xD;
+GiftCard+ is a turnkey, white label service tailored as you wish with your logo and colors. The solution does not impact your current system and the technology is secured and fully integrated with payment gateways.&#xD;
+&#xD;
+GET A 14 DAYS FREE TRIAL&#xD;
+&#xD;
+Then subscribe to one of our non-binding plans:&#xD;
+&#xD;
+    &#x20AC;29/month + VAT: 40 gift-cards included (0.90cts per extra gift-cards)&#xD;
+    &#x20AC;59/month + VAT: 100 gift-cards included (0.80cts per extra gift-cards)&#xD;
+    &#x20AC;99/month + VAT: 250 gift-cards included (0.70cts per extra gift-cards)&#xD;
+    &#x20AC;159/month + VAT: 500 gift-cards included (0.60cts per extra gift-cards)&#xD;
+    &#x20AC;399/month + VAT: 1500 gift-cards included (0.50cts per extra gift-cards)&#xD;
+&#xD;
+How to use a gift-card on my e-commerce website?&#xD;
+&#xD;
+Once generated, the gift-card is used as a payment means on your website. Your customers may use the gift-card for several purchases and they can achieve a complementary payment (via credit-card) if the amount of their cart exceeds the value of the gift-card. In case of cancellation or product return, the gift-card can be re-credited in same way as standard payment method. Gift-cards expire after one year. Credit is then considered as non-recurring income in your accounting journal.&#xD;
+&#xD;
+Your customers only have benefits for using the solution:&#xD;
+&#xD;
+    The can give a gift-card as a group or by themselves directly from your website or your Facebook Page&#xD;
+    No one needs to front-up cash when it comes to buy a joint gift&#xD;
+    Your customers are rewarded for their loyalty&#xD;
+    The payment is safe as a regular one&#xD;
+&#xD;
+Setup Instructions:&#xD;
+&#xD;
+To activate the plugin, you must register at BuyBox. Go to www.buybox.net/en/subscribe, select &#x201C;GiftCard+&#x201D; and click on &#x201C;Try it for Free&#x201D;. A 14 days trial will start as soon as you will achieve your registration. Then, choose a plan and complete the form. No any debit will be pursue whilst your 14 days trial and the subscription is non-recurring so that you can stop your plan at any time. Click on &#x201C;Continue&#x201D; and provide all the required information.&#xD;
+&#xD;
+Once your registration achieved, you will receive an e-mail with your information and a startup guide.&#xD;
+&#xD;
+Need some help? Contact our support at help@buybox.net&#xD;
+&#xD;
+Find out more about GiftCard+ on BuyBox website: www.buybox.net/en/gift-card-plus</notes>
+    <authors><author><name>Buybox</name><user>Buybox</user><email>support@buybox.net</email></author></authors>
+    <date>2014-07-22</date>
+    <time>13:19:47</time>
+    <contents><target name="magecommunity"><dir name="Buybox"><dir name="GiftCard"><dir name="Block"><dir name="Checkout"><file name="Onepage.php" hash="a46053c49d28a5edc0036d25b48f89f5"/></dir><dir name="Kadowin"><file name="Head.php" hash="0c21aafaec42b295e7cdd079365730d3"/></dir><dir name="Payment"><file name="Form.php" hash="a93b1969b3c5398761522dc2318c1219"/><file name="Info.php" hash="262cdb19c7270b0ea091ccc0afe0bf2c"/></dir></dir><dir name="Helper"><file name="Data.php" hash="4523149be78c357fedbeb9670f414acd"/></dir><dir name="Model"><dir name="Api"><file name="Abstract.php" hash="9ddefb622dd4ea21ca586d645e146108"/><file name="Nvp.php" hash="dcaaba446d70264ba7e081a6611904a0"/></dir><file name="Checkout.php" hash="c1e65b1ea4b36a2f7da1cacf95a3660d"/><file name="Config.php" hash="7a7020a55bd65152c7a012f2733a21e6"/><file name="Info.php" hash="018f1c35abbfb213dc8174d7d2c63002"/><file name="Payment.php" hash="55f9105bd3eaeee52a25348ce4173cd2"/><file name="Session.php" hash="e63c6fa7b115bb61c8969a0fb7b3260f"/></dir><dir name="controllers"><file name="PaymentController.php" hash="0c502ab5c5a99d1fba4e5f73b678b659"/></dir><dir name="etc"><file name="config.xml" hash="a35b32c65bdc31925aaf2a4de189ee20"/><file name="system.xml" hash="d36d322c62ed1e62292055cca38cc214"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="buybox_gift_card.xml" hash="bcf39de97d22f6fd49228253e82f1126"/></dir><dir name="template"><dir name="buybox_gift_card"><dir name="checkout"><file name="onepage.phtml" hash="6473546fd4b2c96cf72149d8b1344c23"/></dir><dir name="kadowin"><file name="head.phtml" hash="f753f12707abe4c22b6b2bc5d9cd9e05"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Buybox_GiftCard.xml" hash="86a5cc4b8d50bc9326dbbcc7a5bd191e"/></dir></target><target name="magelocale"><dir><dir name="en_US"><file name="Buybox_GiftCard.csv" hash="a2166082efdf36eec99952ca2d247e9e"/></dir><dir name="fr_FR"><file name="Buybox_GiftCard.csv" hash="b9181feb61532b98c67eeac3424b7689"/></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

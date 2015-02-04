@@ -1,0 +1,51 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/* @var $this Mage_Core_Block_Template */
+/* @var $catalogSearchHelper Mage_Catalogsearch_Helper_Data */
+$catalogSearchHelper =  $this->helper('catalogsearch');
+?>
+<div id="searchModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div>
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+            <h3 class="title"><span><?php echo $this->__('Search')?></span></h3>
+        </div>
+        <div class="modal-body">
+            <p class="a-center"><?php echo $this->__('Use the search box to find the product you are looking for.') ?></p>
+            <form id="search_modal_form" action="<?php echo $catalogSearchHelper->getResultUrl() ?>" method="get">                            
+                <input id="search_m" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="input-text" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" />
+                <button type="submit" title="<?php echo $this->__('Go') ?>" class="button filled"><span><?php echo $this->__('Go') ?></span></button>
+                <div id="search_autocomplete" class="search-autocomplete"></div>
+                <script type="text/javascript">
+                //<![CDATA[
+                    var searchMdForm = new Varien.searchForm('search_modal_form', 'search_m', '<?php echo $this->__('Search entire store here...') ?>');
+                    searchMdForm.initAutocomplete('<?php echo $catalogSearchHelper->getSuggestUrl() ?>', 'search_autocomplete');
+                //]]>
+                </script>            
+            </form>
+        </div>    
+    </div>    
+</div>

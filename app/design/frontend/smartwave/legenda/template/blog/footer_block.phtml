@@ -1,0 +1,23 @@
+<h4 class="footer-title"><?php echo $this->__('Recent Posts')?></h4>
+    <div>
+        <?php $posts = $this->getRecent() ?>
+        <?php if (count($posts)): ?>
+            <?php foreach ($posts as $post): ?>
+                <div class="recent-post-mini">
+                    <a class="postimg" href="<?php echo $post->getAddress(); ?>" title="<?php echo $post->getTitle(); ?>">
+                    <?php
+                        if($post_image = $post->getImage()){
+                    ?>
+                        <img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$post_image; ?>" alt=""/>
+                    <?php } ?>
+                    </a>
+                    <a href="<?php echo $post->getAddress(); ?>" title="<?php echo $post->getTitle(); ?>"><?php echo $post->getTitle(); ?></a>
+                    <br>by&nbsp;<strong><?php echo $post->getUser() ?></strong>
+                    <br><?php echo date('d M Y', strtotime($post->getCreatedTime())) ?>
+                    <div class="clearfix"></div>
+                </div>
+            <?php endforeach; ?>
+        <?php else: ?>                
+            <?php echo $this->__('There is no recent posts.'); ?>
+        <?php endif; ?>
+    </div>

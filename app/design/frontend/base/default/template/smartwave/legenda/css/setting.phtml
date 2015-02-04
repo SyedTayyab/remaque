@@ -1,0 +1,13 @@
+<?php 
+    $store = Mage::app()->getStore();
+    $code  = $store->getCode();
+?>
+<?php $helper = Mage::helper('legenda'); ?>
+<?php $s = $helper->getConfigGroup(); ?>
+.top-bar .container {
+<?php if($s['header_settings']['top_bar_border']): ?>
+	border-bottom: dotted 1px #dbdbdb;
+<?php else: ?>
+	border: none;
+<?php endif; ?>
+}

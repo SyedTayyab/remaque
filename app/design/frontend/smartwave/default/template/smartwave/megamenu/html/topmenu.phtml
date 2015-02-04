@@ -1,0 +1,39 @@
+<?php $menuHelper = Mage::helper('megamenu'); ?>
+<?php $menuData = $menuHelper->getMenuData(); extract($menuData); ?>
+<?php 
+$legendaHelper = Mage::helper('legenda'); 
+$menuType = $legendaHelper->getConfig('header_settings/header_type'); 
+?>
+<div class="header-wrapper <?php echo $menuType ?>">
+<!--<div class="container">
+    <div class="menu-icon hidden-md hidden-lg"><i class="fa fa-bars"></i></div>
+</div>-->
+
+<div class="main-nav visible-md visible-lg">
+    <div class="double-border">
+        <div class="container">            
+            <div class="menu-wrapper">
+                <div class="logo-with-menu">
+                    <?php if ($menuHelper->getIsHomePage()):?>
+                    <h1 class="logo"><strong><?php echo $menuHelper->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $menuHelper->getLogoAlt() ?>"><img src="<?php echo $menuHelper->getLogoSrc() ?>" alt="<?php echo $menuHelper->getLogoAlt() ?>" /></a></h1>
+                    <?php else:?>
+                        <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $menuHelper->getLogoAlt() ?>" class="logo"><strong><?php echo $menuHelper->getLogoAlt() ?></strong><img src="<?php echo $menuHelper->getLogoSrc() ?>" alt="<?php echo $menuHelper->getLogoAlt() ?>" /></a>
+                    <?php endif?>
+                </div>
+                <div class="menu-all-pages-container">
+                    <ul class="menu">
+                        <?php echo $menuHelper->getMenuContent(); ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var SW_MENU_POPUP_WIDTH = <?php echo $_popupWidth; ?>;
+//]]>
+</script>

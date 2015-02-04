@@ -1,0 +1,12 @@
+<!--version 1.1.0-->
+<?php $menuHelper = Mage::helper('megamenu'); ?>
+<?php $menuData = $menuHelper->getMenuData(); extract($menuData); ?>
+<div class="vmegamenu block">
+    <div class="block-title"><strong><?php echo $this->__('Categories') ?></strong></div>
+    <div class="nav-category-list block-content visible-md visible-lg">    
+        <?php echo $menuHelper->getSideCategoryList(); ?>        
+    </div>    
+    <div class="nav-category-mobile-list block-content hidden-md hidden-lg clearfix">
+        <?php echo $menuHelper->getCategoryMobileItem(); ?>
+    </div>    
+</div>

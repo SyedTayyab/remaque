@@ -1,0 +1,28 @@
+.flickr-image,
+.fb-person
+ {
+    display: block;
+    float: left;
+    width: 72px;
+    height: 72px;
+    margin: 0 10px 10px 0;
+    -webkit-transition: 0.2s all ease-in-out;
+    -moz-transition: 0.2s all ease-in-out;
+    -ms-transition: 0.2s all ease-in-out;
+    -o-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
+    &:hover {
+        opacity: 0.7;
+        filter: alpha(opacity=70);        
+    }
+}
+.fb-person {
+    a,
+    span {
+        display: block;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}

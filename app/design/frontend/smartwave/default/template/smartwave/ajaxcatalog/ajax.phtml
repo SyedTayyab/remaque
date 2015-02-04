@@ -1,0 +1,115 @@
+<script type="text/javascript">
+	var data = "";
+	var active = false;
+	jQuery(function($){
+		if($('body').find('#resultLoading').attr('id') != 'resultLoading'){
+		$('.main').append('<div id="resultLoading" style="display:none"><div class="bg"></div></div>');}
+		var height = $('.main').outerHeight();
+		var width = $('.main').outerWidth();
+		$('.ui-slider-handle').css('cursor','pointer');
+		
+		$('#resultLoading').css({
+			'width':'100%',
+			'height':'100%',
+			'position':'fixed',
+			'z-index':'10000000',
+			'top':'0',
+			'left':'0'
+		});	
+		$('#resultLoading .bg').css({
+			'background':'<?php echo $this->overlayColor; ?>',
+			'opacity':'<?php echo $this->overlayOpacity ?>',
+			'width':'100%',
+			'height':'100%',
+			'position':'fixed',
+			'top':'0'
+		});
+		<?php if($this->ajaxLayered): ?>                
+        $('.block-layered-nav a').on('click', function(e){if(!$(this).parent().hasClass('slider-range')){sliderAjax($(this).attr('href'));}e.preventDefault();});       
+        <?php endif; ?>
+        
+        <?php if($this->ajaxToolbar): ?>
+        $('.toolbar a').on('click', function(e){ if($(this).attr('href')){var url=$(this).attr('href');sliderAjax(url);} e.preventDefault();});
+        $('.toolbar select').removeAttr('onchange');
+        $('.toolbar select').on('change', function(e){var url=$(this).val();sliderAjax(url);e.preventDefault();});
+        <?php endif; ?>
+		
+		
+	});
+
+<?php if($this->ajaxSlider || $this->ajaxLayered || $this->ajaxToolbar): ?>
+/*DONOT EDIT THIS CODE*/
+function sliderAjax(url) {
+    if (!active) {
+        active = true;
+        jQuery(function($) {
+            oldUrl = url;
+            $('#resultLoading .bg').height('100%');
+            $('#resultLoading').show();
+            if ($('.category-products .products-grid').length) {
+                $('.products-grid .item-area').addClass('loading-state');
+                $('.products-grid .item-area').append('<div class="sw-qv-loading"></div>');   
+            } else if($('.category-products .products-list').length) {
+                $('.products-list .product-image-wrapper').addClass('loading-state');
+                $('.products-list .product-image-wrapper').append('<div class="sw-qv-loading"></div>');   
+            }
+            
+            try {
+                $('body').css('cursor', 'wait');
+                $.ajax({
+                    url: url,
+                    dataType: 'json',
+                    type: 'post',
+                    data: data,
+                    success: function(data) {                        
+                        $('.loading-state').removeClass('loading-state');
+                        $('.sw-qv-loading').remove();
+						callback();
+                        if (data.viewpanel) {
+                            if ($('.block-layered-nav')) {
+                                $('.block-layered-nav').empty();
+                                $('.block-layered-nav').append(data.viewpanel)
+                            }
+                        }
+                        if (data.productlist) {
+                            $('.col-main .category-products').empty();
+                            $('.col-main .category-products').append(data.productlist)
+                        }
+                        var hist = url.split('?');
+                        if(window.history && window.history.pushState){
+							window.history.pushState('GET', data.title, url);
+						}
+                        $('body').find('.toolbar select').removeAttr('onchange');
+                        $('#resultLoading .bg').height('100%');
+                        $('#resultLoading').hide();
+                        $('body').css('cursor', 'default');
+                        categoryAccordion();
+                        contentProdImages();
+                        <?php if(Mage::getStoreConfig('quickview/general/enableview')): ?>
+                        _qsJnit();
+                        <?php endif; ?>
+                        <?php if($this->ajaxLayered): ?>               
+                        $('.block-layered-nav a').on('click', function(e){if(!$(this).parent().hasClass('slider-range')){sliderAjax($(this).attr('href'));}e.preventDefault();});
+                        <?php endif; ?>
+                        
+                        
+                        <?php if($this->ajaxToolbar): ?>
+                        $('.toolbar a').on('click', function(e){ e.preventDefault(); if($(this).attr('href')){var url=$(this).attr('href');sliderAjax(url);}});
+                        $('.toolbar select').removeAttr('onchange');
+                        $('.toolbar select').on('change', function(e){var url=$(this).val();sliderAjax(url);e.preventDefault();});
+                        <?php endif; ?>
+                    }
+                })
+            } catch (e) {}
+        });
+        active = false
+    }
+    return false
+}
+<?php endif; ?> 
+
+function callback(){
+	<?php echo $this->getCallbackJs(); ?>	
+}
+</script>
+

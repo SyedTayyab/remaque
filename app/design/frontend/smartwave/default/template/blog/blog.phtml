@@ -1,0 +1,52 @@
+<?php $posts = $this->getPosts(); ?>
+<div id="messages_product_view">
+    <?php Mage::app()->getLayout()->getMessagesBlock()->setMessages(Mage::getSingleton('customer/session')->getMessages(true)); ?> 
+    <?php echo Mage::app()->getLayout()->getMessagesBlock()->getGroupedHtml(); ?> 
+</div>
+<?php foreach ($posts as $post): ?>
+    <div class="postWrapper">
+        <div class="postBanner">
+            <?php
+                if($banner_image = $post->getBanner()){
+            ?>
+                <a href="<?php echo $post->getAddress(); ?>"><img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$banner_image; ?>" alt=""/></a>
+                
+            <div class="blog-mask">
+                <div class="mask-content">
+                    <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).$banner_image; ?>" class="post-banner-lightbox">
+                        <i class="icon-resize-full"></i>
+                    </a>
+                    <a href="<?php echo $post->getAddress(); ?>" class="post-banner-link">
+                        <i class="icon-link"></i>
+                    </a>
+                </div>
+            </div>
+            <?php } ?>
+        </div>
+        <h3 class="post-title">
+            <a href="<?php echo $post->getAddress(); ?>" ><?php echo $post->getTitle(); ?></a>
+        </h3>
+        <div class="post-info">
+            <span class="posted-on"><?php echo $this->__('Posted on ')?><?php echo $post->getCreatedTime(); ?></span>
+            <span class="posted-by"><?php echo $this->__('by')?>&nbsp;<strong><?php echo $post->getUser() ?></strong></span>&nbsp;/
+            <?php $postCats = $post->getCats(); ?>
+            <?php if (!empty($postCats)): ?>
+            <span class="posted-in">
+                <?php $_i = 0; ?>
+                <?php foreach ($postCats as $data): ?>
+                    <a href="<?php echo $data['url']; ?>"><?php echo $data['title']; ?></a><span class="<?php echo ($_i == count($postCats)-1)?'last':''; ?>">,</span>
+                    <?php $_i++; ?>
+                <?php endforeach; ?>
+            </span>
+            /
+			<?php endif; ?>            
+            <?php if ($this->getCommentsEnabled()): ?>
+            <a href="<?php echo $post->getAddress(); ?>#commentBox" class="post-comments-count" title="<?php echo $this->__('Comment on ').$post->getTitle()?>"><?php echo ($post->getCommentCount())?$post->getCommentCount():0; ?></a>
+            <?php endif; ?>
+        </div>
+        <div class="postContent"><?php echo $post->getPostContent(); ?></div>
+        <div class="clearer"></div>
+        <?php echo $this->getBookmarkHtml($post) ?>        
+    </div>
+<?php endforeach; ?> 
+<?php echo $this->getChildHtml('smartwave_blog_comments_toolbar'); ?>

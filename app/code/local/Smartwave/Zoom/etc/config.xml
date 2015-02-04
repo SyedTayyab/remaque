@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @category    Smartwave
+ * @package        Smartwave_Zoom
+ * @author        SW-THEMES
+ * @copyright    Copyright 2014 Smartwave
+ * @version:    1.0.0
+ */
+-->
+<config>
+    <modules>
+        <Smartwave_Zoom>
+            <version>1.0.0</version>
+        </Smartwave_Zoom>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <smartwave_zoom module="smartwave_zoom">
+                    <file>smartwave_zoom.xml</file>
+                </smartwave_zoom>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <models>
+            <smartwave_zoom>
+                <class>Smartwave_Zoom_Model</class>
+            </smartwave_zoom>
+        </models>
+        <blocks>
+            <smartwave_zoom>
+                <class>Smartwave_Zoom_Block</class>
+            </smartwave_zoom>
+        </blocks>
+        <helpers>
+            <smartwave_zoom>
+                <class>Smartwave_Zoom_Helper</class>
+            </smartwave_zoom>
+        </helpers>
+    </global>
+    <default>        
+        <zoom>
+            <general>
+                <enable>1</enable>
+				<used_zoom>1</used_zoom>
+                <type>inner</type>
+                <scroll_zoom>0</scroll_zoom>
+                <loading_icon>loader.gif</loading_icon>
+				<zoom_img_times>2</zoom_img_times>
+				<zoom_wind_width>450</zoom_wind_width>
+				<zoom_wind_height>450</zoom_wind_height>
+				<lens_shape>round</lens_shape>
+				<lens_size>200</lens_size>
+                <easing>1</easing>
+                <easing_duration>2000</easing_duration>
+            </general>
+			<image>
+				<aspect_ratio>1</aspect_ratio>
+			</image>
+            <gallery>
+                <ga_position>bottom</ga_position>
+				<ga_img_width>130</ga_img_width>
+				<ga_img_height>130</ga_img_height>
+            </gallery>
+            <lightbox>
+                <lb_enable>1</lb_enable>
+                <lb_icon_position>rt_bt</lb_icon_position>
+            </lightbox>
+        </zoom>        
+    </default>
+</config>

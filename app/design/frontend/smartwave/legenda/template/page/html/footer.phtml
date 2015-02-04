@@ -1,0 +1,237 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php 
+    $store = Mage::app()->getStore();
+    $code  = $store->getCode();
+    $footer = Mage::getStoreConfig('legenda_setting/footer_settings', $code);
+?>
+<div class="footer-container">
+    <div class="footer">        
+        <?php if($footer['pre_footer_enabled']): ?>
+            <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId($footer['pre_footer'])->toHtml();?>
+        <?php endif; ?>
+        <?php if($footer['footer_top_enabled']): ?>
+        <div class="footer-top">
+            <div class="container">
+                <?php if(Mage::getStoreConfig('legenda_design/footer/footer_top_border', $code)): ?>
+                <div class="bordered-wrapper">
+                <?php endif; ?>
+                    <div class="row">
+                    <?php if($footer['footer_top_column_1']): ?>
+                        <div class="col-sm-<?php echo $footer['footer_top_column_1_size']?>">
+                            <div class="content-element">
+                                <?php 
+                                    $area = 'footer_top_column_1';
+                                    $type = $footer[$area];
+                                    if ($type == 'custom') {
+                                        echo $this->getLayout()->createBlock('cms/block')->setBlockId($footer[$area.'_custom'])->toHtml();
+                                    } else {
+                                        echo $this->getChildHtml('footer_'.$footer[$area]);
+                                    }
+                                 ?>
+                             </div>
+                        </div>
+                    <?php endif; ?>
+                    <?php if($footer['footer_top_column_2']): ?>
+                        <div class="col-sm-<?php echo $footer['footer_top_column_2_size']?>">
+                            <div class="content-element">
+                                <?php 
+                                    $area = 'footer_top_column_2';
+                                    $type = $footer[$area];
+                                    if ($type == 'custom') {
+                                        echo $this->getLayout()->createBlock('cms/block')->setBlockId($footer[$area.'_custom'])->toHtml();
+                                    } else {
+                                        echo $this->getChildHtml('footer_'.$footer[$area]);
+                                    }
+                                 ?>
+                             </div>
+                        </div>
+                    <?php endif; ?>
+                    <?php if($footer['footer_top_column_3']): ?>
+                        <div class="col-sm-<?php echo $footer['footer_top_column_3_size']?>">
+                            <div class="content-element">
+                                <?php 
+                                    $area = 'footer_top_column_3';
+                                    $type = $footer[$area];
+                                    if ($type == 'custom') {
+                                        echo $this->getLayout()->createBlock('cms/block')->setBlockId($footer[$area.'_custom'])->toHtml();
+                                    } else {
+                                        echo $this->getChildHtml('footer_'.$footer[$area]);
+                                    }
+                                 ?>
+                             </div>
+                        </div>
+                    <?php endif; ?>
+                    <?php if($footer['footer_top_column_4']): ?>
+                        <div class="col-sm-<?php echo $footer['footer_top_column_4_size']?>">
+                            <div class="content-element">
+                                <?php 
+                                    $area = 'footer_top_column_4';
+                                    $type = $footer[$area];
+                                    if ($type == 'custom') {
+                                        echo $this->getLayout()->createBlock('cms/block')->setBlockId($footer[$area.'_custom'])->toHtml();
+                                    } else {
+                                        echo $this->getChildHtml('footer_'.$footer[$area]);
+                                    }
+                                 ?>
+                             </div>
+                        </div>
+                    <?php endif; ?>
+                    <?php if($footer['footer_top_column_5']): ?>
+                        <div class="col-sm-<?php echo $footer['footer_top_column_5_size']?>">
+                            <div class="content-element">
+                                <?php 
+                                    $area = 'footer_top_column_5';
+                                    $type = $footer[$area];
+                                    if ($type == 'custom') {
+                                        echo $this->getLayout()->createBlock('cms/block')->setBlockId($footer[$area.'_custom'])->toHtml();
+                                    } else {
+                                        echo $this->getChildHtml('footer_'.$footer[$area]);
+                                    }
+                                 ?>
+                             </div>
+                        </div>
+                    <?php endif; ?>
+                </div>
+                <?php if(Mage::getStoreConfig('legenda_design/footer/footer_top_border', $code)): ?>
+                </div>
+                <?php endif; ?>
+            </div>
+        </div>
+        <?php endif; ?>
+        <?php if($footer['footer_bottom_enabled']): ?>
+        <div class="footer-bottom">
+            <div class="container">
+                <?php if(Mage::getStoreConfig('legenda_design/footer/footer_bottom_border', $code)): ?>
+                <div class="bordered-wrapper">
+                <?php endif; ?>
+                    <div class="row">
+                    <?php if($footer['footer_bottom_column_1']): ?>
+                        <div class="col-sm-<?php echo $footer['footer_bottom_column_1_size']?>">
+                            <div class="content-element">
+                                <?php 
+                                    $area = 'footer_bottom_column_1';
+                                    $type = $footer[$area];
+                                    if ($type == 'custom') {
+                                        echo $this->getLayout()->createBlock('cms/block')->setBlockId($footer[$area.'_custom'])->toHtml();
+                                    } else {
+                                        echo $this->getChildHtml('footer_'.$footer[$area]);
+                                    }
+                                 ?>
+                             </div>
+                        </div>
+                    <?php endif; ?>
+                    <?php if($footer['footer_bottom_column_2']): ?>
+                        <div class="col-sm-<?php echo $footer['footer_bottom_column_2_size']?>">
+                            <div class="content-element">
+                                <?php 
+                                    $area = 'footer_bottom_column_2';
+                                    $type = $footer[$area];
+                                    if ($type == 'custom') {
+                                        echo $this->getLayout()->createBlock('cms/block')->setBlockId($footer[$area.'_custom'])->toHtml();
+                                    } else {
+                                        echo $this->getChildHtml('footer_'.$footer[$area]);
+                                    }
+                                 ?>
+                             </div>
+                        </div>
+                    <?php endif; ?>
+                    <?php if($footer['footer_bottom_column_3']): ?>
+                        <div class="col-sm-<?php echo $footer['footer_bottom_column_3_size']?>">
+                            <div class="content-element">
+                                <?php 
+                                    $area = 'footer_bottom_column_3';
+                                    $type = $footer[$area];
+                                    if ($type == 'custom') {
+                                        echo $this->getLayout()->createBlock('cms/block')->setBlockId($footer[$area.'_custom'])->toHtml();
+                                    } else {
+                                        echo $this->getChildHtml('footer_'.$footer[$area]);
+                                    }
+                                 ?>
+                             </div>
+                        </div>
+                    <?php endif; ?>
+                    <?php if($footer['footer_bottom_column_4']): ?>
+                        <div class="col-sm-<?php echo $footer['footer_bottom_column_4_size']?>">
+                            <div class="content-element">
+                                <?php 
+                                    $area = 'footer_bottom_column_4';
+                                    $type = $footer[$area];
+                                    if ($type == 'custom') {
+                                        echo $this->getLayout()->createBlock('cms/block')->setBlockId($footer[$area.'_custom'])->toHtml();
+                                    } else {
+                                        echo $this->getChildHtml('footer_'.$footer[$area]);
+                                    }
+                                 ?>
+                             </div>
+                        </div>
+                    <?php endif; ?>
+                    <?php if($footer['footer_bottom_column_5']): ?>
+                        <div class="col-sm-<?php echo $footer['footer_bottom_column_5_size']?>">
+                            <div class="content-element">
+                                <?php 
+                                    $area = 'footer_bottom_column_5';
+                                    $type = $footer[$area];
+                                    if ($type == 'custom') {
+                                        echo $this->getLayout()->createBlock('cms/block')->setBlockId($footer[$area.'_custom'])->toHtml();
+                                    } else {
+                                        echo $this->getChildHtml('footer_'.$footer[$area]);
+                                    }
+                                 ?>
+                             </div>
+                        </div>
+                    <?php endif; ?>
+                </div>
+                <?php if(Mage::getStoreConfig('legenda_design/footer/footer_bottom_border', $code)): ?>
+                </div>
+                <?php endif; ?>
+            </div>
+        </div>
+        <?php endif; ?>
+        <?php if($footer['copyright_enabled']): ?>
+        <div class="copyright">
+            <div class="container">
+                <?php if(Mage::getStoreConfig('legenda_design/footer/footer_copyright_border', $code)): ?>
+                <div class="bordered-wrapper">
+                <?php endif; ?>
+                    <div class="row">
+                        <div class="col-sm-6 text-left">
+                            <a href="<?php echo Mage::getBaseUrl(); ?>"><img src="<?php echo Mage::getDesign()->getSkinUrl($footer['copyright_logo']); ?>" class="logo-small"/></a>
+                        </div>
+                        <div class="col-sm-6 text-right">							
+                            <address><?php echo $footer['copyright_text'] ?></address>
+							<?php echo $this->getChildHtml('store_switcher') ?>
+                        </div>
+                    </div>
+                <?php if(Mage::getStoreConfig('legenda_design/footer/footer_copyright_border', $code)): ?>
+                </div>
+                <?php endif; ?>
+            </div>
+        </div>
+        <?php endif; ?>
+    </div>
+</div>

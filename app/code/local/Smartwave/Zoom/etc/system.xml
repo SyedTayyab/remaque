@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <zoom translate="label">
+            <label>Product Image Zoom</label>
+            <tab>swextensions</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>200</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general>
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enable translate="label comment">
+                            <label>Enable Module</label>
+                            <comment>If disabled, images will be displayed the same as in Magento "default" theme.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enable>
+                        <used_zoom translate="label comment">
+                            <label>Use ImageZoom Effect</label>
+                            <comment>
+                                <![CDATA[
+                                    If set to <strong>Yes</strong>, ImageZoomEffect will be used to the main image.
+                                ]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </used_zoom>
+                        <type translate="label">
+                            <label>Zoom Type</label>                            
+                            <frontend_type>select</frontend_type>
+                            <source_model>smartwave_zoom/system_config_source_general_type</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <used_zoom>1</used_zoom>
+                            </depends>
+                        </type>                        
+                        <scroll_zoom translate="label comment">
+                            <label>Scroll Zoom</label>
+                            <comment>Set to Enable to activate zoom on mouse scroll.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <used_zoom>1</used_zoom>
+                            </depends>
+                        </scroll_zoom>
+                        <loading_icon translate="label">
+                            <label>Loading Icon</label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>                            
+                            <upload_dir config="system/filesystem/media" scope_info="1">smartwave/catalog/product/view/media</upload_dir>
+                            <base_url type="media" scope_info="1">smartwave/catalog/product/view/media</base_url>                            
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </loading_icon>
+                        <zoom_wind_width translate="label comment">
+                            <label>Zoom Window Width</label>
+                            <comment>Width of the zoom area. When Zoom Type is Right Window, this will be active. (Default: 267)</comment>                            
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <type>window</type>
+                                <used_zoom>1</used_zoom>
+                            </depends>
+                        </zoom_wind_width>    
+                        <zoom_wind_height>
+                            <label>Zoom Window Height</label>                            
+                            <comment>Height of the zoom area. When Zoom Type is Right Window, this will be active. (Default: 267)</comment>                            
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <used_zoom>1</used_zoom>
+                                <type>window</type>
+                            </depends>
+                        </zoom_wind_height>
+                        <lens_shape translate="label comment">
+                            <label>Lens Shape</label>
+                            <comment>Note that only modern browsers support round, will default to square in older browsers.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>smartwave_zoom/system_config_source_general_shape</source_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <used_zoom>1</used_zoom>
+                                <type>lens</type>
+                            </depends>
+                        </lens_shape>                        
+                        <lens_size translate="label comment">
+                            <label>Lens Size</label>
+                            <comment><![CDATA[
+									Lens Window Size when <strong>Zoom Type</strong> set to <strong>Lens</strong>. (Default: 200)
+                                ]]>
+							</comment>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <used_zoom>1</used_zoom>
+                                <type>lens</type>
+                            </depends>
+                        </lens_size>
+                        <zoom_img_times translate="label comment">
+                            <label>After Zoom Image Size Times</label>
+                            <comment>The Times of size of the enlarged image. This field refers to the actual resolution of the image after zoom. (Default: 2)</comment>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>                                
+                                <used_zoom>1</used_zoom>
+                            </depends>
+                        </zoom_img_times>                        
+                        <border_width translate="label comment">
+                            <label>Zoom Area Border Width</label>
+                            <comment>
+                                <![CDATA[
+                                    If <strong>Zoom Type</strong> is <strong>Inner</strong>, this will be ignored. Set the border width of zoomimg window. (For example: 2)
+                                ]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store> 
+                            <depends>
+                                <used_zoom>1</used_zoom>
+                            </depends>
+                        </border_width>
+                        <border_color translate="label comment">
+                            <label>Zoom Area Border Color</label>
+                            <comment>
+                                <![CDATA[
+                                    If <strong>Zoom Type</strong> is <strong>Inner</strong>, this will be ignored.
+                                ]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>                            
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                            <depends>
+                                <used_zoom>1</used_zoom>
+                            </depends>
+                        </border_color>
+                        <lens_border_width translate="label comment">
+                            <label>Lens Area Border Width</label>
+                            <comment>
+                                <![CDATA[
+                                    If <strong>Type</strong> is <strong>Inner</strong>, this will be ignored. To set lens border width. (For example: 2)
+                                ]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <used_zoom>1</used_zoom>
+                                <type>window</type>
+                            </depends>                            
+                        </lens_border_width>
+                        <lens_border_color translate="label comment">
+                            <label>Lens Area Border Color</label>
+                            <comment>
+                                <![CDATA[
+                                    If <strong>Type</strong> is <strong>Inner</strong>, this will be ignored.
+                                ]]>
+                            </comment>
+                            <frontend_type>text</frontend_type> 
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model> 
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>  
+                            <depends>
+                                <used_zoom>1</used_zoom>
+                                <type>window</type>
+                            </depends>                          
+                        </lens_border_color>
+                        <easing translate="label comment">
+                            <label>Active Easing</label>
+                            <comment>Set to Yes to activate easing.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <used_zoom>1</used_zoom>
+                            </depends>
+                        </easing>
+                        <easing_duration translate="label comment">
+                            <label>Easing Duration</label>
+                            <comment>You can use custom easing setting of duration. Default:2000</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <used_zoom>1</used_zoom>
+                                <easing>1</easing>
+                            </depends>
+                        </easing_duration>
+                        <tint translate="label">
+                            <label>Tint Active</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>165</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <used_zoom>1</used_zoom>
+                                <type>window</type>
+                            </depends>
+                        </tint>
+                        <tint_color translate="label">
+                            <label>Tint Color</label>                            
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>170</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <used_zoom>1</used_zoom>                            
+                                <type>window</type>
+                                <tint>1</tint>
+                            </depends>
+                        </tint_color>
+                        <tint_opacity translate="label comment">
+                            <label>Tint Opacity</label>
+							<comment>Default: 0.4</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>180</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <used_zoom>1</used_zoom>
+                                <type>window</type>
+                                <tint>1</tint>
+                            </depends>
+                        </tint_opacity>
+                        <lens_opacity translate="label comment">
+                            <label>Lens Opacity</label>
+							<comment>Default: 0.4</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>190</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <used_zoom>1</used_zoom>
+                                <type>window</type>
+                            </depends>
+                        </lens_opacity>
+                        <lens_color translate="label">
+                            <label>Lens Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <used_zoom>1</used_zoom>
+                                <type>window</type>
+                            </depends>
+                        </lens_color>                        
+                    </fields>
+                </general>
+                <image>
+                    <label>Main Image</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <aspect_ratio translate="label">
+                            <label>Keep Image Aspect Ratio</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </aspect_ratio>
+                        <img_width translate="label comment">
+                            <label>Main Image Width</label>
+                            <comment>
+                                <![CDATA[
+                                    If <strong>width</strong> is not specified, default image width will be used. Default: 267
+                                ]]>
+                            </comment>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <aspect_ratio>0</aspect_ratio>
+                            </depends>
+                        </img_width>
+                        <img_height translate="label comment">
+                            <label>Main Image Height</label>
+                            <comment>
+                                <![CDATA[
+                                    If <strong>Image Rate</strong> is specified, this value will be ignored and actual height will be calcuated based on <strong>Main Image Width</strong> and <strong>Image Rate</strong>. <br>
+                                    If width is not specified, default width and height will be used. Default: 267    
+                                ]]>
+                            </comment>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <aspect_ratio>0</aspect_ratio>
+                            </depends>
+                        </img_height>
+                    </fields>
+                </image>
+                <gallery>
+                    <label>Image Gallery</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>                        
+                        <ga_img_width translate="label comment">
+                            <label>Gallery Image Width</label>
+                            <comment>
+                                <![CDATA[
+                                    If <strong>Gallery Image Width</strong> is not specified, default width and height will be used. Default: 65
+                                ]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ga_img_width>
+                        <ga_img_height translate="label comment">
+                            <label>Gallery Image Height</label>
+                            <comment>
+                                <![CDATA[
+                                    If <strong>Gallery Image Width</strong> is not specified, default width and height will be used. Default: 65
+                                ]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ga_img_height>                        
+                        <ga_item_num translate="label comment">
+                            <label>Max Items</label>
+							<comment>Default: 4</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>35</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ga_item_num>
+                        
+                        <ga_item_margin translate="label comment">
+                            <label>Items Margin</label>
+							<comment>Default: 5</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>37</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ga_item_margin>
+                        <ga_border_width translate="label comment">
+                            <label>Gallery Image Border Width</label>
+							<comment>The border width of gallery image items. (For example: 2)</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ga_border_width>
+                        <ga_border_color>
+                            <label>Gallery Image Border Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </ga_border_color>
+                    </fields>
+                </gallery>
+                <lightbox>
+                    <label>Lightbox</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>40</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <lb_enable translate="label">
+                            <label>Enable Lightbox</label>                            
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </lb_enable>
+                        <lb_icon_position translate="label">
+                            <label>Zoom Icon Position</label>                            
+                            <frontend_type>select</frontend_type>
+                            <source_model>smartwave_zoom/system_config_source_lightbox_position</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <lb_enable>1</lb_enable>
+                            </depends>
+                        </lb_icon_position>
+                    </fields>
+                </lightbox>
+            </groups>
+        </zoom>
+    </sections>
+</config>

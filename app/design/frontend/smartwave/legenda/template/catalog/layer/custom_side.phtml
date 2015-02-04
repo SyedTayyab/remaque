@@ -1,0 +1,11 @@
+<?php
+	$store = Mage::app()->getStore();
+	$code  = $store->getCode();
+	$side_block_id = Mage::getStoreConfig('legenda_setting/category/cat_side_block', $code);    
+	if ($side_block_id) {
+		$catalog_side_block = Mage::getModel('cms/block')->load($side_block_id);
+		if($catalog_side_block->getIsActive()){
+			echo '<div class="catalog-side-block">'.$this->getLayout()->createBlock('cms/block')->setBlockId($side_block_id)->toHtml().'</div>';
+		}
+	}
+?>

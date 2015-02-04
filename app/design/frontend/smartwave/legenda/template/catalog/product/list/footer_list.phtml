@@ -1,0 +1,28 @@
+<?php
+/**
+ * Product list template (For footer)
+ *
+ * @see Mage_Catalog_Block_Product_List
+ */
+?>
+<?php
+    $_productCollection=$this->getLoadedProductCollection();
+    $_helper = $this->helper('catalog/output');
+    $store = Mage::app()->getStore();
+    $code  = $store->getCode();
+?>
+<?php if(!$_productCollection->count()): ?>
+<p><?php echo $this->__('There are no products.')?></p>
+<?php else: ?>
+    <ul class="footer-products-list">
+        <?php foreach ($_productCollection as $_product): ?>
+            <li>
+                <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>">
+                    <img src="<?php if(Mage::getStoreConfig('legenda_setting/category/aspect_ratio', $code)):?><?php echo $this->helper('catalog/image')->init($_product, 'small_image')->constrainOnly(FALSE)->keepAspectRatio(TRUE)->keepFrame(FALSE)->resize(62); ?><?php else: ?><?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize(62, 68); ?><?php endif; ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" width="62" height="68" />
+                    <?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>
+                </a>
+                <?php echo $this->getPriceHtml($_product, true) ?>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+<?php endif; ?>

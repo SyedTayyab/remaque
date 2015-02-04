@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    
+    <!-- Product page -->
+    <catalog_product_view>        
+        <reference name="head">
+            <!-- CSS -->
+            <action method="addItem" ifconfig="zoom/general/enable"><type>js_css</type><name>smartwave/jquery/plugins/owlslider/css/owl.carousel.css</name></action>
+            <action method="addItem"
+                ifconfig="zoom/lightbox/lb_enable"><type>js_css</type><name>smartwave/jquery/plugins/fancybox/css/jquery.fancybox.css</name></action>
+            <action method="addItem" ifconfig="zoom/general/enable"><type>skin_css</type><name>zoom/css/style.css</name></action>
+            <!-- js -->
+            <action method="addJs"><script>smartwave/jquery/jquery-1.10.2.min.js</script></action>
+            <action method="addJs"><script>smartwave/jquery/jquery-noconflict.js</script></action>          
+            <action method="addJs" ifconfig="zoom/general/enable"><script>smartwave/jquery/plugins/owlslider/js/owl.carousel.js</script></action>
+            <action method="addJs"
+                ifconfig="zoom/general/enable"><script>smartwave/jquery/plugins/elevate/jquery.elevatezoom.js</script></action>
+            <action method="addJs"
+                ifconfig="zoom/lightbox/lb_enable"><script>smartwave/jquery/plugins/fancybox/js/jquery.fancybox.js</script></action>
+        </reference>
+        
+        <reference name="product.info.media">
+            <action method="setTemplate" ifconfig="zoom/general/enable"><template>smartwave/zoom/product/view/media.phtml</template></action>        </reference>        
+    </catalog_product_view>
+</layout>

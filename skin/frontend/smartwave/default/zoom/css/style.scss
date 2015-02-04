@@ -1,0 +1,99 @@
+/* If PaginationNumbers is true */
+
+/* preloading images */
+.owl-item {
+    &.loading {
+        min-height: 150px;
+        background: url(AjaxLoader.gif) no-repeat center center;
+    }
+    .item {
+        position: relative;
+    }
+}
+.product-view {
+    .product-img-box {
+        .product-image-zoom,
+        .product-no-image-zoom {
+            height: auto;
+            overflow: hidden;
+	    &.window {
+		overflow: visible;
+	    }
+        }
+        .product-no-image-zoom img  {
+            width: 100%;
+        }
+        .product-image-zoom img {
+            position: relative;
+        }
+        .owl-theme {
+            .owl-controls {
+                margin-top: 0;
+                .owl-buttons {
+                    div {
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        margin: -20px 0;
+                        z-index: 1000;
+                        &.owl-prev {
+                            left: 0;
+                        }
+                        &.owl-next {
+                            right: 0;
+                        }
+                    }                    
+                }
+            }
+        }
+    }
+}
+#more_img_gal .item {
+    margin: 0 10px;    
+}
+.more-views {
+    margin: 20px 0 0;
+    .owl-item {
+        opacity: 0.7;
+        filter: Alpha(Opacity=70);
+        cursor: pointer;
+        &.synced {
+            opacity: 1;
+            filter: Alpha(Opacity=100);
+        }
+    }
+}
+.item img {
+    width: 100%;
+    height: auto;
+}
+.vt-icon {
+    display: none;
+}
+.lb-icon {
+    position: absolute;
+    font-size: 18px;
+    z-index: 1000;
+    &.rt_bt {
+        right: 15px;
+        bottom: 10px;        
+    }
+    &.rt_tp {
+        right: 15px;
+        top: 10px;        
+    }
+    &.lt_bt {
+        left: 15px;
+        bottom: 10px;        
+    }
+    &.lt_tp {
+        left: 15px;
+        top: 10px;        
+    }
+    i {
+        cursor: pointer;
+        &:before {
+            content: '\f065';    
+        }
+    }
+}

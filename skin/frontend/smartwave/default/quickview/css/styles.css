@@ -1,0 +1,35 @@
+.quickview-main {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #efefef;
+}
+.quickview-main .doubled-border {
+    padding: 10px;
+    border: 1px solid #efefef;
+}
+.quickview-main .product-img-box {
+    margin-bottom: 20px;
+}
+.quickview-main  .product-view .product-img-box .product-image-zoom {
+    overflow: visible;
+}
+.quickview-main .product-view .product-img-box .product-image-zoom img {
+    position: relative;
+}
+.quickview-main .product-collateral {
+    display: none;
+}
+.products-grid .item .product-img-wrapper {
+    position: relative;
+}
+.products-grid .item .product-img-wrapper .sw-product-quickview {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+    text-transform: uppercase;
+    padding: 2px;
+    text-align: center;
+    width: 50px;
+    background-color: #fff;
+}

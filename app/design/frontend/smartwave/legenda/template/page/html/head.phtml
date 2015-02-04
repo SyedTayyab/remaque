@@ -1,0 +1,89 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<meta http-equiv="Content-Type" content="<?php echo $this->getContentType() ?>" />
+<title><?php echo $this->getTitle() ?></title>
+<meta name="description" content="<?php echo htmlspecialchars($this->getDescription()) ?>" />
+<meta name="keywords" content="<?php echo htmlspecialchars($this->getKeywords()) ?>" />
+<meta name="robots" content="<?php echo htmlspecialchars($this->getRobots()) ?>" />
+<?php 
+/* fixed from version 1.0.2 beta */
+/* version 1.0.2 beta start */
+?>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<?php 
+/* version 1.0.2 beta end */
+?>
+<link rel="icon" href="<?php echo $this->getFaviconFile(); ?>" type="image/x-icon" />
+<link rel="shortcut icon" href="<?php echo $this->getFaviconFile(); ?>" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = '<?php echo $this->helper('core/js')->getJsUrl('blank.html') ?>';
+    var BLANK_IMG = '<?php echo $this->helper('core/js')->getJsUrl('spacer.gif') ?>';
+//]]>
+</script>
+<![endif]-->
+<?php $helper = Mage::helper('legenda'); ?>
+<?php $d = $helper->getConfigGroupDesign(); ?>
+<?php 
+    $charSubset = '';    
+?>
+<?php if($d['font']['primary_font_family_group'] == 'google'): ?>    
+	<?php if ($d['font']['primary_char_latin_ext'])
+        $charSubset .= ',latin-ext'; ?>
+    <?php if($d['font']['primary_font_family'] == 'Open Sans'): ?>
+        <link rel="stylesheet" id="Open+Sans_default-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C700&amp;v1&amp;subset=latin%2Clatin-ext" type="text/css" media="screen" />
+    <?php else: ?>
+        <link rel="stylesheet" href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $d['font']['primary_font_family']); echo $charSubset; ?>' type='text/css' />
+    <?php endif; ?>
+<?php else: ?>
+    <link rel="stylesheet" id="Open+Sans_default-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C700&amp;v1&amp;subset=latin%2Clatin-ext" type="text/css" media="screen" />
+<?php endif; ?>
+
+<?php if($d['font']['heading_font_family_group'] == 'google'): ?>    
+    <?php if($d['font']['heading_font_family'] == 'Open Sans'): ?>
+        <link rel="stylesheet" id="Open+Sans_default-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C700&amp;v1&amp;subset=latin%2Clatin-ext" type="text/css" media="screen" />
+    <?php else: ?>
+        <link rel="stylesheet" href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $d['font']['heading_font_family']); echo $charSubset; ?>' type='text/css' />
+    <?php endif; ?>
+<?php else: ?>
+    <link rel="stylesheet" id="Open+Sans_default-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C700&amp;v1&amp;subset=latin%2Clatin-ext" type="text/css" media="screen" />
+<?php endif; ?>
+
+<?php if($d['font']['sub_font_family_group'] == 'google'): ?>    
+    <?php if($d['font']['sub_font_family'] == 'Open Sans'): ?>
+        <link rel="stylesheet" id="Open+Sans_default-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C700&amp;v1&amp;subset=latin%2Clatin-ext" type="text/css" media="screen" />
+    <?php else: ?>
+        <link rel="stylesheet" href='//fonts.googleapis.com/css?family=<?php echo str_replace(' ', '+', $d['font']['sub_font_family']); echo $charSubset; ?>' type='text/css' />
+    <?php endif; ?>
+<?php else: ?>
+    <link rel="stylesheet" id="Open+Sans_default-css" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C700&amp;v1&amp;subset=latin%2Clatin-ext" type="text/css" media="screen" />
+<?php endif; ?>
+<?php echo $this->getCssJsHtml() ?>
+<?php echo $this->getChildHtml() ?>
+<?php echo $this->helper('core/js')->getTranslatorScript() ?>
+<?php echo $this->getIncludes() ?>

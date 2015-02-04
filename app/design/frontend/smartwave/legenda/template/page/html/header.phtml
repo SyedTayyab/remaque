@@ -1,0 +1,109 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/**
+ * @var Mage_Page_Block_Html_Header $this
+ */
+?>
+<?php 
+$legendaHelper = Mage::helper('legenda'); 
+$menuType = $legendaHelper->getConfig('header_settings/header_type'); 
+$topPanel = $legendaHelper->getTopPanelId();
+
+//added from version 1.2.0
+//version 1.2.0 start
+$store = Mage::app()->getStore();
+$code  = $store->getCode();
+
+$rev_setting = Mage::getStoreConfig('revolutionslider/options/fullScreen', $code);
+$abs_pos = '';
+if($rev_setting == 'on')
+    $abs_pos = 'abs_position';
+$pageIdentifier = Mage::app()->getFrontController()->getAction()->getFullActionName();
+
+//version 1.2.0 end
+//$blogHelper = Mage::helper('blog'); //version 1.1.0
+?>
+<?php echo $this->getChildHtml('sticky.nav') ?>
+<?php echo $this->getChildHtml('mobile.nav') ?>
+<div class="header-container <?php echo $menuType ?> <?php if ($pageIdentifier == 'cms_index_index')  echo $abs_pos; ?>">
+    <div class="top-bar">
+        <div class="container">            
+                <div class="language-area visible-sm visible-md visible-lg">
+                    <?php echo $this->getChildHtml('store_language') ?>
+                </div>
+                <div class="currency-area visible-sm visible-md visible-lg">
+                    <?php echo $this->getChildHtml('currency') ?>
+                </div>
+                <?php if ($topPanel): ?>                
+                <div class="show-top-panel visible-sm visible-md visible-lg"></div>
+                <?php endif; ?>
+                <div class="search hide-input a-right">
+                    <span data-toggle="modal" data-target="#searchModal" class="search-link">search</span>
+                </div>
+                <div class="top-links visible-sm visible-md visible-lg a-center">
+                    <?php echo $this->getChildHtml('topLinks') ?>
+                </div>
+                <a href="<?php echo $this->getUrl('customer/account')?>" class="my-account-link visible-xs">&nbsp;</a>
+                <?php //version 1.1.0 updated?>
+                <?php if (Mage::getStoreConfig('blog/blog/enabled') && Mage::getStoreConfig('blog/menu/sideblock')) : ?>                
+                <div class="side-area-icon visible-md visible-lg">
+                    <i class="icon-reorder">
+                    </i>
+                </div>                
+                <?php endif; ?>                        
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            
+                <div class="table-row">
+                    <div class="quick-access search-left hidden-xs hidden-sm a-left">
+                        <?php echo $this->getChildHtml('topSearch') ?>    
+                    </div>
+                    <div class="logo">
+                        <?php if ($this->getIsHomePage()):?>
+                            <h1><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+                        <?php else:?>
+                            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+                        <?php endif?>
+                    </div>
+                    <div class="quick-access search-center hidden-xs hidden-sm">
+                        <?php echo $this->getChildHtml('centerSearch'); ?>
+                    </div>
+                    <?php echo $this->getChildHtml('cart_sidebar'); ?>
+                    <div class="menu-icon hidden-desktop">
+                        <i class="icon-reorder"></i>
+                    </div>
+                </div>
+                                    
+            <?php echo $this->getChildHtml('topContainer'); ?>
+        </div>
+    </div>
+    <?php //added from version 1.2.0 ?>
+    <?php echo $this->getChildHtml('topMenu') ?>
+</div>
+<?php // echo $this->getChildHtml('topMenu') // removed from version 1.2.0 ?>
+<?php echo $this->getChildHtml('modalSearch') ?>

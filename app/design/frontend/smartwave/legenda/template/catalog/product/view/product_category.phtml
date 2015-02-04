@@ -1,0 +1,7 @@
+<?php 
+    $cat_id = Mage::getModel('catalog/layer')->getCurrentCategory()->getId();
+    $category = Mage::getModel('catalog/category')->load($cat_id);
+?>
+<?php if ($category): ?>
+    <span class="category-url-wrapper"><span class="item-title"><?php echo $this->__('Category: ')?></span><a href="<?php echo $category->getUrl() ?>"><?php echo $category->getName() ?></a></span>
+<?php endif; ?>

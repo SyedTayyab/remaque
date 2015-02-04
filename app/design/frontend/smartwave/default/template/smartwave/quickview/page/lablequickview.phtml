@@ -1,0 +1,25 @@
+<?php
+    $qwHelper       = Mage::helper('quickview');
+    $swZoomHelper   = Mage::helper('smartwave_zoom');
+    $_dialogWidth   = $qwHelper->getDialogWidth();
+    $_dialogHeight  = $qwHelper->getDialogHeight();	
+	$currentUrl     =  Mage::helper("core/url")->getCurrentUrl();
+    $swEn           = $swZoomHelper->isZoomEnabled() + 0;    
+	if (strpos($currentUrl,'index.php') !== false) {
+		$url = $this->getUrl();
+	}else{
+
+		$url = str_replace('index.php/','',$this->getUrl());
+	}
+?>
+<script type="text/javascript">
+//<![CDATA[
+	if (typeof EM == 'undefined') EM = {};
+	EM.Quickview = {
+		BASE_URL        : "<?php echo $url?>",
+        SW_EN           : <?php echo $swEn ?>,
+		QS_FRM_WIDTH    :"<?php echo $_dialogWidth?>",
+		QS_FRM_HEIGHT   : "<?php echo $_dialogHeight?>"
+	};
+//]]	
+</script> 

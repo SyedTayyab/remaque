@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addJs"><script>smartwave/jquery/jquery-1.10.2.min.js</script></action>
+            <action method="addJs"><script>smartwave/jquery/jquery-noconflict.js</script></action>
+            <action method="addItem"><type>skin_js</type><name>socialfeeds/js/twitterfetcher.js</name><params/></action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>socialfeeds/css/style.css</name>
+            </action>
+        </reference>
+    </default>
+</layout>

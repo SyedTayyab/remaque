@@ -1,0 +1,1864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <legenda translate="label" module="legenda">
+            <label>legenda 1.2.0</label>
+            <sort_order>101</sort_order>            
+            <class>legenda</class>
+        </legenda>
+    </tabs>
+    <sections>
+        <legenda_setting translate="label" module="legenda">
+            <label>Legenda - Theme Settings</label>
+            <tab>legenda</tab>
+            <sort_order>100</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general_settings translate="label" module="legenda">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>500</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>                    
+                    <fields>
+                        <page_style translate="label">
+                            <label>Page Style</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_page_type</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </page_style>
+						<favicon translate="label">
+							<label>Favicon Effect</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</favicon>
+                    </fields>
+                </general_settings>
+                <header_settings translate="label" module="legenda">
+                    <label>Header</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>                        
+                        <header_type translate="label">
+                            <label>Type</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_header_type</source_model>
+                            <sort_order>210</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </header_type>
+                        <top_panel translate="label comment">
+                            <label>Top Panel</label>
+                            <comment><![CDATA[In order to display a <strong>Top Panel</strong> in top of page, use the <strong>Static Block ID</strong> (<strong>CMS->Static Blocks</strong> section)<br/>e.g. top_panel_block]]></comment>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>220</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </top_panel>
+						<top_bar_border translate="label">
+							<label>Use Topbar Bottom Border?</label>
+							<frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>230</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+						</top_bar_border>
+                    </fields>
+                </header_settings>
+                <footer_settings translate="label" module="legenda">
+                    <label>Footer</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>2000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <pre_footer_heading translate="label">
+                            <label>Pre Footer</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </pre_footer_heading>
+                        <pre_footer_enabled translate="label">
+                            <label>Show Pre Footer</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </pre_footer_enabled>
+                        <pre_footer translate="label">
+                            <label>Static Block Id</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <pre_footer_enabled>1</pre_footer_enabled>
+                            </depends>
+                        </pre_footer>
+                        <footer_top_heading translate="label">
+                            <label>Footer Top</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_top_heading>
+                        <footer_top_enabled translate="label">
+                            <label>Show Footer Top</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_top_enabled>
+                        <footer_top_column_1 translate="label">
+                            <label>Column 1</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_column</source_model>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_enabled>1</footer_top_enabled>
+                            </depends>
+                        </footer_top_column_1>
+                        <footer_top_column_1_custom translate="label">
+                            <label>Static Block Id</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_enabled>1</footer_top_enabled>
+                                <footer_top_column_1>custom</footer_top_column_1>
+                            </depends>
+                        </footer_top_column_1_custom>
+                        <footer_top_column_1_size translate="label">
+                            <label>Column 1 Size</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_size</source_model>
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_enabled>1</footer_top_enabled>
+                            </depends>
+                        </footer_top_column_1_size>
+                        <footer_top_column_2 translate="label">
+                            <label>Column 2</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_column</source_model>
+                            <sort_order>150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_enabled>1</footer_top_enabled>
+                            </depends>
+                        </footer_top_column_2>
+                        <footer_top_column_2_custom translate="label">
+                            <label>Static Block Id</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_enabled>1</footer_top_enabled>
+                                <footer_top_column_2>custom</footer_top_column_2>
+                            </depends>
+                        </footer_top_column_2_custom>
+                        <footer_top_column_2_size translate="label">
+                            <label>Column 2 Size</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_size</source_model>
+                            <sort_order>170</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_enabled>1</footer_top_enabled>
+                            </depends>
+                        </footer_top_column_2_size>
+                        <footer_top_column_3 translate="label">
+                            <label>Column 3</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_column</source_model>
+                            <sort_order>180</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_enabled>1</footer_top_enabled>
+                            </depends>
+                        </footer_top_column_3>
+                        <footer_top_column_3_custom translate="label">
+                            <label>Static Block Id</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>190</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_enabled>1</footer_top_enabled>
+                                <footer_top_column_3>custom</footer_top_column_3>
+                            </depends>
+                        </footer_top_column_3_custom>
+                        <footer_top_column_3_size translate="label">
+                            <label>Column 3 Size</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_size</source_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_enabled>1</footer_top_enabled>
+                            </depends>
+                        </footer_top_column_3_size>
+                        <footer_top_column_4 translate="label">
+                            <label>Column 4</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_column</source_model>
+                            <sort_order>210</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_enabled>1</footer_top_enabled>
+                            </depends>
+                        </footer_top_column_4>
+                        <footer_top_column_4_custom translate="label">
+                            <label>Static Block Id</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>220</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_enabled>1</footer_top_enabled>
+                                <footer_top_column_4>custom</footer_top_column_4>
+                            </depends>
+                        </footer_top_column_4_custom>
+                        <footer_top_column_4_size translate="label">
+                            <label>Column 4 Size</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_size</source_model>
+                            <sort_order>230</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_enabled>1</footer_top_enabled>
+                            </depends>
+                        </footer_top_column_4_size>
+                        <footer_top_column_5 translate="label">
+                            <label>Column 5</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_column</source_model>
+                            <sort_order>240</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_enabled>1</footer_top_enabled>
+                            </depends>
+                        </footer_top_column_5>
+                        <footer_top_column_5_custom translate="label">
+                            <label>Static Block Id</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>250</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_enabled>1</footer_top_enabled>
+                                <footer_top_column_5>custom</footer_top_column_5>
+                            </depends>
+                        </footer_top_column_5_custom>
+                        <footer_top_column_5_size translate="label">
+                            <label>Column 5 Size</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_size</source_model>
+                            <sort_order>260</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_enabled>1</footer_top_enabled>
+                            </depends>
+                        </footer_top_column_5_size>
+                        <footer_bottom_heading translate="label">
+                            <label>Footer Bottom</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>1000</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_bottom_heading>
+                        <footer_bottom_enabled translate="label">
+                            <label>Show Footer Bottom</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1010</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_bottom_enabled>
+                        <footer_bottom_column_1 translate="label">
+                            <label>Column 1</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_column</source_model>
+                            <sort_order>1020</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_enabled>1</footer_bottom_enabled>
+                            </depends>
+                        </footer_bottom_column_1>
+                        <footer_bottom_column_1_custom translate="label">
+                            <label>Static Block Id</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1030</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_enabled>1</footer_bottom_enabled>
+                                <footer_bottom_column_1>custom</footer_bottom_column_1>
+                            </depends>
+                        </footer_bottom_column_1_custom>
+                        <footer_bottom_column_1_size translate="label">
+                            <label>Column 1 Size</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_size</source_model>
+                            <sort_order>1040</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_enabled>1</footer_bottom_enabled>
+                            </depends>
+                        </footer_bottom_column_1_size>
+                        <footer_bottom_column_2 translate="label">
+                            <label>Column 2</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_column</source_model>
+                            <sort_order>1050</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_enabled>1</footer_bottom_enabled>
+                            </depends>
+                        </footer_bottom_column_2>
+                        <footer_bottom_column_2_custom translate="label">
+                            <label>Static Block Id</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1060</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_enabled>1</footer_bottom_enabled>
+                                <footer_bottom_column_2>custom</footer_bottom_column_2>
+                            </depends>
+                        </footer_bottom_column_2_custom>
+                        <footer_bottom_column_2_size translate="label">
+                            <label>Column 2 Size</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_size</source_model>
+                            <sort_order>1070</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_enabled>1</footer_bottom_enabled>
+                            </depends>
+                        </footer_bottom_column_2_size>
+                        <footer_bottom_column_3 translate="label">
+                            <label>Column 3</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_column</source_model>
+                            <sort_order>1080</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_enabled>1</footer_bottom_enabled>
+                            </depends>
+                        </footer_bottom_column_3>
+                        <footer_bottom_column_3_custom translate="label">
+                            <label>Static Block Id</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1090</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_enabled>1</footer_bottom_enabled>
+                                <footer_bottom_column_3>custom</footer_bottom_column_3>
+                            </depends>
+                        </footer_bottom_column_3_custom>
+                        <footer_bottom_column_3_size translate="label">
+                            <label>Column 3 Size</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_size</source_model>
+                            <sort_order>1100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_enabled>1</footer_bottom_enabled>
+                            </depends>
+                        </footer_bottom_column_3_size>
+                        <footer_bottom_column_4 translate="label">
+                            <label>Column 4</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_column</source_model>
+                            <sort_order>1110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_enabled>1</footer_bottom_enabled>
+                            </depends>
+                        </footer_bottom_column_4>
+                        <footer_bottom_column_4_custom translate="label">
+                            <label>Static Block Id</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_enabled>1</footer_bottom_enabled>
+                                <footer_bottom_column_4>custom</footer_bottom_column_4>
+                            </depends>
+                        </footer_bottom_column_4_custom>
+                        <footer_bottom_column_4_size translate="label">
+                            <label>Column 4 Size</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_size</source_model>
+                            <sort_order>1130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_enabled>1</footer_bottom_enabled>
+                            </depends>
+                        </footer_bottom_column_4_size>                        
+                        <footer_bottom_column_5 translate="label">
+                            <label>Column 5</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_column</source_model>
+                            <sort_order>1140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_enabled>1</footer_bottom_enabled>
+                            </depends>
+                        </footer_bottom_column_5>
+                        <footer_bottom_column_5_custom translate="label">
+                            <label>Static Block Id</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_enabled>1</footer_bottom_enabled>
+                                <footer_bottom_column_5>custom</footer_bottom_column_5>
+                            </depends>
+                        </footer_bottom_column_5_custom>
+                        <footer_bottom_column_5_size translate="label">
+                            <label>Column 5 Size</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_footer_size</source_model>
+                            <sort_order>1160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_enabled>1</footer_bottom_enabled>
+                            </depends>
+                        </footer_bottom_column_5_size>
+                        <copyright_heading translate="label">
+                            <label>Copyright</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>5000</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>    
+                        </copyright_heading>
+                        <copyright_enabled translate="label">
+                            <label>Show Copyright Block</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>5010</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </copyright_enabled>
+                        <copyright_text translate="label">
+                            <label>Copyright Text</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5020</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <copyright_enabled>1</copyright_enabled>
+                            </depends>
+                        </copyright_text>
+                        <copyright_logo translate="label">
+                            <label>Logo Image</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5030</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <copyright_enabled>1</copyright_enabled>
+                            </depends>
+                        </copyright_logo>                        
+                    </fields>
+                </footer_settings>
+                <category translate="label" module="legenda">
+                    <label>Category View</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>8500</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <effect_img translate="label comment">
+                            <label>Hover Image List</label>
+                            <comment>Show product image list as slider when hover in product image area.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </effect_img>
+                        <aspect_ratio>
+                            <label>Keep Image Aspect Ratio</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </aspect_ratio>
+                        <ratio_width>
+                            <label>Image Width</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <aspect_ratio>0</aspect_ratio>
+                            </depends>
+                        </ratio_width>
+                        <ratio_height>
+                            <label>Image Height</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <aspect_ratio>0</aspect_ratio>
+                            </depends>
+                        </ratio_height>
+                        <main_cat_heading translate="label">
+                            <label>Main Category</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </main_cat_heading>
+                        <main_cat_position>
+                            <label>Main Category Navigation Position</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_category_maincatpos</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </main_cat_position>
+						<cat_side_heading translate="label">
+                            <label>Category View Side Block</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cat_side_heading>
+                        <cat_side_block translate="label comment">
+                            <label>Block Id</label>
+                            <frontend_type>text</frontend_type>
+							<comment>Please specify static block Id</comment>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cat_side_block>
+                    </fields>
+                </category>
+                <category_grid translate="label" module="legenda">
+                    <label>Category View (Grid)</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>9000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <columns translate="label">
+                            <label>Product Grid Columns</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_setting_category_columns</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </columns>
+                    </fields>
+                </category_grid>
+				<product_view translate="label">
+                    <label>Product View</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>9005</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <pro_side_block translate="label comment">
+                            <label>Side Block Id</label>
+                            <comment>Please specify static block Id</comment>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </pro_side_block>
+                    </fields>
+                </product_view>
+                <shopping_cart translate="label">
+                    <label>Shopping Cart</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>9010</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <banner_block translate="label comment">
+                            <label>Banner Block</label>
+                            <comment>Please specify static block Id</comment>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </banner_block>
+                    </fields>
+                </shopping_cart>
+                <product_label translate="label">
+                    <label>Product Label</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>9100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <new translate="label">
+                            <label>Show "New" Label</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </new>
+                        <sale translate="label">
+                            <label>Show "Sale" Label</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sale>
+                    </fields>
+                </product_label>
+                <contacts translate="label" module="legenda">
+                    <label>Contact Us</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>9500</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <google_map_heading translate="label">
+                            <label>Google Map</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </google_map_heading>
+                        <latitude translate="label">
+                            <label>Latitude</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </latitude>
+                        <longitude translate="label">
+                            <label>Longitude</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </longitude>
+                        <zoom translate="label">
+                            <label>Zoom</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </zoom>
+                        <marker_image translate="label">
+                            <label>Marker Image</label>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">smartwave/legenda/contacts</upload_dir>
+                            <base_url type="media" scope_info="1">smartwave/legenda/contacts</base_url>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </marker_image>
+                        <heading_info translate="label">
+                            <label>Contact Info</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_info>
+                        <infoblock translate="label">
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </infoblock>
+                    </fields>
+                </contacts>
+                <custom_settings translate="label comment" module="legenda">
+                    <label>Customization Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>9600</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <custom_css translate="label">
+                            <label>Load Custom CSS</label>
+                            <comment>Enable this option to load "custom.css" file is located in skin/frontend/smartwave/legenda/css directory.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </custom_css>
+                    </fields>
+                </custom_settings>
+                <install translate="label comment" module="legenda">
+                    <label>Theme Installation</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>9700</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <heading_import_blocks>
+                            <label>Import Static Blocks</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_import_blocks>
+                        <import_blocks>
+                            <label>Static Blocks</label>
+                            <comment>
+                                <![CDATA[Click this button to create all static blocks provided with legenda theme.]]>
+                            </comment>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>legenda/adminhtml_button_import_cms</frontend_model>
+                            <process>blocks</process>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </import_blocks>
+                        <overwrite_blocks>
+                            <label>Overwrite Existing Blocks</label>
+                            <comment>If the identifiers of the static blocks are already exist, you can set to "Yes" then save the configuration, then click the "Import Static Blocks" button.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </overwrite_blocks>
+                        <heading_import_pages>
+                            <label>Import CMS Pages</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_import_pages>
+                        <import_pages>
+                            <label>CMS Pages</label>
+                            <comment>
+                                <![CDATA[Click this button to create all CMS pages provided with legenda theme.]]>
+                            </comment>
+                            <frontend_type>button</frontend_type>
+                            <frontend_model>legenda/adminhtml_button_import_cms</frontend_model>
+                            <process>pages</process>
+                            <sort_order>210</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </import_pages>
+                        <overwrite_pages>
+                            <label>Overwrite Existing Pages</label>
+                            <comment>If the identifiers of the cms pages are already exist, you can set to "Yes" then save the configuration, then click the "Import CMS Pages" button.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>220</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </overwrite_pages>
+                    </fields>
+                </install>
+            </groups>
+        </legenda_setting>
+        <legenda_design translate="label" module="legenda">
+            <label>Legenda - Theme Design</label>
+            <tab>legenda</tab>
+            <sort_order>200</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label" module="legenda">
+                    <label>General</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <theme_style translate="label">
+                            <label>Theme Style</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_design_page_type</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </theme_style>
+                    </fields>
+                </general>
+                <colors translate="label" module="legenda">
+                    <label>Colors</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <basic_heading translate="label">
+                            <label>Basic Color</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </basic_heading>
+                        <txt_color translate="label">
+                            <label>Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>                            
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </txt_color>
+                        <link_color translate="label">
+                            <label>Link Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>                            
+                            <sort_order>25</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </link_color>
+                        <title_color translate="label">
+                            <label>Title Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>                            
+                            <sort_order>26</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title_color>
+                        <active_color translate="label">
+                            <label>Active Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>                            
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active_color>                        
+                        <btn_heading translate="label">
+                            <label>Buttons</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </btn_heading>
+                        <btn_color translate="label">
+                            <label>Button Font Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>45</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </btn_color>
+                        <btn_filled_color translate="label">                            
+                            <label>Filled Button Font Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>                            
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </btn_filled_color>
+                        <price_heading translate="label">
+                            <label>Price</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>700</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </price_heading>
+                        <price_color translate="label">
+                            <label>Price Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>                                            <sort_order>710</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </price_color>
+						<menu_icon_heading translate="label">
+                            <label>Menu Icon</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>750</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </menu_icon_heading>
+                        <menu_icon_color translate="label">
+                            <label>Icon Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>                                            <sort_order>760</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </menu_icon_color>
+                        <category_label_heading translate="label">
+                            <label>Category Labels</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>800</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </category_label_heading>
+                        <cat_lb1_bg_color translate="label">
+                            <label>Lebel1 Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>810</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cat_lb1_bg_color>
+                        <cat_lb1_txt_color translate="label">
+                            <label>Lebel1 Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>820</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cat_lb1_txt_color>
+                        <cat_lb2_bg_color translate="label">
+                            <label>Lebel2 Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>830</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cat_lb2_bg_color>
+                        <cat_lb2_txt_color translate="label">
+                            <label>Lebel2 Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>840</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cat_lb2_txt_color>
+                    </fields>
+                </colors>
+                <font translate="label">
+                    <label>Font</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>30</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <basic_heading translate="label">
+                            <label>Basic Font</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </basic_heading>
+                        <font_size translate="label">
+                            <label>Font Size</label>
+                            <frontend_type>text</frontend_type>                            
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </font_size>
+                        <primary_font_family_group translate="label">
+                            <label>Font Family</label>
+                            <comment>Select predefined font stack, Google Fonts or type in your custom font stack.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>all/system_config_source_design_font_family_groupcustomgoogle</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </primary_font_family_group>
+                        <primary_font_family_custom translate="label">
+                            <label>Custom</label>
+                            <comment>
+                                <![CDATA[Type in your custom font stack, e.g.:<br/>
+                                <em>Arial, "Helvetica Neue", Helvetica, sans-serif</em>
+                                <strong>Important</strong>: Do not add trailing semicolon.]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <primary_font_family_group>custom</primary_font_family_group>                                
+                            </depends>
+                        </primary_font_family_custom>
+                        <primary_font_family translate="label">
+                            <label>Font Family - Google Fonts</label>
+                            <comment>
+                                <![CDATA[Font preview is available on <a href="http://www.google.com/webfonts">Google Web Fonts</a>]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>all/system_config_source_design_font_family_google</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <primary_font_family_group>google</primary_font_family_group>                                
+                            </depends>
+                        </primary_font_family>
+                        <primary_char_latin_ext translate="label">
+                            <label>Character Set: Latin Extended</label>
+                            <comment>
+                                <![CDATA[Only selected fonts support extended character sets. For a complete list of available fonts and font subsets please refer to <a href="http://www.google.com/webfonts">Google Web Fonts</a>.]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <primary_font_family_group>google</primary_font_family_group>                                
+                            </depends>
+                        </primary_char_latin_ext>
+                        <heading_heading translate="label">
+                            <label>Header Font</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>70</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </heading_heading>                        
+                        <heading_font_family_group translate="label">
+                            <label>Font Family</label>
+                            <comment>Select predefined font stack, Google Fonts or type in your custom font stack.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>all/system_config_source_design_font_family_groupcustomgoogle</source_model>
+                            <sort_order>80</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </heading_font_family_group>
+                        <heading_font_family_custom translate="label">
+                            <label>Custom</label>
+                            <comment>
+                                <![CDATA[Type in your custom font stack, e.g.:<br/>
+                                <em>Arial, "Helvetica Neue", Helvetica, sans-serif</em>
+                                <strong>Important</strong>: Do not add trailing semicolon.]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <heading_font_family_group>custom</heading_font_family_group>                                
+                            </depends>
+                        </heading_font_family_custom>
+                        <heading_font_family translate="label">
+                            <label>Font Family - Google Fonts</label>
+                            <comment>
+                                <![CDATA[Font preview is available on <a href="http://www.google.com/webfonts">Google Web Fonts</a>]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>all/system_config_source_design_font_family_google</source_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <heading_font_family_group>google</heading_font_family_group>                                
+                            </depends>
+                        </heading_font_family>                        
+                        <sub_heading translate="label">
+                            <label>Sub Header Font</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sub_heading>                        
+                        <sub_font_family_group translate="label">
+                            <label>Font Family</label>
+                            <comment>Select predefined font stack, Google Fonts or type in your custom font stack.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>all/system_config_source_design_font_family_groupcustomgoogle</source_model>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </sub_font_family_group>
+                        <sub_font_family_custom translate="label">
+                            <label>Custom</label>
+                            <comment>
+                                <![CDATA[Type in your custom font stack, e.g.:<br/>
+                                <em>Arial, "Helvetica Neue", Helvetica, sans-serif</em>
+                                <strong>Important</strong>: Do not add trailing semicolon.]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <sub_font_family_group>custom</sub_font_family_group>                                
+                            </depends>
+                        </sub_font_family_custom>
+                        <sub_font_family translate="label">
+                            <label>Font Family - Google Fonts</label>
+                            <comment>
+                                <![CDATA[Font preview is available on <a href="http://www.google.com/webfonts">Google Web Fonts</a>]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>all/system_config_source_design_font_family_google</source_model>
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <sub_font_family_group>google</sub_font_family_group>                                
+                            </depends>
+                        </sub_font_family>
+                    </fields>
+                </font>
+                <page translate="label" module="legenda">
+                    <label>Page</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <main_heading translate="label comment">
+                            <label>Main Background</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </main_heading>
+                        <main_bg translate="label comment">
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>  
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </main_bg>
+                        <main_bg_texture translate="label comment">
+                            <label>Background Texture</label>
+                            <frontend_type>select</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_texture</frontend_model>
+                            <source_model>all/system_config_source_design_texture_names</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </main_bg_texture>
+                        <body_heading translate="label comment">
+                            <label>Body Background</label>
+                            <comment>This settings are effective in boxed version</comment>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </body_heading>
+                        <body_bg translate="label comment">
+                            <label>Background Color</label>
+                            <comment>This setting is effective in boxed version</comment>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>  
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </body_bg>
+                        <body_bg_type translate="label comment">
+                            <label>Body Background Type</label>
+                            <comment>This setting is effective in boxed version</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>legenda/system_config_source_design_page_bgtype</source_model>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </body_bg_type>
+                        <body_bg_texture translate="label comment">
+                            <label>Background Texture</label>
+                            <comment>This setting is effective in boxed version</comment>
+                            <frontend_type>select</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_texture</frontend_model>
+                            <source_model>all/system_config_source_design_texture_names</source_model>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <body_bg_type>texture</body_bg_type>
+                            </depends>
+                        </body_bg_texture>
+                        <body_bg_img translat="label">
+                            <label>Background Image</label>
+                            <comment>This setting is effective in boxed version</comment>
+                            <frontend_type>image</frontend_type>
+                            <backend_model>adminhtml/system_config_backend_image</backend_model>
+                            <upload_dir config="system/filesystem/media" scope_info="1">smartwave/legenda</upload_dir>
+                            <base_url type="media" scope_info="1">smartwave/legenda</base_url>
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <body_bg_type>image</body_bg_type>
+                            </depends>
+                        </body_bg_img>
+                    </fields>
+                </page>
+                <header translate="label" module="legenda">
+                    <label>Header</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <top_heading translate="label">
+                            <label>Top Bar</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </top_heading>
+                        <top_bg_color translate="label">
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>  
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </top_bg_color>
+                        <top_link_color translate="label">
+                            <label>Link Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>                            
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </top_link_color>                        
+                        <top_border_color translate="label">
+                            <label>Border Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>                            
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </top_border_color>     
+                        <!--version 1.1.0 start-->
+                        <header_container_heading translate="label">
+                            <label>Main Header</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </header_container_heading>
+                        <main_header_bg_color translate="label">
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </main_header_bg_color>                                                
+                        <!--version 1.1.0 end-->
+                        <nav_heading translate="label">
+                            <label>Main Navigation</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </nav_heading>
+                        <nav_bg_color translate="label">
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>210</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </nav_bg_color>                        
+                        <nav_font_color translate="label">
+                            <label>Font Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>215</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </nav_font_color>
+                        <nav_font_custom translate="label">
+                            <label>Use Custom Font</label>                            
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>230</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>                            
+                        </nav_font_custom>
+                        <top_font_family_group translate="label">
+                            <label>Top Menu Font Family</label>
+                            <comment>Select predefined font stack, Google Fonts or type in your custom font stack.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>all/system_config_source_design_font_family_groupcustomgoogle</source_model>
+                            <sort_order>240</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <nav_font_custom>1</nav_font_custom>
+                            </depends>                            
+                        </top_font_family_group>
+                        <top_font_family_custom translate="label">
+                            <label>Top Menu Custom</label>
+                            <comment>
+                                <![CDATA[Type in your custom font stack, e.g.:<br/>
+                                <em>Arial, "Helvetica Neue", Helvetica, sans-serif</em>
+                                <strong>Important</strong>: Do not add trailing semicolon.]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>250</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <top_font_family_group>custom</top_font_family_group>
+                                <nav_font_custom>1</nav_font_custom>
+                            </depends>
+                        </top_font_family_custom>
+                        <top_font_family translate="label">
+                            <label>Top Menu Font Family - Google Fonts</label>
+                            <comment>
+                                <![CDATA[Font preview is available on <a href="http://www.google.com/webfonts">Google Web Fonts</a>]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>all/system_config_source_design_font_family_google</source_model>
+                            <sort_order>260</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <top_font_family_group>google</top_font_family_group>
+                                <nav_font_custom>1</nav_font_custom>                                
+                            </depends>
+                        </top_font_family>
+                        <toplv_font_family_group translate="label">
+                            <label>Top Level Font Family</label>
+                            <comment>Select predefined font stack, Google Fonts or type in your custom font stack.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>all/system_config_source_design_font_family_groupcustomgoogle</source_model>
+                            <sort_order>270</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <nav_font_custom>1</nav_font_custom>
+                            </depends>                            
+                        </toplv_font_family_group>
+                        <toplv_font_family_custom translate="label">
+                            <label>Top Level Custom</label>
+                            <comment>
+                                <![CDATA[Type in your custom font stack, e.g.:<br/>
+                                <em>Arial, "Helvetica Neue", Helvetica, sans-serif</em>
+                                <strong>Important</strong>: Do not add trailing semicolon.]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>280</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <toplv_font_family_group>custom</toplv_font_family_group>
+                                <nav_font_custom>1</nav_font_custom>                                
+                            </depends>
+                        </toplv_font_family_custom>
+                        <toplv_font_family translate="label">
+                            <label>Top Level Font Family - Google Fonts</label>
+                            <comment>
+                                <![CDATA[Font preview is available on <a href="http://www.google.com/webfonts">Google Web Fonts</a>]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>all/system_config_source_design_font_family_google</source_model>
+                            <sort_order>290</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <toplv_font_family_group>google</toplv_font_family_group>                                
+                            </depends>
+                        </toplv_font_family>
+                        <sublv_font_family_group translate="label">
+                            <label>Sub Level Font Family</label>
+                            <comment>Select predefined font stack, Google Fonts or type in your custom font stack.</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>all/system_config_source_design_font_family_groupcustomgoogle</source_model>
+                            <sort_order>300</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <nav_font_custom>1</nav_font_custom>
+                            </depends>                            
+                        </sublv_font_family_group>
+                        <sublv_font_family_custom translate="label">
+                            <label>Sub Level Custom</label>
+                            <comment>
+                                <![CDATA[Type in your custom font stack, e.g.:<br/>
+                                <em>Arial, "Helvetica Neue", Helvetica, sans-serif</em>
+                                <strong>Important</strong>: Do not add trailing semicolon.]]>
+                            </comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>310</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <sublv_font_family_group>custom</sublv_font_family_group>
+                                <nav_font_custom>1</nav_font_custom>                                
+                            </depends>
+                        </sublv_font_family_custom>
+                        <sublv_font_family translate="label">
+                            <label>Sub Level Font Family - Google Fonts</label>
+                            <comment>
+                                <![CDATA[Font preview is available on <a href="http://www.google.com/webfonts">Google Web Fonts</a>]]>
+                            </comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>all/system_config_source_design_font_family_google</source_model>
+                            <sort_order>320</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <sublv_font_family_group>google</sublv_font_family_group>
+                                <nav_font_custom>1</nav_font_custom>                                
+                            </depends>
+                        </sublv_font_family>
+                        <sticky_bg_color translate="label">
+                            <label>Sticky Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>330</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sticky_bg_color>
+                        <sticky_bg_trans>
+                            <label>Sticky Transparency Background</label>
+                            <frontend_type>select</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_transparency</frontend_model>
+                            <source_model>all/system_config_source_design_transparency_names</source_model>
+                            <sort_order>340</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sticky_bg_trans>                        
+                        <popup_bg_color translate="label">
+                            <label>Popup Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>350</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </popup_bg_color>
+                        <popup_bg_trans>
+                            <label>Popup Transparency Background</label>
+                            <frontend_type>select</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_transparency</frontend_model>
+                            <source_model>all/system_config_source_design_transparency_names</source_model>
+                            <sort_order>360</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </popup_bg_trans>                        
+                    </fields>
+                </header>
+                <footer translate="label" module="legenda">
+                    <label>Footer</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <footer_top_heading translate="label">
+                            <label>Footer Top</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_top_heading>
+                        <footer_top_bg_color translate="label">
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_top_bg_color>
+                        <footer_top_ttl_color translate="label">
+                            <label>Title Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_top_ttl_color>
+                        <footer_top_txt_color translate="label">
+                            <label>Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>130</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_top_txt_color>
+                        <footer_top_active_color translate="label">
+                            <label>Active Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>140</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_top_active_color>
+                        <footer_top_bt_border_color translate="label">
+                            <label>Item Bottom Border Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>150</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_top_bt_border_color>
+                        <footer_top_border translate="label">
+                            <label>Use Top Border?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>160</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_top_border>
+                        <footer_top_tp_border_color translate="label">
+                            <label>Top Border Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>170</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_top_border>1</footer_top_border>
+                            </depends>
+                        </footer_top_tp_border_color>
+                        <footer_bottom_heading translate="label">
+                            <label>Footer Bottom</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_bottom_heading>
+                        <footer_bottom_bg_color translate="label">
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>210</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_bottom_bg_color>
+                        <footer_bottom_ttl_color translate="label">
+                            <label>Title Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>220</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_bottom_ttl_color>
+                        <footer_bottom_txt_color translate="label">
+                            <label>Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>230</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_bottom_txt_color>
+                        <footer_bottom_active_color translate="label">
+                            <label>Active Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>240</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_bottom_active_color>
+                        <footer_bottom_bt_border_color translate="label">
+                            <label>Item Bottom Border Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>250</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_bottom_bt_border_color>
+                        <footer_bottom_border translate="label">
+                            <label>Use Top Border?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>260</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_bottom_border>
+                        <footer_bottom_tp_border_color translate="label">
+                            <label>Top Border Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>270</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_bottom_border>1</footer_bottom_border>
+                            </depends>
+                        </footer_bottom_tp_border_color>
+                        <footer_copyright_heading translate="label">
+                            <label>Copyright</label>
+                            <frontend_model>adminhtml/system_config_form_field_heading</frontend_model>
+                            <sort_order>300</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_copyright_heading>
+                        <footer_copyright_bg_color translate="label">
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>310</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_copyright_bg_color>
+                        <footer_copyright_txt_color translate="label">
+                            <label>Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>330</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_copyright_txt_color>
+                        <footer_copyright_border translate="label">
+                            <label>Use Top Border?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>340</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </footer_copyright_border>
+                        <footer_copyright_tp_border_color translate="label">
+                            <label>Top Border Color</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>all/adminhtml_system_config_form_field_color</frontend_model>
+                            <backend_model>all/system_config_backend_design_color_validatetransparent</backend_model>
+                            <sort_order>350</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends>
+                                <footer_copyright_border>1</footer_copyright_border>
+                            </depends>
+                        </footer_copyright_tp_border_color>
+                    </fields>
+                </footer>
+            </groups>
+        </legenda_design>
+    </sections>
+</config>

@@ -1,0 +1,22 @@
+<div class="block-facebook-like ">
+    <h3 class="footer-title facebook-title"><?php echo $this->__('Facebook') ?></h3>    
+<?php
+$socialfeeds = $this->helper('socialfeeds');
+
+$fb_result = $socialfeeds->getFBFans();
+if ($fb_result) : ?>
+<?php 
+    $fb_profile = $fb_result['profile'];
+    $fb_fans = $fb_result['fans'];
+    $fb_limit = $fb_result['limit'];
+?>
+
+    <div class="block-content">
+        <p><?php echo $fb_profile['likes'] ?> <?php echo $this->__('people like') ?> <a target="_blank" href="<?php echo $fb_profile['link'] ?>" title="<?php echo $fb_profile['name'] ?>"><?php echo $fb_profile['name'] ?></a></p>
+        <div class="clearfix fb-persons">
+            <?php echo $fb_fans ?>            
+        </div>
+    </div>
+<?php endif; ?>
+
+</div>                

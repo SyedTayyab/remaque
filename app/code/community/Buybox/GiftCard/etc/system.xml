@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<config>
+	<sections>
+		<gift_card translate="label" module="gift_card">
+			<label>Buybox Social Gift Card</label>
+			<tab>sales</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>351</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+				<checkout translate="label">
+					<label>Checkout Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>10</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<active translate="label">
+							<label>Enable Buybox checkout</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<config_path>payment/gift_card_payment/active</config_path>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</active>
+						<api_username translate="label">
+							<label>Payment API username</label>
+							<config_path>payment/gift_card_payment/api_username</config_path>
+							<frontend_type>obscure</frontend_type>
+							<backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+							<!-- <frontend_class>required-entry</frontend_class> -->
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</api_username>
+						<api_password translate="label">
+							<label>Payment API password</label>
+							<config_path>payment/gift_card_payment/api_password</config_path>
+							<frontend_type>obscure</frontend_type>
+							<backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</api_password>
+						<api_signature translate="label">
+							<label>Payment API signature</label>
+							<config_path>payment/gift_card_payment/api_signature</config_path>
+							<backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+							<frontend_type>obscure</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</api_signature>
+						<sandbox_flag translate="label">
+							<label>Sandbox mode</label>
+							<config_path>payment/gift_card_payment/sandbox_flag</config_path>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</sandbox_flag>
+						<sort_order translate="label">
+							<label>Payment sort order</label>
+							<config_path>payment/gift_card_payment/sort_order</config_path>
+							<frontend_type>text</frontend_type>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</sort_order>
+						<payment_action translate="label">
+							<label>Payment action</label>
+							<config_path>payment/gift_card_payment/payment_action</config_path>
+							<frontend_type>select</frontend_type>
+							<source_model>gift_card/config::getPaymentActions</source_model>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</payment_action>
+						<user_action translate="label">
+							<label>User action</label>
+							<config_path>payment/gift_card_payment/user_action</config_path>
+							<frontend_type>select</frontend_type>
+							<source_model>gift_card/config::getUserActions</source_model>
+							<sort_order>7</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</user_action>
+						<title translate="label comment">
+							<label>Payment title at checkout page</label>
+							<comment>Example: Use your gift card</comment>
+							<config_path>payment/gift_card_payment/title</config_path>
+							<frontend_type>text</frontend_type>
+							<required>1</required>
+							<sort_order>8</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</title>
+					</fields>
+				</checkout>
+
+				<front translate="label">
+					<label>FrontEnd Experience Settings</label>
+					<frontend_type>text</frontend_type>
+					<sort_order>20</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+<!--						<api_key translate="label">
+							<label>Javascript API key</label>
+							<config_path>gift_card/front/api_key</config_path>
+							<frontend_type>obscure</frontend_type>
+							<backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+						</api_key>-->
+<!--						<client_id translate="label">
+							<label>client_id</label>
+							<config_path>gift_card/front/client_id</config_path>
+							<frontend_type>obscure</frontend_type>
+							<backend_model>adminhtml/system_config_backend_encrypted</backend_model>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+						</client_id>-->
+						<domain translate="label comment">
+							<label>Service domain</label>
+							<comment>Example: lapomme.buybox.net</comment>
+							<config_path>gift_card/front/domain</config_path>
+							<frontend_type>text</frontend_type>
+							<sort_order>3</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</domain>
+<!--						<modal_flag translate="label">
+							<label>Modal popup</label>
+							<config_path>gift_card/front/modal_flag</config_path>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>4</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+						</modal_flag>-->
+
+						<button_enabled translate="label">
+							<label>Display action button</label>
+							<config_path>gift_card/front/button_enabled</config_path>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>5</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+						</button_enabled>
+
+<!--						<button_image translate="label">
+							<label>Upload your customized image of this button</label>
+							<config_path>gift_card/front/button_image</config_path>
+							<frontend_type>image</frontend_type>
+							<upload_dir config="system/filesystem/media" scope_info="1">gift_card/buttons</upload_dir>
+							<base_url type="media" scope_info="1">gift_card/buttons</base_url>
+							<backend_model>adminhtml/system_config_backend_image</backend_model>
+							<sort_order>6</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+						</button_image>-->
+
+					</fields>
+				</front>
+
+			</groups>
+		</gift_card>
+	</sections>
+</config>

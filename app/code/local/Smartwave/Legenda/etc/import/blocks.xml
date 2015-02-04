@@ -1,0 +1,1632 @@
+<root>
+   <blocks>
+      <cms_block>
+         <title>Home page top</title>
+         <identifier>home_page_top</identifier>
+         <content><![CDATA[<div class="content-element custom-bordered-wrapper" style="margin-bottom: 15px;">
+<div class="row">
+<div class="col-sm-4 custom-info-block text-left"><a href="#">Do You Have Any Question? <span class="colored-active">Call: (555) 343 458</span></a></div>
+<div class="col-sm-4 custom-info-block text-center"><a href="#">Get 15% Off When You Spend Over $100</a></div>
+<div class="col-sm-4 custom-info-block text-right"><a href="#">Free Shipping! <span class="colored-active">All Orders Over $199</span></a></div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Home Slider</title>
+         <identifier>home_slider_1</identifier>
+         <content><![CDATA[<ul>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/s1.jpg"}}" alt="" />
+<div class="tp-caption subtitle_white2 sfr" data-x="center" data-hoffset="290" data-y="115" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-endspeed="300">Best ecommerce wordpress theme</div>
+<div class="tp-caption title_white2 sft" data-x="center" data-hoffset="270" data-y="156" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300">Classic Elegance</div>
+<div class="tp-caption subtitle_white2 sft" data-x="center" data-hoffset="290" data-y="240" data-speed="300" data-start="1100" data-easing="Power3.easeInOut" data-endspeed="300">Give the class of your site with our template</div>
+<div class="tp-caption black sfr" data-x="center" data-hoffset="290" data-y="315" data-speed="300" data-start="1400" data-easing="Power3.easeInOut" data-endspeed="300"><a class="button white" href="#">All features</a>&nbsp;<a class="button white" href="#">Categories</a></div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300" data-delay="30000"><img src="{{media url="wysiwyg/s4.jpg"}}" alt="" />
+<div class="tp-caption subtitle_seagreen2 sfr" data-x="center" data-hoffset="290" data-y="114" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Best ecommerce magento theme</div>
+<div class="tp-caption title_seagreen2 sfr" data-x="center" data-hoffset="276" data-y="150" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Classic Elegance</div>
+<div class="tp-caption subtitle_seagreen2 sfr" data-x="center" data-hoffset="290" data-y="240" data-speed="300" data-start="1100" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Give the class of your site with our template</div>
+<div class="tp-caption black sfr" data-x="center" data-hoffset="290" data-y="315" data-speed="300" data-start="1400" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><a class="button white" href="#">All features</a>&nbsp; <a class="button white" href="#">Categories</a></div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300" data-delay="90000"><img src="{{media url="wysiwyg/s2.jpg"}}" alt="" />
+<div class="tp-caption subtitle_white2 lfl" data-x="center" data-hoffset="-290" data-y="115" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-endspeed="300">Best ecommerce wordpress theme</div>
+<div class="tp-caption title_white2 lfl" data-x="center" data-hoffset="-270" data-y="156" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300">Classic Elegance</div>
+<div class="tp-caption subtitle_white2 lfl" data-x="center" data-hoffset="-290" data-y="240" data-speed="300" data-start="1100" data-easing="Power3.easeInOut" data-endspeed="300">Give the class of your site with our template</div>
+<div class="tp-caption black lfl" data-x="center" data-hoffset="-290" data-y="315" data-speed="300" data-start="1400" data-easing="Power3.easeInOut" data-endspeed="300"><a class="button white" href="#">All features</a>&nbsp;<a class="button white" href="#">Categories</a></div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300" data-delay="1231232"><img src="{{media url="wysiwyg/s3.jpg"}}" alt="" />
+<div class="tp-caption subtitle_seagreen2 lfl" data-x="center" data-hoffset="-290" data-y="115" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-endspeed="300">Best ecommerce wordpress theme</div>
+<div class="tp-caption title_seagreen2 lfl" data-x="center" data-hoffset="-270" data-y="156" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300">Classic Elegance</div>
+<div class="tp-caption subtitle_seagreen2 lfl" data-x="center" data-hoffset="-290" data-y="240" data-speed="300" data-start="1100" data-easing="Power3.easeInOut" data-endspeed="300">Give the class of your site with our template</div>
+<div class="tp-caption black lfl" data-x="center" data-hoffset="-290" data-y="315" data-speed="300" data-start="1400" data-easing="Power3.easeInOut" data-endspeed="300"><a class="button white" href="#">All features</a>&nbsp;<a class="button white" href="#">Categories</a></div>
+</li>
+</ul>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Home Slider</title>
+         <identifier>home_slider_2</identifier>
+         <content><![CDATA[<ul><!-- SLIDE  -->
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/fullw1.jpg"}}" alt="" /> <!-- LAYERS --> <!-- LAYER NR. 1 -->
+<div class="tp-caption subtitle_white2 lfl start" data-x="center" data-hoffset="0" data-y="88" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-endspeed="300">Best ecommerce wordpress theme</div>
+<!-- LAYER NR. 2 -->
+<div class="tp-caption title_white2 lfl start" data-x="center" data-hoffset="0" data-y="137" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300">Classic Elegance</div>
+<!-- LAYER NR. 3 -->
+<div class="tp-caption subtitle_white2 lfl start" data-x="center" data-hoffset="0" data-y="201" data-speed="300" data-start="1100" data-easing="Power3.easeInOut" data-endspeed="300">Give the class of your site with our template</div>
+<!-- LAYER NR. 4 -->
+<div class="tp-caption text_white lfl start" data-x="center" data-hoffset="0" data-y="246" data-speed="300" data-start="1400" data-easing="Power3.easeInOut" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.</div>
+<!-- LAYER NR. 5 -->
+<div class="tp-caption text_white lfl start" data-x="center" data-hoffset="0" data-y="313" data-speed="300" data-start="1700" data-easing="Power3.easeInOut" data-endspeed="300"><a class="button white" href="#">All features</a> &nbsp; <a class="button white" href="#">Categories</a></div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><!-- MAIN IMAGE --> <img src="{{media url="wysiwyg/fullw2.jpg"}}" alt="" />
+<div class="tp-caption subtitle_white2 lfl start" data-x="center" data-hoffset="0" data-y="98" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-endspeed="300">Best ecommerce wordpress theme</div>
+<div class="tp-caption title_white2 lfl start" data-x="center" data-hoffset="0" data-y="133" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300">Classic Elegance</div>
+<div class="tp-caption subtitle_white2 lfl start" data-x="center" data-hoffset="0" data-y="208" data-speed="300" data-start="1100" data-easing="Power3.easeInOut" data-endspeed="300">Give the class of your site with our template</div>
+<div class="tp-caption text_white lfl start" data-x="center" data-hoffset="0" data-y="262" data-speed="300" data-start="1400" data-easing="Power3.easeInOut" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.</div>
+<div class="tp-caption text_white lfl start" data-x="center" data-hoffset="0" data-y="318" data-speed="300" data-start="1700" data-easing="Power3.easeInOut" data-endspeed="300"><a class="button white" href="#">All features</a> &nbsp; <a class="button white" href="#">Categories</a></div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><!-- MAIN IMAGE --> <img src="{{media url="wysiwyg/fullw3.jpg"}}" alt="" /> 
+<div class="tp-caption subtitle_white2 lfl start" data-x="center" data-hoffset="0" data-y="109" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-endspeed="300">Best ecommerce wordpress theme</div>
+<div class="tp-caption title_white2 lfl start" data-x="center" data-hoffset="0" data-y="144" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300">Classic Elegance</div>
+<div class="tp-caption subtitle_white2 lfl start" data-x="center" data-hoffset="0" data-y="222" data-speed="300" data-start="1100" data-easing="Power3.easeInOut" data-endspeed="300">Give the class of your site with our template</div>
+<div class="tp-caption text_white lfl start" data-x="center" data-hoffset="0" data-y="265" data-speed="300" data-start="1400" data-easing="Power3.easeInOut" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.</div>
+<div class="tp-caption text_white lfl start" data-x="center" data-hoffset="0" data-y="324" data-speed="300" data-start="1700" data-easing="Power3.easeInOut" data-endspeed="300"><a class="button white" href="#">All features</a> &nbsp; <a class="button white" href="#">Categories</a></div>
+</li>
+</ul>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Home Slider</title>
+         <identifier>home_slider_3</identifier>
+         <content><![CDATA[<ul>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide11.jpg"}}" alt="" />
+<div class="tp-caption restourant_subtitle sfl" data-x="center" data-hoffset="-335" data-y="166" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Work is our biggest passion</div>
+<div class="tp-caption toys_big lfb start" data-x="center" data-hoffset="-336" data-y="227" data-speed="300" data-start="900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">SMILE <span style="color: #f6dc00;">FACTORY</span></div>
+<div class="tp-caption text_white2 sfr start" data-x="center" data-hoffset="-335" data-y="345" data-speed="300" data-start="1200" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna <br>aliqua. Ut enim ad minim veniam.</div>
+<div class="tp-caption noshadow sfl start" data-x="center" data-hoffset="-335" data-y="center" data-voffset="-75" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="divider horizontal-break" /></div>
+<div class="tp-caption noshadow sfr start" data-x="center" data-hoffset="-335" data-y="center" data-voffset="19" data-speed="300" data-start="1000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="divider horizontal-break" /></div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide21.jpg"}}" alt="" />
+<div class="tp-caption restourant_subtitle sfl start" data-x="center" data-hoffset="330" data-y="162" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Work is our biggest passion</div>
+<div class="tp-caption toys_big lfb start" data-x="center" data-hoffset="330" data-y="227" data-speed="300" data-start="900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">SMILE <span style="color: #f6dc00;">FACTORY</span></div>
+<div class="tp-caption text_white2 sfr start" data-x="center" data-hoffset="330" data-y="345" data-speed="300" data-start="1200" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna <br>aliqua. Ut enim ad minim veniam.</div>
+<div class="tp-caption noshadow sfl start" data-x="center" data-hoffset="330" data-y="center" data-voffset="-75" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="divider horizontal-break" /></div>
+<div class="tp-caption noshadow sfr start" data-x="center" data-hoffset="330" data-y="center" data-voffset="19" data-speed="300" data-start="1000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="divider horizontal-break" /></div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide31.jpg"}}" alt="" />
+<div class="tp-caption restourant_subtitle sfl start" data-x="center" data-hoffset="-330" data-y="162" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Work is our biggest passion</div>
+<div class="tp-caption toys_big lfb start" data-x="center" data-hoffset="-330" data-y="227" data-speed="300" data-start="900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">SMILE <span style="color: #f6dc00;">FACTORY</span></div>
+<div class="tp-caption text_white2 sfr start" data-x="center" data-hoffset="-330" data-y="345" data-speed="300" data-start="1200" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna <br>aliqua. Ut enim ad minim veniam.</div>
+<div class="tp-caption noshadow sfl start" data-x="center" data-hoffset="-330" data-y="center" data-voffset="-75" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="divider horizontal-break" /></div>
+<div class="tp-caption noshadow sfr start" data-x="center" data-hoffset="-330" data-y="center" data-voffset="19" data-speed="300" data-start="1000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="divider horizontal-break" /></div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide4.jpg"}}" alt="" />
+<div class="tp-caption restourant_subtitle sfl start" data-x="center" data-hoffset="330" data-y="162" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Work is our biggest passion</div>
+<div class="tp-caption toys_big lfb start" data-x="center" data-hoffset="330" data-y="227" data-speed="300" data-start="900" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">SMILE <span style="color: #f6dc00;">FACTORY</span></div>
+<div class="tp-caption text_white2 sfr start" data-x="center" data-hoffset="330" data-y="345" data-speed="300" data-start="1200" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br> eiusmod tempor incididunt ut labore et dolore magna <br>aliqua. Ut enim ad minim veniam.</div>
+<div class="tp-caption noshadow sfl start" data-x="center" data-hoffset="330" data-y="center" data-voffset="-75" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="divider horizontal-break" /></div>
+<div class="tp-caption noshadow sfr start" data-x="center" data-hoffset="330" data-y="center" data-voffset="19" data-speed="300" data-start="1000" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="divider horizontal-break" /></div>
+</li>
+</ul>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Home Slider</title>
+         <identifier>home_slider_4</identifier>
+         <content><![CDATA[<ul>
+<li data-transition="slideleft" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_4_1.jpg"}}" alt="" />
+<div class="tp-caption restourant_subtitle sft start" data-x="center" data-hoffset="-2" data-y="151" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Best ecommerce wordpress theme</div>
+<div class="tp-caption restourant_big lfb start" data-x="center" data-hoffset="-2" data-y="187" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">CLASSIC ELEGANCE</div>
+<div class="tp-caption text_white2 sfb start" data-x="center" data-hoffset="9" data-y="280" data-speed="300" data-start="1100" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.</div>
+</li>
+<li data-transition="slideleft" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_4_2.jpg"}}" alt="" />
+<div class="tp-caption restourant_subtitle sft start" data-x="center" data-hoffset="255" data-y="142" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Ecommerce wordpress theme</div>
+<div class="tp-caption restourant_big lfb start" data-x="center" data-hoffset="258" data-y="183" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">ITALIAN WINE</div>
+<div class="tp-caption text_white2 sfb start" data-x="center" data-hoffset="263" data-y="280" data-speed="300" data-start="1100" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.</div>
+</li>
+<li data-transition="slideleft" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_4_3.jpg"}}" alt="" />
+<div class="tp-caption restourant_subtitle sft start" data-x="center" data-hoffset="-301" data-y="132" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Ecommerce wordpress theme</div>
+<div class="tp-caption restourant_big lfb start" data-x="center" data-hoffset="-304" data-y="165" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">ITALIAN PIZZA</div>
+<div class="tp-caption text_white2 sfb start" data-x="center" data-hoffset="-296" data-y="256" data-speed="300" data-start="1100" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.</div>
+</li>
+</ul>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Home Slider</title>
+         <identifier>home_slider_5</identifier>
+         <content><![CDATA[<ul style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: 500px;">
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_5_1.jpg"}}" alt="" />
+<div class="tp-caption underwear_subtitle lft start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-86" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Professional running shoes</div>
+<div class="tp-caption sport_big lfb start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-32" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Crossfit Time</div>
+<div class="tp-caption noshadow lfb start" data-x="center" data-hoffset="0" data-y="center" data-voffset="35" data-speed="300" data-start="700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><a class="button filled" style="background: #000; border: none;" href="#">Features List</a> <a class="button filled" style="background: #000; border: none;" href="#">Categories</a></div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_5_2.jpg"}}" alt="" />
+<div class="tp-caption underwear_subtitle lft start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-86" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Professional running shoes</div>
+<div class="tp-caption sport_big lfb start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-32" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Football Time</div>
+<div class="tp-caption noshadow lfb start" data-x="center" data-hoffset="0" data-y="center" data-voffset="35" data-speed="300" data-start="700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><a class="button filled" style="background: #000; border: none; opacity: 0.8;" href="#">Features List</a> <a class="button filled" style="background: #000; border: none; opacity: 0.8;" href="#">Categories</a></div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_5_3.jpg"}}" alt="" />
+<div class="tp-caption underwear_subtitle lft start" data-x="center" data-hoffset="-350" data-y="center" data-voffset="-86" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><span style="color: #fee57e;">the generation game</span></div>
+<div class="tp-caption sport_big lfb start" data-x="center" data-hoffset="-350" data-y="center" data-voffset="-32" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Dancing</div>
+<div class="tp-caption noshadow lfb start" data-x="center" data-hoffset="-350" data-y="center" data-voffset="35" data-speed="300" data-start="700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><a class="button filled" style="background: #000; border: none; opacity: 0.8;" href="#">Features List</a> <a class="button filled" style="background: #000; border: none; opacity: 0.8;" href="#">Categories</a></div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_5_4.jpg"}}" alt="" />
+<div class="tp-caption underwear_subtitle lft start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-86" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><span style="color: #000;">Professional running shoes</span></div>
+<div class="tp-caption sport_big lfb start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-32" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Running Time</div>
+<div class="tp-caption noshadow lfb start" data-x="center" data-hoffset="0" data-y="center" data-voffset="35" data-speed="300" data-start="700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><a class="button filled" style="background: #000; border: none; opacity: 0.8;" href="#">Features List</a> <a class="button filled" style="background: #000; border: none; opacity: 0.8;" href="#">Categories</a></div>
+</li>
+</ul>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Home Slider</title>
+         <identifier>home_slider_6</identifier>
+         <content><![CDATA[<ul style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: 500px;">
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_6_1.jpg"}}" alt="" />
+<div class="tp-caption underwear_subtitle lft start" data-x="center" data-hoffset="-250" data-y="center" data-voffset="-86" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Professional running shoes</div>
+<div class="tp-caption candy_big lfb start" data-x="center" data-hoffset="-250" data-y="center" data-voffset="-32" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Classic Elegance</div>
+<div class="tp-caption text_white lfb start" data-x="center" data-hoffset="-250" data-y="center" data-voffset="35" data-speed="300" data-start="700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="horizontal-break" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.</div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_6_2.jpg"}}" alt="" />
+<div class="tp-caption underwear_subtitle lft start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-86" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Professional running shoes</div>
+<div class="tp-caption candy_big lfb start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-32" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Classic Elegance</div>
+<div class="tp-caption text_white lfb start" data-x="center" data-hoffset="0" data-y="center" data-voffset="35" data-speed="300" data-start="700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="horizontal-break" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.</div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_6_3.jpg"}}" alt="" />
+<div class="tp-caption underwear_subtitle lft start" data-x="center" data-hoffset="-250" data-y="center" data-voffset="-86" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Professional running shoes</div>
+<div class="tp-caption candy_big lfb start" data-x="center" data-hoffset="-250" data-y="center" data-voffset="-32" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Classic Elegance</div>
+<div class="tp-caption text_white lfb start" data-x="center" data-hoffset="-250" data-y="center" data-voffset="35" data-speed="300" data-start="700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="horizontal-break" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.</div>
+</li>
+</ul>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Home Slider</title>
+         <identifier>home_slider_7</identifier>
+         <content><![CDATA[<ul>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_7_1.jpg"}}" alt="" />
+<div class="tp-caption subtitle_white2 sft start" data-x="center" data-hoffset="-2" data-y="141" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Best Magento theme</div>
+<div class="tp-caption restourant_big lfb start" data-x="center" data-hoffset="-2" data-y="177" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">CLASSIC ELEGANCE</div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_7_2.jpg"}}" alt="" />
+<div class="tp-caption subtitle_white2 sft start" data-x="center" data-hoffset="-2" data-y="141" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Ecommerce Magento theme</div>
+<div class="tp-caption restourant_big lfb start" data-x="center" data-hoffset="-2" data-y="177" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">CLASSIC ELEGANCE</div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_7_3.jpg"}}" alt="" />
+<div class="tp-caption subtitle_white2 sft start" data-x="center" data-hoffset="-2" data-y="141" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Ecommerce Magento theme</div>
+<div class="tp-caption restourant_big lfb start" data-x="center" data-hoffset="-2" data-y="177" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">CLASSIC ELEGANCE</div>
+</li>
+</ul>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Home Slider</title>
+         <identifier>home_slider_8</identifier>
+         <content><![CDATA[<ul style="display: block; overflow: hidden; width: 100%; height: 100%; max-height: 500px;">
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_8_1.jpg"}}" alt="" />
+<div class="tp-caption underwear_subtitle lft start" data-x="center" data-hoffset="-249" data-y="center" data-voffset="-76" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><span style="color: #f5d568;">Professional running shoes</span></div>
+<div class="tp-caption watches_big lfb start" data-x="center" data-hoffset="-250" data-y="center" data-voffset="-32" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Crossfit Time</div>
+<div class="tp-caption noshadow lfb start" data-x="center" data-hoffset="-248" data-y="center" data-voffset="13" data-speed="300" data-start="700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="horizontal-break" /></div>
+<div class="tp-caption text_white lfb start" data-x="center" data-hoffset="-246" data-y="center" data-voffset="50" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt dolore magna aliqua.Ut enim ad minim veniam.</div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_8_2.jpg"}}" alt="" />
+<div class="tp-caption underwear_subtitle lft start" data-x="center" data-hoffset="280" data-y="center" data-voffset="-76" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><span style="color: #f5d568;">Professional running shoes</span></div>
+<div class="tp-caption watches_big lfb start" data-x="center" data-hoffset="280" data-y="center" data-voffset="-32" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Crossfit Time</div>
+<div class="tp-caption noshadow lfb start" data-x="center" data-hoffset="280" data-y="center" data-voffset="13" data-speed="300" data-start="700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="horizontal-break" /></div>
+<div class="tp-caption text_white lfb start" data-x="center" data-hoffset="280" data-y="center" data-voffset="50" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt dolore magna aliqua.Ut enim ad minim veniam.</div>
+</li>
+</ul>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Home Slider</title>
+         <identifier>home_slider_9</identifier>
+         <content><![CDATA[<ul>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_9_1.jpg"}}" alt="" />
+<div class="tp-caption underwear_subtitle lft start" data-x="center" data-hoffset="250" data-y="center" data-voffset="-76" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">The game is available from 10 April</div>
+<div class="tp-caption cars_big lfb start" data-x="center" data-hoffset="250" data-y="center" data-voffset="-32" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Become a soldier</div>
+<div class="tp-caption noshadow lfb start" data-x="center" data-hoffset="250" data-y="center" data-voffset="13" data-speed="300" data-start="700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="horizontal-break" /></div>
+<div class="tp-caption text_white lfb start" data-x="center" data-hoffset="250" data-y="center" data-voffset="50" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt dolore magna aliqua.Ut enim ad minim veniam.</div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_9_2.jpg"}}" alt="" />
+<div class="tp-caption underwear_subtitle lft start" data-x="center" data-hoffset="250" data-y="center" data-voffset="-76" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">The game is available from 10 April</div>
+<div class="tp-caption cars_big lfb start" data-x="center" data-hoffset="250" data-y="center" data-voffset="-32" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Winter is coming</div>
+<div class="tp-caption noshadow lfb start" data-x="center" data-hoffset="250" data-y="center" data-voffset="13" data-speed="300" data-start="700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="horizontal-break" /></div>
+<div class="tp-caption text_white lfb start" data-x="center" data-hoffset="250" data-y="center" data-voffset="50" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt dolore magna aliqua.Ut enim ad minim veniam.</div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_9_3.jpg"}}" alt="" />
+<div class="tp-caption underwear_subtitle lft start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-76" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300">The game is available from 10 April</div>
+<div class="tp-caption cars_big lfb start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-32" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300">championship in Brazil</div>
+<div class="tp-caption noshadow lfb start" data-x="center" data-hoffset="0" data-y="center" data-voffset="13" data-speed="300" data-start="700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300"><hr class="horizontal-break" /></div>
+<div class="tp-caption text_white lfb start" data-x="center" data-hoffset="0" data-y="center" data-voffset="50" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt dolore magna aliqua.Ut enim ad minim veniam.</div>
+</li>
+</ul>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Home Slider</title>
+         <identifier>home_slider_10</identifier>
+         <content><![CDATA[<ul>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_10_1.jpg"}}" alt="" />
+<div class="tp-caption underwear_subtitle lft start" data-x="center" data-hoffset="-249" data-y="center" data-voffset="-76" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">A completely new line of tires in our offer</div>
+<div class="tp-caption cars_big lfb start" data-x="center" data-hoffset="-250" data-y="center" data-voffset="-32" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">new sports tires</div>
+<div class="tp-caption noshadow lfb start" data-x="center" data-hoffset="-248" data-y="center" data-voffset="13" data-speed="300" data-start="700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="horizontal-break" /></div>
+<div class="tp-caption text_white lfb start" data-x="center" data-hoffset="-246" data-y="center" data-voffset="50" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt dolore magna aliqua.Ut enim ad minim veniam.</div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_10_2.jpg"}}" alt="" />
+<div class="tp-caption underwear_subtitle lft start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-76" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">A completely new line of tires in our offer</div>
+<div class="tp-caption cars_big lfb start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-32" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">new sports tires</div>
+<div class="tp-caption noshadow lfb start" data-x="center" data-hoffset="0" data-y="center" data-voffset="13" data-speed="300" data-start="700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="horizontal-break" /></div>
+<div class="tp-caption text_white lfb start" data-x="center" data-hoffset="0" data-y="center" data-voffset="50" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt dolore magna aliqua.Ut enim ad minim veniam.</div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/slide_10_3.jpg"}}" alt="" />
+<div class="tp-caption underwear_subtitle lft start" data-x="center" data-hoffset="250" data-y="center" data-voffset="-76" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">A completely new line of tires in our offer</div>
+<div class="tp-caption cars_big lfb start" data-x="center" data-hoffset="250" data-y="center" data-voffset="-32" data-speed="300" data-start="600" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">new sports tires</div>
+<div class="tp-caption noshadow lfb start" data-x="center" data-hoffset="250" data-y="center" data-voffset="13" data-speed="300" data-start="700" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><hr class="horizontal-break" /></div>
+<div class="tp-caption text_white lfb start" data-x="center" data-hoffset="250" data-y="center" data-voffset="50" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt dolore magna aliqua.Ut enim ad minim veniam.</div>
+</li>
+</ul>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Home Slider</title>
+         <identifier>home_slider_11</identifier>
+         <content><![CDATA[<ul>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300"><img src="{{media url="wysiwyg/home_slider111.jpg"}}" alt="" />
+<div class="tp-caption subtitle_seagreen2 sfr" style="color: #1b1b1b;" data-x="center" data-hoffset="290" data-y="115" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-endspeed="300">Best ecommerce wordpress theme</div>
+<div class="tp-caption title_seagreen2 sft" style="color: #1b1b1b;" data-x="center" data-hoffset="270" data-y="156" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300">Classic Elegance</div>
+<div class="tp-caption subtitle_seagreen2 sft" style="color: #1b1b1b;" data-x="center" data-hoffset="290" data-y="240" data-speed="300" data-start="1100" data-easing="Power3.easeInOut" data-endspeed="300">Give the class of your site with our template</div>
+<div class="tp-caption black sfr" data-x="center" data-hoffset="290" data-y="315" data-speed="300" data-start="1400" data-easing="Power3.easeInOut" data-endspeed="300"><a class="button white" href="#">All features</a>&nbsp;<a class="button white" href="#">Categories</a></div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300" data-delay="30000"><img src="{{media url="wysiwyg/home_slider112.jpg"}}" alt="" />
+<div class="tp-caption subtitle_white2 sfr" data-x="center" data-hoffset="290" data-y="114" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Best ecommerce magento theme</div>
+<div class="tp-caption title_white2 sfr" data-x="center" data-hoffset="276" data-y="150" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Classic Elegance</div>
+<div class="tp-caption subtitle_whit2e sfr" data-x="center" data-hoffset="290" data-y="240" data-speed="300" data-start="1100" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300">Give the class of your site with our template</div>
+<div class="tp-caption black sfr" data-x="center" data-hoffset="290" data-y="315" data-speed="300" data-start="1400" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none" data-elementdelay="0" data-endelementdelay="0" data-endspeed="300"><a class="button white" href="#">All features</a>&nbsp; <a class="button white" href="#">Categories</a></div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300" data-delay="90000"><img src="{{media url="wysiwyg/home_slider113.jpg"}}" alt="" />
+<div class="tp-caption subtitle_seagreen2 lfl" style="color: #1b1b1b;" data-x="center" data-hoffset="-290" data-y="115" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-endspeed="300">Best ecommerce wordpress theme</div>
+<div class="tp-caption title_seagreen2 lfl" style="color: #1b1b1b;" data-x="center" data-hoffset="-270" data-y="156" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300">Classic Elegance</div>
+<div class="tp-caption subtitle_seagreen2 lfl" style="color: #1b1b1b;" data-x="center" data-hoffset="-290" data-y="240" data-speed="300" data-start="1100" data-easing="Power3.easeInOut" data-endspeed="300">Give the class of your site with our template</div>
+<div class="tp-caption black lfl" data-x="center" data-hoffset="-290" data-y="315" data-speed="300" data-start="1400" data-easing="Power3.easeInOut" data-endspeed="300"><a class="button white" href="#">All features</a>&nbsp;<a class="button white" href="#">Categories</a></div>
+</li>
+<li data-transition="slidehorizontal" data-slotamount="7" data-masterspeed="300" data-delay="1231232"><img src="{{media url="wysiwyg/home_slider114.jpg"}}" alt="" />
+<div class="tp-caption subtitle_white2 lfl" data-x="center" data-hoffset="-290" data-y="115" data-speed="300" data-start="500" data-easing="Power3.easeInOut" data-endspeed="300">Best ecommerce wordpress theme</div>
+<div class="tp-caption title_white2 lfl" data-x="center" data-hoffset="-270" data-y="156" data-speed="300" data-start="800" data-easing="Power3.easeInOut" data-endspeed="300">Classic Elegance</div>
+<div class="tp-caption subtitle_white2 lfl" data-x="center" data-hoffset="-290" data-y="240" data-speed="300" data-start="1100" data-easing="Power3.easeInOut" data-endspeed="300">Give the class of your site with our template</div>
+<div class="tp-caption black lfl" data-x="center" data-hoffset="-290" data-y="315" data-speed="300" data-start="1400" data-easing="Power3.easeInOut" data-endspeed="300"><a class="button white" href="#">All features</a>&nbsp;<a class="button white" href="#">Categories</a></div>
+</li>
+</ul>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+      <cms_block>
+         <title>Banner 1</title>
+         <identifier>banner_block_1</identifier>
+         <content><![CDATA[<div class="row">
+<div class="col-sm-6">
+<div class="banner a-right hover-zoom">
+<div class="banner-content">
+<div class="banner-inner">
+<h1>Simple</h1>
+<h3>Installation</h3>
+<p>Lorem ipsum sit amet, consectetur adipisicing <br> elit, sed do eiusmod tempor incididunt.</p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/second-banner-1.jpg"}}" alt="" /></div>
+</div>
+<div class="col-sm-6">
+<div class="banner a-right hover-zoom">
+<div class="banner-content">
+<div class="banner-inner">
+<h1>Free</h1>
+<h3>UK Shipping</h3>
+<p>Lorem ipsum sit amet, consectetur adipisicing <br> elit, sed do eiusmod tempor incididunt.</p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/first-banner-1.png"}}" alt="" /></div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+            
+      <cms_block>
+         <title>Banner 2</title>
+         <identifier>banner_block_2</identifier>
+         <content><![CDATA[<div class="row">
+<div class="col-sm-4">
+<div class="banner a-center banner-font-light hover-zoom">
+<div class="banner-content">
+<div class="banner-inner">
+<h1 style="margin: 80px 0 0 0; text-shadow: 1px 1px 8px #000;">Summer <span style="color: #f6dc00;">2014</span></h1>
+<h4>store category</h4>
+<p><a style="color: white; margin-top: 10px; text-shadow: 1px 1px 8px #000;" href="#">VIEW CATEGORY</a></p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner1.jpg"}}" alt="" /></div>
+</div>
+<div class="col-sm-4">
+<div class="banner a-center banner-font-light hover-zoom">
+<div class="banner-content">
+<div class="banner-inner">
+<h1 style="margin: 80px 0 0 0; text-shadow: 1px 1px 8px #000;">Happy <span style="color: #f6dc00;">Hour</span></h1>
+<h4>store category</h4>
+<p><a style="color: white; margin-top: 10px; text-shadow: 1px 1px 8px #000;" href="#">VIEW CATEGORY</a></p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner2.jpg"}}" alt="" /></div>
+</div>
+<div class="col-sm-4">
+<div class="banner a-center banner-font-light hover-zoom">
+<div class="banner-content">
+<div class="banner-inner">
+<h1 style="margin: 80px 0 0 0; text-shadow: 1px 1px 8px #000;">Aliens <span style="color: #f6dc00;">Attack</span></h1>
+<h4>store category</h4>
+<p><a style="color: white; margin-top: 10px; text-shadow: 1px 1px 8px #000;" href="#">VIEW CATEGORY</a></p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner3.jpg"}}" alt="" /></div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Banner 3</title>
+         <identifier>banner_block_3</identifier>
+         <content><![CDATA[<div class="row">
+<div class="col-sm-6">
+<div class="banner a-center hover-zoom">
+<div class="banner-content">
+<div class="banner-inner">
+<h1 style="font-size: 52px; margin: 15px 0 0 0; text-shadow: 1px 1px 10px #000;">Weather</h1>
+<h3 style="color: #ffefca;">Resistance</h3>
+<hr class="horizontal-break" />
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner12.png"}}" alt="" /></div>
+</div>
+<div class="col-sm-6">
+<div class="banner a-center hover-zoom">
+<div class="banner-content">
+<div class="banner-inner">
+<h1 style="font-size: 52px; margin: 15px 0 0 0; text-shadow: 1px 1px 10px #000;">Running</h1>
+<h3 style="color: #ffefca;">Accessories</h3>
+<hr class="horizontal-break" />
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner21.png"}}" alt="" /></div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Banner 4</title>
+         <identifier>banner_block_4</identifier>
+         <content><![CDATA[<div class="row">
+<div class="col-sm-6">
+<div class="banner a-right banner-font-light hover-fade">
+<div class="banner-content">
+<div class="banner-inner">
+<h1 style="margin: 20px 0 0 0; color: #e3bc36;">Classic</h1>
+<h3>Watches</h3>
+<hr class="horizontal-break right" style="width: 40px; height: 2px; background: #4d4d4d;" />
+<div class="clearfix">&nbsp;</div>
+<p>Lorem ipsum dolor sit amet, consecte<br> tempor incididunt ut labore.</p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner_41.jpg"}}" alt="" /></div>
+</div>
+<div class="col-sm-6">
+<div class="banner a-right banner-font-light hover-fade">
+<div class="banner-content">
+<div class="banner-inner">
+<h1 style="margin: 20px 0 0 0; color: #e3bc36;">Classic</h1>
+<h3>Watches</h3>
+<hr class="horizontal-break right" style="width: 40px; height: 2px; background: #4d4d4d;" />
+<div class="clearfix">&nbsp;</div>
+<p>Lorem ipsum dolor sit amet, consecte<br> tempor incididunt ut labore.</p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner_42.jpg"}}" alt="" /></div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Banner 5</title>
+         <identifier>banner_block_5</identifier>
+         <content><![CDATA[<div class="row">
+<div class="col-sm-4">
+<div class="banner a-center va-middle banner-font-light hover-fade">
+<div class="banner-content">
+<div class="banner-inner">
+<h1 style="margin: 0; text-shadow: 1px 1px 8px #000;">Catalog<span style="color: #4a91ab;">2014</span></h1>
+<h4>store category</h4>
+<p><a style="color: white;" href="#">View category</a></p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner_51.jpg"}}" alt="" /></div>
+</div>
+<div class="col-sm-4">
+<div class="banner a-center va-middle banner-font-light hover-fade">
+<div class="banner-content">
+<div class="banner-inner">
+<h1 style="margin: 0; text-shadow: 1px 1px 8px #000;">Moto<span style="color: #4a91ab;">cycles</span></h1>
+<h4>store category</h4>
+<p><a style="color: white;" href="#">View category</a></p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner_52.jpg"}}" alt="" /></div>
+</div>
+<div class="col-sm-4">
+<div class="banner a-center va-middle banner-font-light hover-fade">
+<div class="banner-content">
+<div class="banner-inner">
+<h1 style="margin: 0; text-shadow: 1px 1px 8px #000;">New<span style="color: #4a91ab;">wheels</span></h1>
+<h4>store category</h4>
+<p><a style="color: white;" href="#">View category</a></p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner_53.jpg"}}" alt="" /></div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Banner 7</title>
+         <identifier>banner_block_7</identifier>
+         <content><![CDATA[<div class="row">
+<div class="col-sm-4">
+<div class="banner a-center va-bottom full-inner hover-zoom">
+<div class="banner-content">
+<div class="banner-inner">
+<div class="banner-sub-inner banner-dark">
+<h1 style="padding-top: 10px; text-shadow: 1px 1px 8px #000;">Elegant</h1>
+<h4 style="padding-bottom: 10px; text-shadow: 1px 1px 8px #000;">Store Category</h4>
+</div>
+<p style="margin-top: 10px; margin-bottom: 20px;"><a style="color: #fff; text-shadow: 1px 1px 8px #000;" href="#">VIEW CATEGORY</a></p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner_7_1.jpg"}}" alt="" /></div>
+</div>
+<div class="col-sm-4">
+<div class="banner a-center va-bottom full-inner hover-zoom">
+<div class="banner-content">
+<div class="banner-inner">
+<div class="banner-sub-inner banner-dark">
+<h1 style="padding-top: 10px; text-shadow: 1px 1px 8px #000;">Casual</h1>
+<h4 style="padding-bottom: 10px; text-shadow: 1px 1px 8px #000;">Store Category</h4>
+</div>
+<p style="margin-top: 10px; margin-bottom: 20px;"><a style="color: #fff; text-shadow: 1px 1px 8px #000;" href="#">VIEW CATEGORY</a></p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner_7_2.jpg"}}" alt="" /></div>
+</div>
+<div class="col-sm-4">
+<div class="banner a-center va-bottom full-inner hover-zoom">
+<div class="banner-content">
+<div class="banner-inner">
+<div class="banner-sub-inner banner-dark">
+<h1 style="padding-top: 10px; text-shadow: 1px 1px 8px #000;">Special</h1>
+<h4 style="padding-bottom: 10px; text-shadow: 1px 1px 8px #000;">Store Category</h4>
+</div>
+<p style="margin-top: 10px; margin-bottom: 20px;"><a style="color: #fff; text-shadow: 1px 1px 8px #000;" href="#">VIEW CATEGORY</a></p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner_7_3.jpg"}}" alt="" /></div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Banner 8</title>
+         <identifier>banner_block_8</identifier>
+         <content><![CDATA[<div class="row">
+<div class="col-sm-4">
+<div class="banner a-right hover-zoom">
+<div class="banner-content">
+<div class="banner-inner">
+<h1 style="margin-top: 85px;">Simple</h1>
+<h3>Installation</h3>
+<p>Lorem ipsum sit amet, consectetur adipisicing <br /> elit, sed do eiusmod tempor incididunt.</p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner_1.jpg"}}" alt="" /></div>
+</div>
+<div class="col-sm-4">
+<div class="banner a-center hover-zoom">
+<div class="banner-content">
+<div class="banner-inner">
+<h1>Free</h1>
+<h3>UK Shipping</h3>
+<p>Lorem ipsum sit amet, consectetur adipisicing <br /> elit, sed do eiusmod tempor incididunt.</p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner_2.jpg"}}" alt="" /></div>
+<div class="banner a-center hover-zoom">
+<div class="banner-content">
+<div class="banner-inner">
+<h1>Free</h1>
+<h3>UK Shipping</h3>
+<p>Lorem ipsum sit amet, consectetur adipisicing <br /> elit, sed do eiusmod tempor incididunt.</p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner_3.jpg"}}" alt="" /></div>
+</div>
+<div class="col-sm-4">
+<div class="banner a-left hover-zoom">
+<div class="banner-content">
+<div class="banner-inner">
+<h1 style="margin-top: 85px;">Free</h1>
+<h3>UK Shipping</h3>
+<p>Lorem ipsum sit amet, consectetur adipisicing <br /> elit, sed do eiusmod tempor incididunt.</p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/banner_4.jpg"}}" alt="" /></div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Banner Slider</title>
+         <identifier>banner_slider_5</identifier>
+         <content><![CDATA[<div id="category_5_banner" class="owl-carousel">
+<div><img src="{{media url="wysiwyg/cat_3.png"}}" alt="" /></div>
+<div><img src="{{media url="wysiwyg/cat_6.png"}}" alt="" /></div>
+<div><img src="{{media url="wysiwyg/cat_7.png"}}" alt="" /></div>
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+jQuery('#category_5_banner').owlCarousel({singleItem : true,
+        slideSpeed : 1000,
+        autoHeight: true,
+        navigation: false,
+        pagination:true,
+autoPlay:true,
+        responsiveRefreshRate : 200,});
+});
+</script>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Banner Slider</title>
+         <identifier>banner_slider_6</identifier>
+         <content><![CDATA[<div id="category_6_banner" class="owl-carousel">
+<div><img src="{{media url="wysiwyg/cat_2.png"}}" alt="" /></div>
+<div><img src="{{media url="wysiwyg/cat_11.png"}}" alt="" /></div>
+<div><img src="{{media url="wysiwyg/cat_8.png"}}" alt="" /></div>
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+jQuery('#category_6_banner').owlCarousel({singleItem : true,
+        slideSpeed : 1000,
+        autoHeight: true,
+        navigation: false,
+        pagination:true,
+autoPlay:true,
+        responsiveRefreshRate : 200,});
+});</script>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Shopping Cart Banner</title>
+         <identifier>cart_banner_block</identifier>
+         <content><![CDATA[<div class="img-wrapper"><img src="{{media url="wysiwyg/banner1.png"}}" alt="" /></div>
+<div class="img-wrapper"><img src="{{media url="wysiwyg/banner2.png"}}" alt="" /></div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Catalog Side Block</title>
+         <identifier>catalog_side_block</identifier>
+         <content><![CDATA[<div class="banner">
+<div class="banner-content">
+<div class="banner-inner">
+<h2 style="text-align: center; font-size: 22px; color: #000;">Promo Banner</h2>
+<p style="text-align: center; color: #6f6f6f;">Lorem ipsum dolor sit.</p>
+<p style="text-align: center;"><a class="button filled" href="#">Purchase Now</a></p>
+</div>
+</div>
+<img src="{{media url="wysiwyg/sidebar-banner.jpg"}}" alt="" /></div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Company Description</title>
+         <identifier>company_description_block</identifier>
+         <content><![CDATA[<div>
+<div class="col-xs-12">
+<div class="content-element a-center">
+<h1>Company <span style="color: #e2b913;">Description</span></h1>
+<hr class="divider horizontal-break" />Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,<br> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+<div class="row content-element">
+<div class="col-sm-4">
+<div class="content-element">
+<h3>Our Mission</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+<p><strong class="active">Ipsum dolor sit amet, consectetur.</strong><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+<p><strong class="active">Lorem ipsum dolor sit amet.</strong><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="content-element">
+<h3>Our Approach</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div class="list list-arrow">
+<ul>
+<li>Duis aute irure dolor in reprehenderit in voluptate.</li>
+<li>Excepteur sint occaecat cupidatat non proident.</li>
+<li>Sunt in culpa qui officia deserunt mollit</li>
+<li>Duis aute irure dolor in reprehenderit in voluptate.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="content-element">
+<h3>New Technologies</h3>
+</div>
+<div class="content-element"><img src="{{media url="wysiwyg/content-image.png"}}" alt="" /></div>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Featured Brands</title>
+         <identifier>featured_brands_block</identifier>
+         <content><![CDATA[<div class="featured-brands">
+<h2 class="title"><span>Featured Brands</span></h2>
+<div class="row">
+<div class="col-sm-3">
+<div class="element-content brand"><a href="#"> <img src="{{media url="wysiwyg/brand2.png"}}" alt="" /> </a></div>
+</div>
+<div class="col-sm-3">
+<div class="element-content brand"><a href="#"> <img src="{{media url="wysiwyg/brand2.png"}}" alt="" /> </a></div>
+</div>
+<div class="col-sm-3">
+<div class="element-content brand"><a href="#"> <img src="{{media url="wysiwyg/brand2.png"}}" alt="" /> </a></div>
+</div>
+<div class="col-sm-3">
+<div class="element-content brand"><a href="#"> <img src="{{media url="wysiwyg/brand2.png"}}" alt="" /> </a></div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+      <cms_block>
+         <title>Featured Brands</title>
+         <identifier>featured_brands_block2</identifier>
+         <content><![CDATA[<div class="featured-brands">
+<h2 class="title with-customtitle"><span>Featured Brands</span></h2>
+<span class="custom-title a-center"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,<br>neaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</span>
+<div class="row">
+<div class="col-sm-3">
+<div class="element-content brand"><a href="#"> <img src="{{media url="wysiwyg/kiko.png"}}" alt="" /> </a></div>
+</div>
+<div class="col-sm-3">
+<div class="element-content brand"><a href="#"> <img src="{{media url="wysiwyg/kiko.png"}}" alt="" /> </a></div>
+</div>
+<div class="col-sm-3">
+<div class="element-content brand"><a href="#"> <img src="{{media url="wysiwyg/kiko.png"}}" alt="" /> </a></div>
+</div>
+<div class="col-sm-3">
+<div class="element-content brand"><a href="#"> <img src="{{media url="wysiwyg/kiko.png"}}" alt="" /> </a></div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	<cms_block>
+         <title>About Company</title>
+         <identifier>footer_about_company</identifier>
+         <content><![CDATA[<h3 class="footer-title">About Company</h3>
+<div class="footer-custom-content">
+<p>We are a company of highly skilled developers and designers, specialized in working with Magento/Wordpress system management</p>
+<h6>Contact information</h6>
+30 South Park Avenue Sanfrancisco, CA 94107 Phone: +78 123 456 789 <br> <br>
+<ul class="links pay-icons hidden-phone">
+<li><a href="#"><img src="{{media url="wysiwyg/paypal.png"}}" alt="" /></a></li>
+</ul>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Our Offers</title>
+         <identifier>footer_offers_block</identifier>
+         <content><![CDATA[<h3 class="footer-title">Our Offers</h3>
+<ul class="footer-menu">
+<li><a href="{{store direct_url="contacts"}}">Contact us</a></li>
+<li><a href="{{store direct_url="about-magento-demo-store"}}">About Us</a></li>
+<li><a href="#">Returns</a></li>
+<li><a href="#">Payment security</a></li>
+<li><a href="#">Shopping online</a></li>
+<li><a href="#">Size guide</a></li>
+<li><a href="#">FAQs</a></li>
+</ul>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Our Service</title>
+         <identifier>footer_service_block</identifier>
+         <content><![CDATA[<h3 class="footer-title">Our Service</h3>
+<ul class="footer-menu">
+<li><a href="#">New Product</a></li>
+<li><a href="#">Top sellers</a></li>
+<li><a href="#">Specials</a></li>
+<li><a href="#">Manufacturers</a></li>
+<li><a href="#">Supplies</a></li>
+<li><a href="#">Specials</a></li>
+<li><a href="#">Custom Service</a></li>
+</ul>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Our Store</title>
+         <identifier>footer_store_block</identifier>
+         <content><![CDATA[<h3 class="footer-title">Our Stores</h3>
+<ul class="footer-menu">
+<li><a href="#">London</a></li>
+<li><a href="#">Singapore</a></li>
+<li><a href="#">Paris</a></li>
+<li><a href="#">Moscow</a></li>
+<li><a href="#">Berlin</a></li>
+<li><a href="#">Milano</a></li>
+<li><a href="#">Amsterdam</a></li>
+</ul>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+	
+		
+		<cms_block>
+         <title>We want to offer you</title>
+         <identifier>offer_you_block</identifier>
+         <content><![CDATA[<div class="row">
+<div class="col-xs-12">
+<div class="element-content">
+<h2 class="title with-customtitle"><span>We want to offer you</span></h2>
+<span class="custom-title a-center"> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,<br>neaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</span></div>
+<div class="row">
+<div class="col-sm-4">
+<div class="block-with-ico ico-box-4009 ico-position-top ico-style-encircled"><em class="icon-globe">&nbsp;</em>
+<div class="ico-box-content">
+<h3 style="color: #666666;">Crandy Lovers</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="block-with-ico ico-box-8239 ico-position-top ico-style-encircled"><em class="icon-archive">&nbsp;</em>
+<div class="ico-box-content">
+<h3 style="color: #666666;">Everyday delivery</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="block-with-ico ico-box-4525 ico-position-top ico-style-encircled"><em class="icon-coffee">&nbsp;</em>
+<div class="ico-box-content">
+<h3 style="color: #666666;">Special services</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<hr class="divider space " style="height: 30px;" /></div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+		<cms_block>
+         <title>Our Company</title>
+         <identifier>our_company_home_block</identifier>
+         <content><![CDATA[<div>
+<h2 class="title with-customtitle"><span>About Us</span></h2>
+<span class="custom-title a-center"> Sed ut perspiciatis unde omnis iste natus error sit boluptatem doloremque laudantium, <br> totam rem aperiam, eaque ipsa quae ab illo inventor veritatis et quasi architecto beatae vitae dicta sunt explicabo. </span>
+<div class="row">
+<div class="col-sm-4">
+<div class="content-element">
+<h4>Our Mission</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h5>Ipsum dolor sit amet, consectetur.</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h5>Lorem ipsum dolor sit amet.</h5>
+<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="content-element">
+<h5>our Approach</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div class="list list-arrow">
+<ul>
+<li>Duis aute irure dolor in reprehenderit in voluptate.</li>
+<li>Excepteur sint occaecat cupidatat non proident.</li>
+<li>Sunt in culpa qui officia deserunt mollit.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="content-element">
+<h5>Company Abilities</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<div class="progress-bars">
+<div class="progress-bars">
+<div class="progress-bar" data-width="80"><span>Webdesign abilities</span>
+<div>&nbsp;</div>
+</div>
+</div>
+<div class="progress-bars">
+<div class="progress-bar" data-width="90"><span>Magento development</span>
+<div>&nbsp;</div>
+</div>
+</div>
+<div class="progress-bars">
+<div class="progress-bar" data-width="70"><span>partying and driking</span>
+<div>&nbsp;</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+		<cms_block>
+         <title>Parallex</title>
+         <identifier>parallex_block_1</identifier>
+         <content><![CDATA[<div class="et_section color-scheme-dark parallax-section a-center" style="background-image: url('{{skin url="images/parallax_1.jpg"}}'); margin-top: 30px; padding-top: 125px; padding-bottom: 125px;" data-parallax-speed="0.05">
+<div class="container">
+<div class="col-xs-12">
+<div class="element-content  a-center"><span class="google-font " style="font-family: Dancing Script; ; font-size: 24px;">Best Magento theme</span>
+<h1 class="margin0">Retro style</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,&nbsp;sed do eiusmod</p>
+<p><a class="button white" href="#"><span>Featured list</span></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="button white" href="#"><span>Categories</span></a></p>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Parallex</title>
+         <identifier>parallex_block_2</identifier>
+         <content><![CDATA[<div class="et_section color-scheme-dark parallax-section a-center" style="background-image: url('{{skin url="images/parallax_2.jpg"}}'); margin-top: 100px; padding-top: 75px; padding-bottom: 75px;" data-parallax-speed="0.05">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="content-element">
+<h2 style="text-align: center;">Our company achievements</h2>
+<p style="text-align: center;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,<br> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+</div>
+<div class="row">
+<div class="col-sm-4">
+<div class="content-element">
+<h3 style="text-align: center;"><span class="active font-large"><span id="animatedCounter" class="animated-counter " data-value="11000">1</span>+</span></h3>
+<h4 style="text-align: center;">happy clients</h4>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="content-element">
+<h3 style="text-align: center;"><span class="active font-large"><span id="animatedCounter" class="animated-counter " data-value="300">1</span>+</span></h3>
+<h4 style="text-align: center;">Followers</h4>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="content-element">
+<h3 style="text-align: center;"><span class="active font-large">24/7</span></h3>
+<h4 style="text-align: center;">Best Support</h4>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Parallex</title>
+         <identifier>parallex_block_3</identifier>
+         <content><![CDATA[<div class="et_section  no-border color-scheme-dark parallax-section a-center" style="margin-bottom: 30px; padding-top: 150px; padding-bottom: 120px; background-image: url('{{skin url="images/parallax_3.jpg"}}');" data-parallax-speed="0.1">
+<div class="container">
+<div class="col-xs-12">
+<div class="content-element">
+<h3 style="color: #dcb913; margin: 0;">Best ecommerce wordpress theme</h3>
+<h2>Man imposes his own limitations, don&rsquo;t set any</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.</p>
+</div>
+<div class="content-element">
+<p><a class="button white" href="#"><span>Features list</span></a>&nbsp;<a class="button white" href="#"><span>Categories</span></a></p>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Parallex</title>
+         <identifier>parallex_block_4</identifier>
+         <content><![CDATA[<div class="et_section  no-border color-scheme- parallax-section " style="margin-bottom: 0px; padding-top: 60px; padding-bottom: 40px; background-image: url('{{skin url="images/white_parallax_1.png"}}'); background-color: #efefef;" data-parallax-speed="0.05">
+<div class="container">
+<div class=" col-sm-12">
+<div class="element-content a-center">
+<h3 style="text-align: center; margin: 0;">Our other restaurants</h3>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,<br> totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+</div>
+<div class="row">
+<div class="col-sm-4">
+<div class="teaser-box style-bordered">
+<div>
+<h4 class="title"><span>London</span></h4>
+<img src="{{media url="wysiwyg/amsterdam_weather.jpg"}}" alt="" />
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+<p><strong>Openng Hours</strong><br> Mon &ndash; Sat: 10am &ndash; 8pm<br> Sun: 11:30am* &ndash; 6pm<br> (*browsing only between 11:30am &ndash; 12 noon)</p>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="teaser-box  style-bordered">
+<div>
+<h4 class="title"><span>Berlin</span></h4>
+<img src="{{media url="wysiwyg/brandenburger_tor_berlin.jpg"}}" alt="" />
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+<p><strong>Openng Hours</strong><br> Mon &ndash; Sat: 10am &ndash; 8pm<br> Sun: 11:30am* &ndash; 6pm<br> (*browsing only between 11:30am &ndash; 12 noon)</p>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="teaser-box style-bordered">
+<div>
+<h4 class="title"><span>Paris</span></h4>
+<img src="{{media url="wysiwyg/paris_aerial_view_eiffel_tower.jpg"}}" alt="" />
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+<p><strong>Openng Hours</strong><br> Mon &ndash; Sat: 10am &ndash; 8pm<br> Sun: 11:30am* &ndash; 6pm<br> (*browsing only between 11:30am &ndash; 12 noon)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	<cms_block>
+         <title>Parallex</title>
+         <identifier>parallex_block_5</identifier>
+         <content><![CDATA[<div class="et_section  no-border color-scheme-dark parallax-section a-center" style="margin-bottom: 30px; padding-top: 150px; padding-bottom: 120px; background-image: url('{{skin url="images/parallax_4.jpg"}}');" data-parallax-speed="0.1">
+<div class="container">
+<div class="col-sm-12">
+<div class="element-content">
+<h3 style="color: #dcb913; margin: 0;">Best ecommerce wordpress theme</h3>
+<h2>Man imposes his own limitations, don&rsquo;t set any</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.</p>
+</div>
+<div class="element-content">
+<p><a class="button white" href="#"><span>Features list</span></a>&nbsp;<a class="button white" href="#"><span>Categories</span></a></p>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+		<cms_block>
+         <title>Parallex</title>
+         <identifier>parallex_block_6</identifier>
+         <content><![CDATA[<div class="et_section  no-border color-scheme-dark parallax-section a-center" style="padding-top: 100px; padding-bottom: 80px; background-image: url('{{skin url="images/parallax_5.jpg"}}');" data-parallax-speed="0.05">
+<div class="container">
+<div class="col-sm-12">
+<div class="element-content a-center">
+<h3 style="color: #dcb913; margin: 0;">Best ecommerce wordpress theme</h3>
+<h1 style="font-size: 38px;">Man imposes his own limitations, don&rsquo;t set any</h1>
+<hr class="divider horizontal-break" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation.</div>
+<div class="element-content">
+<p><a class="button filled white" href="#">Features list</a> <a class="button filled white" href="#">Categories</a></p>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Parallex</title>
+         <identifier>parallex_block_7</identifier>
+         <content><![CDATA[<div class="et_section" style="padding-top: 60px; padding-bottom: 40px; background-color: #fafafa;" data-parallax-speed="0.05">
+<div class="container">
+<div class="col-xs-12">
+<div class="cta-block style-without-border">
+<div class="table-row">
+<div class="table-cell">
+<p><span class="active">BEST ECOMMERCE WORDPRESS THEME</span></p>
+<h1 style="color: #666666; line-height: 1; margin-bottom: 20px;">Are you looking for job?</h1>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,<br> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+</div>
+<div class="table-cell a-right"><a class="button " href="#">Contact Us</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+	
+		<cms_block>
+         <title>Parallex</title>
+         <identifier>parallex_block_8</identifier>
+         <content><![CDATA[<div class="et_section  no-border color-scheme-dark parallax-section a-center" style="padding-top: 100px; padding-bottom: 90px; background-image: url('{{skin url="images/parallax_6.jpg"}}');" data-parallax-speed="0.05">
+<div class="container">
+<div class=" col-sm-12">
+<div class="element-content a-center">
+<p><span class="active">BEST ECOMMERCE WORDPRESS THEME</span></p>
+<h1>Time for fresh fruit</h1>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,<br> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+</div>
+<div class="element-content">
+<p><a class="button white" href="#">Features List</a> <a class="button white" href="#">Categories</a></p>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Parallex</title>
+         <identifier>parallex_block_9</identifier>
+         <content><![CDATA[<div class="et_section  no-border color-scheme-dark parallax-section a-center" style="margin-top: 20px; margin-bottom: 0px; padding-top: 120px; padding-bottom: 100px; background-image: url('{{skin url="images/parallax_7.jpg"}}');" data-parallax-speed="0.05">
+<div class="container">
+<div class=" col-sm-12">
+<div class="element-content a-center">
+<p><span class="active" style="letter-spacing: 2px;">BEST ECOMMERCE WORDPRESS THEME</span></p>
+<h1 style="font-size: 48px; line-height: 36px;">Classic Elegance</h1>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,<br> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+<hr class="divider horizontal-break" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt dolore magna aliqua.Ut enim ad minim veniam.</div>
+<div class="element-content">
+<p><a class="button white" href="#">Features List</a> <a class="button white" href="#">Categories</a></p>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Parallex</title>
+         <identifier>parallex_block_10</identifier>
+         <content><![CDATA[<div class="et_section a-center" data-parallax-speed="0.05">
+<div class="container">
+<div class="row">
+<div class=" col-sm-12">
+<div class="element-content a-center">
+<h3 style="text-align: center;">Promo Video</h3>
+<p style="text-align: center;">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making<br> it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked</p>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<div class="content-element">
+<div class="content-video-wrapper"><iframe title="RRodd - With your suit and tie on (Justin Timberlake vs Marvin Gaye)" src="//player.vimeo.com/video/86684672" frameborder="0" width="1170" height="658"></iframe></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	<cms_block>
+         <title>Parallex</title>
+         <identifier>parallex_block_11</identifier>
+         <content><![CDATA[<div class="et_section  no-border color-scheme-dark parallax-section a-center" style="padding-top: 100px; padding-bottom: 70px; background-image: url('{{skin url="images/parallax_7.jpg"}}');" data-parallax-speed="0.05">
+<div class="container">
+<div class=" col-sm-12">
+<div class="element-content a-center">
+<p><span style="letter-spacing: 2px; text-transform: uppercase;">Lorem ipsum dolor sit amet, consectetur</span></p>
+<h1 style="font-size: 48px; line-height: 36px;">Completly new technology</h1>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,<br> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+<hr class="divider horizontal-break" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt dolore magna aliqua.Ut enim ad minim veniam.</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+		
+		<cms_block>
+         <title>Parallex</title>
+         <identifier>parallex_block_12</identifier>
+         <content><![CDATA[<div class="et_section no-border color-scheme-default" style="background-color: #ffffff;" data-parallax-speed="0.05">
+<div class="container">
+<div class="row">
+<div class=" col-sm-12">
+<div class="content-element">
+<h3 class="title with-customtitle"><span>Featured Products</span></h3>
+<span class="custom-title a-center"> Sed ut perspiciatis unde omnis iste natus error sit boluptatem doloremque laudantium, <br> totam rem aperiam, eaque ipsa quae ab illo inventor veritatis et quasi architecto beatae vitae dicta sunt explicabo. </span></div>
+<div class="row">
+<div class="col-sm-6">
+<div class="content-element">
+<div class="content-video-wrapper"><iframe title="// ArtFX OFFICIEL // Thousandth Street" src="//player.vimeo.com/video/69375721" frameborder="0" width="1170" height="658"></iframe></div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="content-element a-left">
+<h4>Our Mission</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+<p><strong>Ipsum dolor sit amet, consectetur. </strong></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Parallex</title>
+         <identifier>parallex_block_13</identifier>
+         <content><![CDATA[<div class="et_section no-border color-scheme-dark parallax-section a-center" style="margin-top: 20px; margin-bottom: 0px; padding-top: 120px; padding-bottom: 100px; background-image: url('{{skin url="images/parallax_8.jpg"}}');" data-parallax-speed="0.05">
+<div class="container">
+<div class="col-sm-12">
+<div class="element-content a-center">
+<p><span style="letter-spacing: 2px; text-transform: uppercase;">Lorem ipsum dolor sit amet, consectetur</span></p>
+<h1 style="font-size: 48px; line-height: 36px;">Completly new technology</h1>
+<hr class="divider horizontal-break" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt dolore magna aliqua.Ut enim ad minim veniam.</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Parallex</title>
+         <identifier>parallex_block_14</identifier>
+         <content><![CDATA[<div class="et_section parallax-section a-center" style="background-image: url('{{skin url="images/parallax_9.jpg"}}'); margin-top: 100px; padding-top: 75px; padding-bottom: 75px;" data-parallax-speed="0.05">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<div class="content-element">
+<h2 style="text-align: center;">Our company achievements</h2>
+<p style="text-align: center;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,<br /> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+</div>
+<div class="row">
+<div class="col-sm-4">
+<div class="content-element">
+<h3 style="text-align: center;"><span class="active font-large"><span id="animatedCounter" class="animated-counter " data-value="11000">1</span>+</span></h3>
+<h4 style="text-align: center;">happy clients</h4>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="content-element">
+<h3 style="text-align: center;"><span class="active font-large"><span id="animatedCounter" class="animated-counter " data-value="300">1</span>+</span></h3>
+<h4 style="text-align: center;">Followers</h4>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="content-element">
+<h3 style="text-align: center;"><span class="active font-large">24/7</span></h3>
+<h4 style="text-align: center;">Best Support</h4>
+<p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Parallex</title>
+         <identifier>parallex_block_15</identifier>
+         <content><![CDATA[<div class="et_section parallax-section a-center" style="background-image: url('{{skin url="images/parallax_9.jpg"}}'); margin-top: 100px; padding-top: 75px; padding-bottom: 75px;" data-parallax-speed="0.05">
+<div class="container">
+<h2>Featured Products</h2>
+{{block type="filterproducts/featured_home_list" product_count="8" template="smartwave/filterproducts/home_featured_custom.phtml"}}</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Pre Footer</title>
+         <identifier>pre_footer</identifier>
+         <content><![CDATA[<div class="container">
+<div class="bordered-wrapper">
+<div class="row">
+<div class="col-sm-4 custom-info-block text-left"><span class="colored-active">Follow Us:</span> <a href="#"><em class="fa fa-youtube">&nbsp;</em></a> <a href="#"><em class="fa fa-twitter">&nbsp;</em></a> <a href="#"><em class="fa fa-facebook">&nbsp;</em></a> <a href="#"><em class="fa fa-rss">&nbsp;</em></a></div>
+<div class="col-sm-4 custom-info-block text-center"><a href="#">Check Out Our New Magento Theme!</a></div>
+<div class="col-sm-4 custom-info-block text-right"><a href="#"> Our Support Is Online 24/7 <span class="colored-active">Support Chat</span> </a></div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Top Panel</title>
+         <identifier>top_panel_block</identifier>
+         <content><![CDATA[<div class="container">
+<div class="row">
+<div class="col-sm-4">
+<div class="element-content"><img src="{{media url="wysiwyg/top-panel-banner.jpg"}}" alt="" /></div>
+</div>
+<div class="col-sm-4 a-left">
+<div class="element-content">
+<h4>About Company</h4>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+</div>
+<div class="element-content">
+<p class="text-center"><a class="button white" href="#"><span><em class="icon-facebook"></em>Facebook</span></a>&nbsp;<a class="button white" href="#"><span><em class="icon-twitter"></em>Twitter</span></a></p>
+</div>
+</div>
+<div class="col-sm-4 a-left">
+<h4>Our Clients Opinion</h4>
+<div class="cbp-qtrotator testimonials-slider testimonials" data-interval="10000">
+<div class="cbp-qtcontent">
+<blockquote class="testimonials-text">In pharetra, lectus a consequat sodales, sapien tortor facilisis sem, ac facilisis felis</blockquote>
+<div class="testimonial-author"><cite class="author"> <strong>Steve Jobs</strong> <span class="url"><a href="http://apple.com">http://apple.com</a></span> </cite></div>
+</div>
+<div class="cbp-qtcontent">
+<blockquote class="testimonials-text">Proin egestas libero eu orci porta, sit amet porttitor lacus faucibus. Duis dolor leo</blockquote>
+<div class="testimonial-author"><cite class="author"> <strong>Obama</strong> <span class="url"><a href="http://albert.com">http://albert.com</a></span> </cite></div>
+</div>
+<div class="cbp-qtcontent">
+<blockquote class="testimonials-text">Etiam tincidunt ligula tellus. Vestibulum vitae justo malesuada, dictum turpis.</blockquote>
+<div class="testimonial-author"><cite class="author"> <strong>Albert</strong> <span class="url"><a href="http://8theme.com/">http://8theme.com/</a></span> </cite></div>
+</div>
+<div class="cbp-qtcontent">
+<blockquote class="testimonials-text">There are many variations of passages of Lorem Ipsum available, but the majority</blockquote>
+<div class="testimonial-author"><cite class="author"> <strong>Johnsons</strong> </cite></div>
+</div>
+<div class="cbp-next"><em class="icon-angle-right">&nbsp;</em></div>
+<div class="cbp-prev"><em class="icon-angle-left">&nbsp;</em></div>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Find out how much we can offer you</title>
+         <identifier>watch_offer_block</identifier>
+         <content><![CDATA[<div class="row">
+<div class="col-xs-12"><hr class="divider space " style="height: 30px;" />
+<div class="content-element">
+<h2 class="title with-customtitle"><span>Find out how much we can offer you</span></h2>
+<span class="custom-title a-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br> eiusmod tempor. Ut enim ad minim veniam.</span></div>
+<div class="row">
+<div class="col-sm-3">
+<div class="block-with-ico ico-box-3617 ico-position-top ico-style-encircled"><em class="icon-fighter-jet">&nbsp;</em>
+<div class="ico-box-content">
+<h5>Powerful engine</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="block-with-ico ico-box-1693 ico-position-top ico-style-encircled"><em class="icon-dashboard">&nbsp;</em>
+<div class="ico-box-content">
+<h5>High performance</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="block-with-ico ico-box-8921 ico-position-top ico-style-encircled"><em class="icon-user-md">&nbsp;</em>
+<div class="ico-box-content">
+<h5>Best Support</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+</div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="block-with-ico ico-box-8627 ico-position-top ico-style-encircled"><em class="icon-dropbox">&nbsp;</em>
+<div class="ico-box-content">
+<h5>Free Updates</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+</div>
+</div>
+</div>
+<hr class="divider space " style="height: 30px;" /></div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Custom Link Sample</title>
+         <identifier>custom_link_sample_narrow</identifier>
+         <content><![CDATA[<li class="menu-item menu-item-has-children menu-parent-item"><a href="#">Custom</a>
+<div class="nav-sublist-dropdown" style="display: none;">
+<div class="container">
+<ul>
+<li class="menu-item menu-item-has-children menu-parent-item " style="list-style: none;"><a class="level1" href="#"><span>Link</span></a>
+<div class="nav-sublist level1">
+<ul>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+</ul>
+</div>
+</li>
+<li class="menu-item menu-item-has-children menu-parent-item " style="list-style: none;"><a class="level1" href="#"><span>Link</span></a>
+<div class="nav-sublist level1">
+<ul>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+</ul>
+</div>
+</li>
+<li class="menu-item menu-item-has-children menu-parent-item " style="list-style: none;"><a class="level1" href="#"><span>Link</span></a></li>
+</ul>
+</div>
+</div>
+</li>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+	  <cms_block>
+         <title>Custom Link Sample</title>
+         <identifier>custom_link_sample_wide</identifier>
+         <content><![CDATA[<li class="menu-full-width"><a href="#">Custom</a>
+<div class="nav-sublist-dropdown" style="display: none;">
+<div class="container">
+<div class="mega-columns row">
+<div class="block1 col-sm-12">
+<div class="row">
+<ul>
+<li class="menu-item menu-item-has-children menu-parent-item col-sm-3 " style="list-style: none;"><a class="level1" href="#"><span>Link</span></a>
+<div class="nav-sublist level1">
+<ul>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+</ul>
+</div>
+</li>
+<li class="menu-item menu-item-has-children menu-parent-item col-sm-3 " style="list-style: none;"><a class="level1" href="#"><span>Link</span></a>
+<div class="nav-sublist level1">
+<ul>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+</ul>
+</div>
+</li>
+<li class="menu-item menu-item-has-children menu-parent-item col-sm-3 " style="list-style: none;"><a class="level1" href="#"><span>Link</span></a>
+<div class="nav-sublist level1">
+<ul>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+</ul>
+</div>
+</li>
+<li class="menu-item menu-item-has-children menu-parent-item col-sm-3 " style="list-style: none;"><a class="level1" href="#"><span>Link</span></a>
+<div class="nav-sublist level1">
+<ul>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+	  <cms_block>
+         <title>Custom Link Sample</title>
+         <identifier>custom_link_sample_mobile</identifier>
+         <content><![CDATA[<li class="menu-full-width"><a href="#">Custom</a>
+<ul>
+<li class="menu-item menu-item-has-children menu-parent-item col-sm-3 " style="list-style: none;"><a class="level1" href="#"><span>Link</span></a>
+<ul>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-parent-item col-sm-3 " style="list-style: none;"><a class="level1" href="#"><span>Link</span></a>
+<ul>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-parent-item col-sm-3 " style="list-style: none;"><a class="level1" href="#"><span>Link</span></a>
+<ul>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-parent-item col-sm-3 " style="list-style: none;"><a class="level1" href="#"><span>Link</span></a>
+<ul>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+<li class="menu-item" style="list-style: none;"><a class="level2" href="#"><span>Sub Link</span></a></li>
+</ul>
+</li>
+</ul>
+</li>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+      
+      <cms_block>
+         <title>Legenda Description</title>
+         <identifier>home_desc_7</identifier>
+         <content><![CDATA[<h1 style="margin-bottom: 0;">Legenda</h1>
+<h3>Premium Ecommerce</h3>
+<div class="element-content">Lorem ipsum dolor sit amet, consectetur ad pisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquaip ex ea commodo consequat.</div>
+<div class="element-content">
+<div>Phone: (123) 456-7890</div>
+<div>Email: <span style="color: #000;">contact@companyname.com</span></div>
+</div>
+<p><a class="button white big" href="#">Go To Features</a></p>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+	  <cms_block>
+         <title>Company Description</title>
+         <identifier>comp_desc_11</identifier>
+         <content><![CDATA[<div>
+<div class="col-xs-12">
+<div class="content-element a-center">
+<h1>Company <span style="color: #c73ccf;">Description</span></h1>
+<hr class="divider horizontal-break" />Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,<br /> eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+<div class="row content-element">
+<div class="col-sm-4">
+<div class="content-element">
+<h3>Our Mission</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+<p><strong class="active">Ipsum dolor sit amet, consectetur.</strong><br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+<p><strong class="active">Lorem ipsum dolor sit amet.</strong><br /> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="content-element">
+<h3>Our Approach</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div class="list list-arrow">
+<ul>
+<li>Duis aute irure dolor in reprehenderit in voluptate.</li>
+<li>Excepteur sint occaecat cupidatat non proident.</li>
+<li>Sunt in culpa qui officia deserunt mollit</li>
+<li>Duis aute irure dolor in reprehenderit in voluptate.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="content-element">
+<h3>New Technologies</h3>
+</div>
+<div class="content-element"><img src="{{media url="wysiwyg/desc_11.png"}}" alt="" /></div>
+</div>
+</div>
+</div>
+</div>]]></content>
+         <is_active>1</is_active>
+         <stores><item>0</item></stores>
+      </cms_block>
+
+
+   </blocks>
+</root>

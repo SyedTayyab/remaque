@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+	<reference name="content">
+		<block type="gift_card/kadowin_head" name="head.gift_card.kadowin" template="buybox_gift_card/kadowin/head.phtml"></block>
+	</reference>
+    </default>
+    <checkout_onepage_index>
+    	<reference name="content">
+    		<block type="gift_card/checkout_onepage" name="checkout.onepage.gift_card" template="buybox_gift_card/checkout/onepage.phtml"></block>
+    	</reference>
+    </checkout_onepage_index>
+</layout>

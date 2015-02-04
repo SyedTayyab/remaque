@@ -1,0 +1,601 @@
+<?php $helper = Mage::helper('legenda'); ?>
+<?php $d = $helper->getConfigGroupDesign(); ?>
+<?php $s = $helper->getConfigGroup(); ?>
+<?php $headerType = $helper->getConfig('header_settings/header_type'); ?>
+<?php $texture_path = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . Mage::helper("all")->getTexturePath(); ?>
+<?php $trans_path = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . Mage::helper("all")->getTransPath(); ?>
+<?php $img_path = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'smartwave/legenda/';?>
+<?php 
+if($s['general_settings']['page_style'] == 'boxed'):
+?>
+body {
+<?php if($d['page']['body_bg']):?>
+    background-color: <?php echo $d['page']['body_bg']?>;
+<?php endif; ?>
+<?php if($d['page']['body_bg_type'] == 'texture' && $d['page']['body_bg_texture']): ?>
+    background-image: url(<?php echo $texture_path.$d['page']['body_bg_texture']?>.png);
+    background-repeat: repeat;
+<?php elseif($d['page']['body_bg_type'] == 'image'): ?>
+    background: url(<?php echo $img_path.$d['page']['body_bg_img']?>);
+    background-attachment: fixed;
+    background-size: cover;
+<?php endif; ?>
+}
+<?php endif; ?>
+.wrapper,
+.title span,
+.modal,
+.fancybox-skin {
+<?php if($d['page']['main_bg']):?>
+    background-color: <?php echo $d['page']['main_bg']?>;
+<?php endif; ?>
+<?php if($d['page']['main_bg_texture']): ?>
+    background-image: url(<?php echo $texture_path.$d['page']['main_bg_texture']?>.png);
+    background-repeat: repeat;
+<?php endif; ?>
+}
+body,
+.label,
+.product-view .product-shop .sku_wrapper .sku {
+<?php
+    if($d['font']['primary_font_family_group'] == 'google'){
+?>
+    font-family: <?php echo $d['font']['primary_font_family']; ?>;
+<?php
+    } elseif ($d['font']['primary_font_family_group'] == 'custom') {
+?>
+    font-family: <?php echo $d['font']['primary_font_family_custom']; ?>;
+<?php
+    } else {
+?>
+    font-family: <?php echo $d['font']['primary_font_family_group']; ?>;
+<?php
+    }
+?>
+<?php if ($d['font']['font_size']) {?>
+    font-size: <?php echo $d['font']['font_size'] ?>px;
+<?php }?>
+<?php 
+    if ($d['colors']['txt_color']) {
+?>
+    color: <?php echo $d['colors']['txt_color'] ?>;
+<?php 
+    }
+?>
+}
+.postWrapper .post-info .posted-in a,
+.breadcrumbs li strong,
+.breadcrumbs li a,
+.old-price .price,
+.product-view .product-shop .link-wishlist:after, 
+.product-view .product-shop .link-compare:after {
+<?php 
+    if ($d['colors']['txt_color']) {
+?>
+    color: <?php echo $d['colors']['txt_color'] ?>;
+<?php 
+    }
+?>
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6, .title,
+.product-name a,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.share-title,
+.block .block-title strong
+{
+<?php
+    if($d['font']['heading_font_family_group'] == 'google'){
+?>
+    font-family: <?php echo $d['font']['heading_font_family']; ?>;
+<?php
+    } elseif ($d['font']['heading_font_family_group'] == 'custom') {
+?>
+    font-family: <?php echo $d['font']['heading_font_family_custom']; ?>;
+<?php
+    } else {
+?>
+    font-family: <?php echo $d['font']['heading_font_family_group']; ?>;
+<?php
+    }
+?>
+<?php if($d['colors']['title_color']): ?>
+    color: <?php echo $d['colors']['title_color'] ?>;
+<?php endif; ?>
+}
+.side-area .widget-title,
+.recent-post-mini a,
+.more-title .show-more-link,
+.footer .footer-products-list li a,
+.fixed-header .menu > li > a, 
+.main-nav .menu > li > a,
+.button {
+<?php
+    if($d['font']['heading_font_family_group'] == 'google'){
+?>
+    font-family: <?php echo $d['font']['heading_font_family']; ?>;
+<?php
+    } elseif ($d['font']['heading_font_family_group'] == 'custom') {
+?>
+    font-family: <?php echo $d['font']['heading_font_family_custom']; ?>;
+<?php
+    } else {
+?>
+    font-family: <?php echo $d['font']['heading_font_family_group']; ?>;
+<?php
+    }
+?>
+}
+
+.fixed-header .menu > li.menu-full-width .nav-sublist-dropdown .container ul > li > a.level1, 
+.main-nav .menu > li.menu-full-width .nav-sublist-dropdown .container ul > li > a.level1 {
+<?php
+    if($d['font']['sub_font_family_group'] == 'google'){
+?>
+    font-family: <?php echo $d['font']['sub_font_family']; ?>;
+<?php
+    } elseif ($d['font']['sub_font_family_group'] == 'custom') {
+?>
+    font-family: <?php echo $d['font']['sub_font_family_custom']; ?>;
+<?php
+    } else {
+?>
+    font-family: <?php echo $d['font']['sub_font_family_group']; ?>;
+<?php
+    }
+?>
+}
+.cart-table .price,
+.cart .totals,
+.cart .totals .price,
+.order-products-table .price,
+strong,
+.block-account .block-content li a,
+.block .block-subtitle,
+.product-categories > li > a,
+.order-view .order-products-table th,
+.shopping-cart .cart-popup .products-small .product-item h5 a,
+.shopping-cart .cart-popup .subtotal,
+.data-table thead th,
+.recent-post-mini a{
+<?php if($d['colors']['title_color']): ?>
+    color: <?php echo $d['colors']['title_color'] ?>;
+<?php endif; ?>
+}
+a,
+.f-icon i:before,
+.product-view .box-up-sell .slider-viewport .owl-theme .owl-controls .owl-buttons div,
+.checkout-progress li,
+.shopping-cart .cart-sum > a {
+<?php if ($d['colors']['link_color']) { ?>
+    color: <?php echo $d['colors']['link_color'] ?>;
+<?php } ?>
+}
+.checkout-progress li {
+<?php if ($d['colors']['link_color']) { ?>
+    border-color: <?php echo $d['colors']['link_color'] ?>;
+<?php } ?>
+}
+.side-area-icon i:before, 
+.menu-icon i:before {
+<?php if ($d['colors']['menu_icon_color']) { ?>
+    color: <?php echo $d['colors']['menu_icon_color'] ?>;
+<?php } ?>
+}
+a:hover,
+.button:hover,
+.fixed-header a:hover,
+.main-nav a:hover,
+.links li a:hover,
+.side-area-icon:hover i:before,
+.menu-icon:hover i:before,
+.recent-post-mini strong,
+.pager li>a:hover, 
+.pager li>a:focus,
+.pager .pages li.current span,
+.pager .pages li a.next:hover:before, 
+.pager .pages li a.previous:hover:before,
+.link-wishlist:hover, 
+.link-compare:hover,
+.product-tabs li.active a:hover,
+.product-name a:hover,
+.product-view .box-up-sell .slider-viewport .owl-theme .owl-controls .owl-buttons div:hover,
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
+.shopping-cart .cart-popup .products-small .product-item h5 a:hover,
+.opc .active h2,
+.colored-active,
+.custom-info-block a .fa:hover,
+.footer .footer-products-list li a:hover,
+.block-account .block-content li.current,
+.block-account .block-content li.current strong,
+.largest,
+.team-member .member-mask .mask-text a:hover,
+ul.list-arrow li:hover,
+.postWrapper .post-info .posted-in a:hover,
+.shopping-cart .cart-sum > a:hover strong,
+.form-list label.required em,
+.more-title .show-more-link:hover,
+.breadcrumbs li a:hover,
+.product-view .product-shop .availability.out-of-stock,
+.tp-leftarrow.default:hover:before, .tp-rightarrow.default:hover:before,
+span.active,
+strong.active,
+p.active,
+.children .current-cat > a,
+<?php echo '/*version 1.1.0 start*/' ?>
+.vmegamenu a:hover,
+.vmegamenu > li:hover > a
+<?php echo '/*version 1.1.0 end*/' ?> {
+<?php if ($d['colors']['active_color']) { ?>
+    color: <?php echo $d['colors']['active_color'] ?>;
+<?php } ?>
+}
+<?php echo '/*version 1.1.0 start*/' ?>
+.tp-leftarrow.default:hover:before, 
+.tp-rightarrow.default:hover:before {
+<?php if ($d['colors']['active_color']) { ?>
+    color: <?php echo $d['colors']['active_color'] ?> !important;
+<?php } ?>
+}
+<?php echo '/*version 1.1.0 end*/' ?>
+.checkout-progress li.active,
+.dark .product-categories .open-this:hover {
+<?php if ($d['colors']['active_color']) { ?>
+    color: <?php echo $d['colors']['active_color'] ?>;
+    border-color: <?php echo $d['colors']['active_color'] ?>;
+<?php } ?>
+}
+.button:hover,
+.pager li>a:hover, 
+.pager li>a:focus,
+.pager .pages li.current span,
+.link-wishlist:hover, 
+.link-compare:hover,
+input.input-text:focus,
+textarea:focus {
+<?php if ($d['colors']['active_color']) { ?>
+    border-color: <?php echo $d['colors']['active_color'] ?>;
+<?php } ?>
+}
+.toolbar .sorter .grid,
+.toolbar .sorter .list {
+<?php  if ($d['colors']['txt_color']): ?>
+    background-color: <?php echo $d['colors']['txt_color'] ?>;
+<?php endif; ?>
+}
+.toolbar .sorter .grid.active,
+.toolbar .sorter .list.active,
+.toolbar .sorter .grid:hover,
+.toolbar .sorter .list:hover,
+.progress-bar > div,
+.mini-filled:hover,
+.product-view .product-shop .link-wishlist:hover, 
+.product-view .product-shop .link-compare:hover,
+.block-with-ico.ico-position-top i {
+<?php if ($d['colors']['active_color']) :?>
+    background-color: <?php echo $d['colors']['active_color'] ?>;
+<?php endif; ?>
+}
+.price {
+<?php if ($d['colors']['price_color']) { ?>
+    color: <?php echo $d['colors']['price_color'] ?>;
+<?php } ?>
+}
+.button,
+.link-wishlist, 
+.link-compare {
+<?php if ($d['colors']['btn_color']) { ?>
+    color: <?php echo $d['colors']['btn_color'] ?>;
+<?php } ?>    
+}
+.button.filled,
+.button.filled:hover,
+.button.white:hover {
+<?php if ($d['colors']['active_color']) { ?>
+    background-color: <?php echo $d['colors']['active_color'] ?>;
+    border-color: <?php echo $d['colors']['active_color'] ?>;
+<?php } ?>
+<?php if ($d['colors']['btn_filled_color']): ?>
+    color: <?php echo  $d['colors']['btn_filled_color'] ?>;
+<?php endif; ?>
+}
+.product-view .product-shop .link-wishlist:hover:before, 
+.product-view .product-shop .link-compare:hover:before {
+<?php if ($d['colors']['btn_filled_color']): ?>
+    color: <?php echo  $d['colors']['btn_filled_color'] ?>;
+<?php endif; ?>
+}
+<?php echo '/*---Top Bar Settings---*/' ?>
+.header-container .top-bar {
+<?php if ($d['header']['top_bg_color']): ?>
+    background: <?php echo $d['header']['top_bg_color'] ?>;
+<?php endif; ?>
+}
+.header-container .top-bar .container {
+<?php if ($d['header']['top_border_color']): ?>
+    border-color: <?php echo $d['header']['top_border_color'] ?>;
+<?php endif; ?>
+}
+.links li a,
+.links li.login:before, 
+.links li.logout:before, 
+.links li.myaccount:before, 
+.links li.mywishlist:before, 
+.links li.register:before, 
+.links li.mycart:before,
+.search .search-link:before,
+.my-account-link:before,
+.top-bar select,
+.top-bar .form-language i:before,
+.top-bar .form-currency i:before,
+.top-bar li.blog:before {
+<?php if ($d['header']['top_link_color']): ?>
+    color: <?php echo $d['header']['top_link_color'] ?>;
+<?php endif; ?>
+}
+<?php echo '/*---Top Bar Settings End---*/' ?>
+<?php echo '/*-----Version 1.1.0 start-----*/'?>
+<?php echo '/*---Main Header Styles---*/'?>
+.header-container {
+<?php if ($d['header']['main_header_bg_color']): ?>
+background-color: <?php echo $d['header']['main_header_bg_color'] ?>;
+<?php endif; ?>
+}
+<?php echo '/*-----version 1.1.0 end-----*/'?>
+<?php echo '/*---Main Navigation Styles---*/' ?>
+.header-wrapper .main-nav {
+<?php if($d['header']['nav_bg_color']): ?>
+    background-color: <?php echo $d['header']['nav_bg_color'] ?>;
+<?php endif; ?>
+}
+.fixed-header a, 
+.main-nav a,
+.fixed-header .menu > li.menu-full-width .nav-sublist-dropdown .container ul > li .nav-sublist ul li:before,
+.main-nav .menu > li.menu-full-width .nav-sublist-dropdown .container ul > li .nav-sublist ul li:before,
+<?php echo '/*version 1.1.0 start*/' ?>
+.vmegamenu a,
+.vmegamenu li.menu-full-width .nav-sublist-dropdown .container ul > li .nav-sublist ul li:before
+<?php echo '/*version 1.1.0 end*/' ?> {
+<?php if($d['header']['nav_font_color']): ?>
+    color: <?php echo $d['header']['nav_font_color'] ?>;    
+<?php endif; ?>
+}
+<?php if ($d['header']['nav_font_custom']): ?>
+.fixed-header .menu > li > a, .main-nav .menu > li > a {
+<?php
+    if($d['header']['top_font_family_group'] == 'google'){
+?>
+    font-family: <?php echo $d['header']['top_font_family']; ?>;
+<?php
+    } elseif ($d['header']['top_font_family_group'] == 'custom') {
+?>
+    font-family: <?php echo $d['header']['top_font_family_custom']; ?>;
+<?php
+    } else {
+?>
+    font-family: <?php echo $d['header']['top_font_family_group']; ?>;
+<?php
+    }
+?>
+}
+.fixed-header .menu > li.menu-full-width .nav-sublist-dropdown .container ul > li > a.level1, .main-nav .menu > li.menu-full-width .nav-sublist-dropdown .container ul > li > a.level1 {
+<?php
+    if($d['header']['toplv_font_family_group'] == 'google'){
+?>
+    font-family: <?php echo $d['header']['toplv_font_family']; ?>;
+<?php
+    } elseif ($d['header']['toplv_font_family_group'] == 'custom') {
+?>
+    font-family: <?php echo $d['header']['toplv_font_family_custom']; ?>;
+<?php
+    } else {
+?>
+    font-family: <?php echo $d['header']['toplv_font_family_group']; ?>;
+<?php
+    }
+?>
+}
+.fixed-header .menu > li.menu-full-width .nav-sublist-dropdown .container ul > li .nav-sublist a, .main-nav .menu > li.menu-full-width .nav-sublist-dropdown .container ul > li .nav-sublist a {
+<?php
+    if($d['header']['sublv_font_family_group'] == 'google'){
+?>
+    font-family: <?php echo $d['header']['sublv_font_family']; ?>;
+<?php
+    } elseif ($d['header']['sublv_font_family_group'] == 'custom') {
+?>
+    font-family: <?php echo $d['header']['sublv_font_family_custom']; ?>;
+<?php
+    } else {
+?>
+    font-family: <?php echo $d['header']['sublv_font_family_group']; ?>;
+<?php
+    }
+?>
+}
+<?php endif; ?>
+.fixed-header .menu > li > a > span.cat-label.cat-label-label1, .main-nav .menu > li > a > span.cat-label.cat-label-label1,
+.fixed-header .menu > li .nav-sublist-dropdown ul li a > span > span.cat-label.cat-label-label1, .main-nav .menu > li .nav-sublist-dropdown ul li a > span > span.cat-label.cat-label-label1,
+.mobile-nav .sw-mobile-menu li > a span.cat-label.cat-label-label1,
+<?php echo '/*version 1.1.0 start*/' ?>
+.nav-category-list > li > a > span.cat-label.cat-label-label1,
+.nav-category-list > li .nav-sublist-dropdown .container ul li a > span span.cat-label.cat-label-label1,
+.nav-category-mobile-list .sw-mobile-menu > li > a span.cat-label.cat-label-label1,
+.nav-category-mobile-list .sw-mobile-menu > li > ul li a > span span.cat-label.cat-label-label1
+<?php echo '/*version 1.1.0 end*/' ?> {
+<?php if ($d['colors']['cat_lb1_bg_color']) :?>
+background: <?php echo $d['colors']['cat_lb1_bg_color'] ?>;
+<?php endif; ?>
+<?php if ($d['colors']['cat_lb1_txt_color']) :?>
+color: <?php echo $d['colors']['cat_lb1_txt_color'] ?>;
+<?php endif; ?>
+}
+.fixed-header .menu > li > a > span.cat-label.cat-label-label2, .main-nav .menu > li > a > span.cat-label.cat-label-label2,
+.fixed-header .menu > li .nav-sublist-dropdown ul li a > span > span.cat-label.cat-label-label2, .main-nav .menu > li .nav-sublist-dropdown ul li a > span > span.cat-label.cat-label-label2,
+.mobile-nav .sw-mobile-menu li > a span.cat-label.cat-label-label2,
+<?php echo '/*version 1.1.0 start*/' ?>
+.nav-category-list > li > a > span.cat-label.cat-label-label2,
+.nav-category-list > li .nav-sublist-dropdown .container ul li a > span span.cat-label.cat-label-label2,
+.nav-category-mobile-list .sw-mobile-menu > li > a span.cat-label.cat-label-label2,
+.nav-category-mobile-list .sw-mobile-menu > li > ul li a > span span.cat-label.cat-label-label2
+<?php echo '/*version 1.1.0 end*/' ?> {
+<?php if ($d['colors']['cat_lb2_bg_color']) :?>
+background: <?php echo $d['colors']['cat_lb2_bg_color'] ?>;
+<?php endif; ?>
+<?php if ($d['colors']['cat_lb2_txt_color']) :?>
+color: <?php echo $d['colors']['cat_lb2_txt_color'] ?>;
+<?php endif; ?>
+}
+.fixed-header {
+<?php if ($d['header']['sticky_bg_color']): ?>
+    background-color: <?php echo $d['header']['sticky_bg_color'] ?>;
+<?php endif; ?>
+<?php if ($d['header']['sticky_bg_trans'] != 0): ?>
+    background: url(<?php echo $trans_path.$d['header']['sticky_bg_trans']?>.png);
+    background-repeat: repeat;
+<?php endif; ?>
+}
+.fixed-header .menu > li .nav-sublist-dropdown, .main-nav .menu > li .nav-sublist-dropdown,
+.fixed-header .menu > li.menu-item .nav-sublist-dropdown .nav-sublist li > a, .main-nav .menu > li.menu-item .nav-sublist-dropdown .nav-sublist li > a,
+<?php echo '/*version 1.1.0 start*/' ?>
+.nav-category-list > li .nav-sublist-dropdown,
+.nav-category-list > li.menu-item .nav-sublist-dropdown .nav-sublist li > a
+<?php echo '/*version 1.1.0 end*/' ?> {
+<?php if ($d['header']['popup_bg_color']): ?>
+    background-color: <?php echo $d['header']['popup_bg_color'] ?>;
+<?php endif; ?>
+<?php if ($d['header']['popup_bg_trans'] != 0): ?>
+    background: url(<?php echo $trans_path.$d['header']['popup_bg_trans']?>.png);
+    background-repeat: repeat;
+<?php endif; ?>
+}
+<?php echo '/*---Main Navigation Styles End---*/' ?>
+<?php echo '/*---Footer Top Styles Start---*/' ?>
+.footer-top {
+<?php if ($d['footer']['footer_top_bg_color']): ?>
+    background-color: <?php echo $d['footer']['footer_top_bg_color'] ?>;
+<?php endif; ?>
+}
+.footer-top,
+.footer-top a,
+.footer-top .footer-products-list .old-price .price {
+<?php if ($d['footer']['footer_top_txt_color']): ?>
+    color: <?php echo $d['footer']['footer_top_txt_color'] ?>;
+<?php endif; ?>
+}
+.footer-top a:hover,
+.footer-top .footer-menu li:hover,
+.footer-top .footer-products-list li a:hover,
+.footer-top .tweet a,
+.dark .footer-top .footer-products-list li a:hover {
+<?php if ($d['footer']['footer_top_active_color']): ?>
+    color: <?php echo $d['footer']['footer_top_active_color'] ?>;
+<?php endif; ?>
+}
+.footer-top h1,
+.footer-top .h1,
+.footer-top h2,
+.footer-top .h2,
+.footer-top h3,
+.footer-top .h3,
+.footer-top h4,
+.footer-top .h4,
+.footer-top h5,
+.footer-top .h5,
+.footer-top h6,
+.footer-top .h6,
+.footer-top .footer-title,
+.footer-top .recent-post-mini a,
+.footer-top .footer-products-list li a {
+<?php if ($d['footer']['footer_top_ttl_color']): ?>
+    color: <?php echo $d['footer']['footer_top_ttl_color'] ?>;
+<?php endif; ?>
+}
+.footer-top .footer-products-list > li,
+.footer-top .block-content .tweet,
+.footer-top .recent-post-mini {
+<?php if ($d['footer']['footer_top_bt_border_color']): ?>
+    border-color: <?php echo $d['footer']['footer_top_bt_border_color'] ?>;
+<?php endif; ?>
+}
+.footer .bordered-wrapper,
+.footer-top .bordered-wrapper {
+<?php if ($d['footer']['footer_top_border'] && $d['footer']['footer_top_tp_border_color']): ?>
+    border-color: <?php echo $d['footer']['footer_top_tp_border_color'] ?>;
+<?php endif; ?>
+}
+<?php echo '/*---Footer Top Styles End---*/' ?>
+
+<?php echo '/*---Footer Bottom Styles Start---*/' ?>
+.footer-bottom {
+<?php if ($d['footer']['footer_bottom_bg_color']): ?>
+    background-color: <?php echo $d['footer']['footer_bottom_bg_color'] ?>;
+<?php endif; ?>
+}
+.footer-bottom,
+.footer-bottom a,
+.footer-bottom .footer-products-list .old-price .price {
+<?php if ($d['footer']['footer_bottom_txt_color']): ?>
+    color: <?php echo $d['footer']['footer_bottom_txt_color'] ?>;
+<?php endif; ?>
+}
+.footer-bottom a:hover,
+.footer-bottom .footer-menu li:hover,
+.footer-bottom .footer-products-list li a:hover,
+.footer-bottom .tweet a,
+.dark .footer-bottom .footer-products-list li a:hover {
+<?php if ($d['footer']['footer_bottom_active_color']): ?>
+    color: <?php echo $d['footer']['footer_bottom_active_color'] ?>;
+<?php endif; ?>
+}
+.footer-bottom h1,
+.footer-bottom .h1,
+.footer-bottom h2,
+.footer-bottom .h2,
+.footer-bottom h3,
+.footer-bottom .h3,
+.footer-bottom h4,
+.footer-bottom .h4,
+.footer-bottom h5,
+.footer-bottom .h5,
+.footer-bottom h6,
+.footer-bottom .h6,
+.footer-bottom .footer-title,
+.footer-bottom .recent-post-mini a,
+.footer-bottom .footer-products-list li a {
+<?php if ($d['footer']['footer_bottom_ttl_color']): ?>
+    color: <?php echo $d['footer']['footer_bottom_ttl_color'] ?>;
+<?php endif; ?>
+}
+.footer-bottom .footer-products-list > li,
+.footer-bottom .block-content .tweet,
+.footer-bottom .recent-post-mini {
+<?php if ($d['footer']['footer_bottom_bt_border_color']): ?>
+    border-color: <?php echo $d['footer']['footer_bottom_bt_border_color'] ?>;
+<?php endif; ?>
+}
+.footer-bottom .bordered-wrapper {
+<?php if ($d['footer']['footer_bottom_border'] && $d['footer']['footer_bottom_tp_border_color']): ?>
+    border-color: <?php echo $d['footer']['footer_bottom_tp_border_color'] ?>;
+<?php endif; ?>
+}
+<?php echo '/*---Footer Bottom Styles End---*/' ?>
+<?php echo '/*---Footer Copyright Styles Start---*/' ?>
+.copyright {
+<?php if ($d['footer']['footer_copyright_bg_color']): ?>
+    background-color: <?php echo $d['footer']['footer_copyright_bg_color'] ?>;
+<?php endif; ?>
+}
+.copyright,
+.copyright a {
+<?php if ($d['footer']['footer_copyright_txt_color']): ?>
+    color: <?php echo $d['footer']['footer_copyright_txt_color'] ?>;
+<?php endif; ?>
+}
+.copyright .bordered-wrapper {
+<?php if ($d['footer']['footer_copyright_border'] && $d['footer']['footer_copyright_tp_border_color']): ?>
+    border-color: <?php echo $d['footer']['footer_copyright_tp_border_color'] ?>;
+<?php endif; ?>
+}
+<?php echo '/*---Footer Copyright Styles End---*/' ?>
+.tabs .tab-title.opened {
+    border-bottom-color: <?php echo $d['page']['main_bg']?>;
+}

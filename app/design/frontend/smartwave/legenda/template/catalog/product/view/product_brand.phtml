@@ -1,0 +1,19 @@
+<?php  //$_manufacturer = $this->getProduct()->getAttributeText('manufacturer');?>
+<?php $_manufacturer = $this->getProduct()->getManufacturer();?>
+<?php if ($_manufacturer): ?>
+<div class="product-brand">
+    <h4 class="title"><span><?php echo $this->__('Product Brand')?></span></h4>
+    <div class="product-brand-content">
+        <a href="<?php echo Mage::getUrl().'catalogsearch/advanced/result/?manufacturer='.str_replace(' ', '+', $_manufacturer)?>">
+            <?php $brandImageDir = Mage::getBaseDir("media").'/wysiwyg/smartwave/legenda/brands/';?>
+            <?php $brandImageUrl = $brandImageDir.str_replace(" ","_",strtolower($this->getProduct()->getAttributeText('manufacturer'))).'.png'; ?>
+            <?php if(file_exists($brandImageUrl)): ?>
+                <?php $brandUrl = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'wysiwyg/smartwave/legenda/brands/';?>
+                <img src="<?php echo $brandUrl.str_replace(" ","_",strtolower($this->getProduct()->getAttributeText('manufacturer'))).'.png' ?>" alt="<?php echo $this->getProduct()->getAttributeText('manufacturer'); ?>" />
+            <?php else: ?>
+                <?php echo $this->getProduct()->getAttributeText('manufacturer'); ?>
+            <?php endif; ?>
+        </a>
+    </div>
+</div>
+<?php endif; ?>

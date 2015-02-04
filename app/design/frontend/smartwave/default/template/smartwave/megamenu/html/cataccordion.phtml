@@ -1,0 +1,11 @@
+<!--version 1.2.0-->
+<?php $menuHelper = Mage::helper('megamenu'); ?>
+<?php $menuData = $menuHelper->getMenuData(); extract($menuData); ?>
+<div class="vmegamenu block">
+    <div class="block-title"><strong><?php echo $this->__('Categories') ?></strong></div>
+    <div class="nav-category-accordion block-content">
+        <ul class="category-accordion-wrapper">
+            <?php echo $menuHelper->getSideCategoryAccordion(); ?>        
+        </ul>    
+    </div>                            
+</div>
